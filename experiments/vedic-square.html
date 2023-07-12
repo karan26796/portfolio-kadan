@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Design Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../containers.css">
+  <script src="../actions.js"></script>
+
+  <style type="text/css">
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    h3 {
+      margin: 12px 0 8px 0;
+    }
+
+    container-home {
+      border: 0px solid;
+      border-width: 0px;
+    }
+  </style>
+</head>
+
+<div class="root-container blog" style="gap:0px;">
+
+  <!-- Done -->
+  <div class="nav-bar">
+    <a href="../home.html">
+      <p class="nav">K3K3</p>
+    </a>
+    <div class="nav-options">
+      <a href="../home.html">
+        <p class="nav">Home</p>
+      </a>
+      <a href="../home.html">
+        <p class="nav">About</p>
+      </a>
+      <a href="../images.html">
+        <p class="nav">Photos</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="container-home padding-blog" style="align-items: center; margin-bottom: -2px;">
+    <h1 style="max-width:20ch; text-align: center;">Using vedic mathematics for biometry scanning</h1>
+    <p class="p-tag blog">MATHEMATICS, CLASSROOM PROJECT</p>
+  </div>
+
+  <!-- Quick Summary -->
+  <div class="container-home padding-blog" style="background: var(--accent-color);margin: -2px 0px -2px 0px">
+    <h3 style="margin:0px;">What is a Vedic square</h3>
+    <p>In Indian mathematics, a Vedic square is a variation on a typical 9 × 9 multiplication table where the entry in
+      each cell is the digital root of the product of the column and row headings, i.e. the remainder when the product
+      of the row and column headings is divided by 9 (with remainder 0 represented by 9).</p>
+  </div>
+
+  <div class="container-home padding-blog" style="margin:0px">
+
+    <p>Numerous geometric patterns and symmetries can be observed in a Vedic square, some of which can be found in
+      traditional Islamic art.</p>
+
+    <div class="img-container"><img src="./vedic square/1.png" class="img-blog"></div>
+
+    <div class="img-container"><img src="./vedic square/2.png" class="img-blog"></div>
+
+    <p>To understand the vedic square better, I assigned an analogous color to each number and vizualized it as
+      following.</p>
+
+    <div class="img-container"><img src="./vedic square/3.png" class="img-blog"></div>
+
+    <h4>Highlighting specific numbers within the Vedic square reveals distinct shapes each with some form of reflection
+      symmetry.
+    </h4>
+
+    <div class="img-container"><img src="./vedic square/4.png" class="img-blog"></div>
+
+    <div class="img-container"><img src="./vedic square/5.png" class="img-blog"></div>
+
+    <p>I removed the numbers from the matrix to see what comes up</p>
+
+    <div class="img-container"><img src="./vedic square/6.png" class="img-blog"></div>
+
+    <h4>The unnumbered grid looked like a pixelated image. So I pixelated one of my images to see what comes up.</h4>
+
+    <p>I created a black and white version of the image and then applied the color scheme seen before onto a 9*9 matrix.
+      This gave me a vedic square to which I assigned a number value to the pixels based on their lightness.</p>
+
+    <div class="img-container"><img src="./vedic square/7.png" class="img-blog"></div>
+
+    <h3>👉 Where can this model be applied?</h3>
+
+    <ul>
+      <li>The numbered pixel data from an image can be used to make a unique n*n vedic square. This can be the biometric
+        data of a person who bears a photo ID. Since the data is unique for every image, the system would yield high
+        accuracy.</li>
+      <li>This system can also be used to verify if an image is fake or real. The data of the image at the time of
+        creation can be compared with the current data for verification</li>
+    </ul>
+
+  </div>
+
+  <div class="nav-bar bottom" style="margin-top: -66px;">
+    <a href="home.html">
+      <p class="nav">Instagram</p>
+    </a>
+    <a href="home.html">
+      <p class="nav">LinkedIn</p>
+    </a>
+    <a href="home.html">
+      <p class="nav">Twitter</p>
+    </a>
+  </div>
+
+  <!-- root -->
+</div>
+
+</html>

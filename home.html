@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Design Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="containers.css">
+  <link rel="stylesheet" href="infinite-carousel.css">
+  <script src="actions.js"></script>
+</head>
+
+<div class="root-container">
+
+  <!-- Done -->
+  <div class="nav-bar">
+    <a href="../home.html">
+      <p class="nav">K3K3</p>
+    </a>
+    <div class="nav-options">
+      <a href="../home.html">
+        <p class="nav">Home</p>
+      </a>
+      <a href="../home.html">
+        <p class="nav">About</p>
+      </a>
+      <a href="../images.html">
+        <p class="nav">Photos</p>
+      </a>
+    </div>
+  </div>
+
+  <!--------------------------------------- introduction ----------------------------------------->
+  <div class="container-home">
+    <div class="padding-home">
+      <h2>Hello, I'm Karan</h2>
+
+      <p style="color: var(--grey-400);">Designer — Technologist — Figma Trainer</p>
+
+      <p style="max-width: 35ch; color: var(--grey-100);">I love to integrate tech and design to craft experiences,
+        solve problems, and talk about the effects of technology on society.<br><br>
+
+        I've designed and conducted workshops at leading companies, studios, & institutes in India and abroad. Here are
+        a select few</p>
+
+      <a onclick="changeStyle()">Click Me</a>
+    </div>
+
+    <div class="grid-logos">
+      <div class="item-logo">
+        <img class="clients-img" src="./logos/iima.webp">
+      </div>
+      <div class="item-logo">
+        <img class="clients-img" src="./logos/obvious.webp">
+      </div>
+      <div class="item-logo">
+        <img class="clients-img" src="./logos/indiana.webp">
+      </div>
+      <div class="item-logo">
+        <img class="clients-img" src="./logos/looppanel.webp">
+      </div>
+      <div class="item-logo">
+        <img class="clients-img" src="./logos/shaadi.webp">
+      </div>
+      <div class="item-logo">
+        <img class="clients-img" src="./logos/obvious.webp">
+      </div>
+    </div>
+
+  </div>
+
+  <!--------------------------------------- projects - done ----------------------------------------->
+  <div class="container-home">
+
+    <div class="container-title">
+      <h3>Projects</h3>
+    </div>
+
+    <a href="./projects/kurakaani.html" style="text-decoration: none;">
+      <div class="project horizontal">
+        <img class="project-img main" src="./projects/images-kurakaani/kurakani-thumb.webp">
+        <div>
+          <p class="p-tag">DESIGN SYSTEM, COMPONENT LIBRARY</p>
+          <h4>How I used Atomic Design principles to redesign Nepal's Superapp</h4>
+        </div>
+      </div>
+    </a>
+
+    <div class="grid">
+      <a href="./projects/loop-note.html">
+        <div class="project">
+          <img class="project-img" src="./projects/images-loop-note/thumb.webp">
+          <div>
+            <p class="p-tag" style="margin-bottom:4px">DESIGN, RESEARCH, USABILITY TESTING</p>
+            <h4>Improving note-taking experience for user research calls on Zoom with Looppanel</h4>
+          </div>
+        </div>
+      </a>
+
+      <a href="./projects/staging-project.html">
+        <div class="project">
+          <img class="project-img" src="https://www.w3schools.com/css/paris.jpg">
+          <div>
+            <p class="p-tag" style="margin-bottom:4px">STAGING, COMMENTARY, EXPERIENTIAL DESIGN , DESIGN INSTALLATION
+            </p>
+            <h4>Hidden in plain sight - a commentary on social media surveillance</h4>
+          </div>
+        </div>
+      </a>
+
+      <a href="./projects/loop-research.html">
+        <div class="project">
+          <img class="project-img" src="./projects/loop-research/thumb.jpg">
+          <div>
+            <p class="p-tag" style="margin-bottom:4px">RESEARCH, DESIGN</p>
+            <h4>Finding new ways to organize user research data</h4>
+          </div>
+        </div>
+      </a>
+
+      <a href="./projects/loop-research/staging-project.html">
+        <div class="project">
+          <img class="project-img" src="https://www.w3schools.com/css/paris.jpg">
+          <div>
+            <p class="p-tag" style="margin-bottom:4px">STAGING, COMMENTARY, EXPERIENTIAL DESIGN , DESIGN INSTALLATION
+            </p>
+            <h4>Hidden in plain sight - a commentary on social media surveillance</h4>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!--------------------------------------- experiments - done ----------------------------------------->
+  <div class="container-home">
+    <div class="container-title">
+      <h3>Experiments</h3>
+    </div>
+
+    <a href="./experiments/color-wheel.html" style="text-decoration:none;">
+      <div class="project horizontal">
+        <div>
+          <h4>Creating a color wheel using arduino and creative code</h4>
+          <p class="p-tag">ELECTRONICS, CREATIVE CODING</p>
+        </div>
+        <p class="arrow">↗</p>
+      </div>
+    </a>
+
+    <a href="./experiments/prototypes.html" style="text-decoration:none;">
+      <div class="project horizontal">
+        <div>
+          <h4>Animation and Prototyping Experiments in Figma</h4>
+          <p class="p-tag">ANIMATION, PROTOTYPING</p>
+        </div>
+        <p class="arrow">↗</p>
+      </div>
+    </a>
+
+    <a href="./experiments/vedic-square.html" style="text-decoration:none;">
+      <div class="project horizontal">
+        <div>
+          <h4>Using vedic mathematics for biometry scanning</h4>
+          <p class="p-tag">MATHEMATICS, CLASSROOM PROJECT</p>
+        </div>
+        <p class="arrow">↗</p>
+      </div>
+    </a>
+
+    <a href="./experiments/data-viz.html" style="text-decoration:none; margin-bottom: -2px;">
+      <div class="project horizontal">
+        <div>
+          <h4>Visualising how students participated in NID's Open Elective Module</h4>
+          <p class="p-tag">DATA VIZ., SIDE PROJECT</p>
+        </div>
+        <p class="arrow">↗</p>
+      </div>
+    </a>
+  </div>
+
+  <!--------------------------------------- testimonials - done ----------------------------------------->
+  <div class="container-home">
+    <div class="container-title">
+      <h3>Hear from the people I've worked with</h3>
+    </div>
+
+    <div class="grid">
+
+      <div class="project testimonial" style="gap: 4px;">
+        <h4>Malavika Susan · UX Designer</h4>
+        <p class="p-tag">Worked together at Aphelia Innovations</p>
+        <p>Karan's emphasis on design standardization, by meticulous planning and
+          strategizing, made way for a strong foundation in design for me and all our future projects. His ability to
+          combine technology with art is exceptional.</p>
+      </div>
+
+      <div class="project testimonial" style="gap: 4px;">
+        <h4>Kritika Oberoi · co-founder</h4>
+        <p class="p-tag">Worked together at Looppanel</p>
+        <p>Karan was a part-time employee at Looppanel but he gave his work his all, took
+          feedback very well, iterated on designs endlessly and learned how to run effective user research.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--------------------------------------- resources ----------------------------------------->
+  <div class="container-home">
+
+    <div class="container-title">
+      <h2 style="max-width: 35ch; color: var(--grey-100);">Learn from my Figma files and YouTube tutorials viewed over
+        30k times</h2>
+      <p style="max-width: 35ch;">Templates and tutorials to help you kickstart any UX Design project</p>
+    </div>
+
+    <div class="logos">
+      <div class="logos-slide">
+        <a href="https://www.figma.com/community/file/897091186704896395/Evolve-Component-Library-%7C-Karan-Kapoor"><img
+            src="./resources/evolve.png" /></a>
+        <a href="https://www.youtube.com/watch?v=Rf-cg42id78"><img src="./resources/figma-shortcuts.jpeg" /></a>
+        <a href="https://www.youtube.com/watch?v=LCHQ9MApBGA"><img src="./resources/learn-play.jpeg" />learn-play</a>
+        <a href="https://www.figma.com/community/file/905774038894769917/Animation-%26-Prototype-Playground"><img
+            src="./resources/prototypes.png" /></a>
+        <a href="https://www.figma.com/community/file/997477366354506560/Twitter-in-Auto-Layout"><img
+            src="./resources/twitter.png" /></a>
+        <a
+          href="https://www.figma.com/community/file/1076867776880340874/Interactive-Presentation-Gradient-Backgrounds"><img
+            src="./resources/gradients.png" /></a>
+      </div>
+
+      <div class="logos-slide">
+        <a href="https://www.figma.com/community/file/897091186704896395/Evolve-Component-Library-%7C-Karan-Kapoor"><img
+            src="./resources/evolve.png" /></a>
+        <a href="https://www.youtube.com/watch?v=Rf-cg42id78"><img src="./resources/figma-shortcuts.jpeg" /></a>
+        <a href="https://www.youtube.com/watch?v=LCHQ9MApBGA"><img src="./resources/learn-play.jpeg" />learn-play</a>
+        <a href="https://www.figma.com/community/file/905774038894769917/Animation-%26-Prototype-Playground"><img
+            src="./resources/prototypes.png" /></a>
+        <a href="https://www.figma.com/community/file/997477366354506560/Twitter-in-Auto-Layout"><img
+            src="./resources/twitter.png" /></a>
+        <a
+          href="https://www.figma.com/community/file/1076867776880340874/Interactive-Presentation-Gradient-Backgrounds"><img
+            src="./resources/gradients.png" /></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-bar bottom" style="margin-top: -98px;">
+    <a href="https://Instagram.com/kadankapoor">
+      <p class="nav">Instagram</p>
+    </a>
+    <a href="https://linkedin.com/in/karankapoorux">
+      <p class="nav">LinkedIn</p>
+    </a>
+    <a href="https:twitter.com/kadankapoor">
+      <p class="nav">Twitter</p>
+    </a>
+  </div>
+
+  <!-- root -->
+</div>
+
+</html>

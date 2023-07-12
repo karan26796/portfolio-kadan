@@ -1,0 +1,206 @@
+<html>
+
+<head>
+	<title>My Design Portfolio</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
+	<link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="../containers.css">
+	<script src="../actions.js"></script>
+	<style type="text/css">
+		div {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+		}
+
+		h3 {
+			margin: 4px 0 0 0;
+		}
+	</style>
+</head>
+
+<div class="root-container blog" style="gap:0px;justify-content:center;">
+
+	<!-- Done -->
+	<div class="nav-bar">
+		<a href="../home.html">
+			<p class="nav">K3K3</p>
+		</a>
+		<div class="nav-options">
+			<a href="../home.html">
+				<p class="nav">Home</p>
+			</a>
+			<a href="../home.html">
+				<p class="nav">About</p>
+			</a>
+			<a href="../images.html">
+				<p class="nav">Photos</p>
+			</a>
+		</div>
+	</div>
+
+	<div class="container-home padding-blog" style="align-items: center; margin-bottom: -2px;">
+		<h1 style="max-width:20ch; text-align: center;">Improving note-taking experience for user research calls on Zoom
+			with Looppanel</h1>
+		<p class="p-tag blog" style="font-size:1.4rem; margin-top:16px;">
+			DESIGN, RESEARCH, USABILITY TESTING</p>
+	</div>
+
+	<div class="img-container"><img src="./images-loop-note/thumb.webp" class="img-blog"></div>
+
+	<div class="container-home padding-blog" style="margin:0px; background: var(--accent-color);">
+
+		<h3> Concept Note </h3>
+
+		<p>Taking notes during a user research call is painful.
+
+			After speaking with our users, we discovered that everyone takes notes during calls, but everyone does it
+			differently. All methods require returning to the call recording and processing it to highlight key
+			moments.<br> <br>
+
+			We designed a live note-taker and a call recorder for Zoom to eliminate the need to return to the recording
+			to take notes. Users can use the recorder to take live notes linked to the transcript while focusing on the
+			interview.</p>
+	</div>
+
+	<div class="container-home padding-blog" style="align-items: left; margin: -2px 0 0 0;">
+		<p>During our conversations with researchers, designers, marketers, and company CXOs we realized they took
+			unstructured and structured notes. But all of them faced challenges while matching/collating the notes with
+			interview transcript.</p>
+
+		<h3>Part -I : Unstructured Note taking</h3>
+		<ul>
+			<li>✳︎ Researchers usually complain about the research process taking too long.</li>
+			<li>✳︎ Revisiting an interview after it's done is one of the most painful parts of the process.
+			</li>
+			<li>✳︎ It's similar to conducting the interview again, but with the additional effort of tagging and
+				attaching notes to the transcript taken during the conversation.
+			</li>
+		</ul>
+
+		<h3>Prototype testing our hypotheses</h3>
+		<p>We designed and usability tested a prototype that the users could interact with while we conducted a mock
+			interview (interviewception). <br> <br> Giving them a prototype to interact with gave us insights into the
+			actions they can and can't perform during an interview. We made the prototype on Protopie to make it work
+			like the dev version to get accurate usability data.</p>
+		<br>
+
+		<div class="img-container"><img src="./images-loop-note/proto-notes.png" class="img-blog"></div>
+
+		<br>
+
+		<h3>Final Designs</h3>
+		<p>Based on the findings, we made design changes to make it more useful during a call</p>
+
+		<br>
+
+		<div class="img-container"><img src="./images-loop-note/updated-note.png" class="img-blog"></div>
+
+		<ul>
+			<li>✳︎ Removed the emojis as they could not be interacted with during the call, and added a bookmark feature
+				which could be accessed using the// shortcut. This also reduces the number of decisions a person makes
+				during the call</li>
+			<li>✳︎ People didn't expect the note-taking space to look like a chat, so we changed it into a more open
+				space that makes the experience similar to a document.</li>
+		</ul>
+
+		<h3>What we learned</h3>
+		<ul>
+			<li>✳︎ We assumed people would engage with the emojis the most, but those were the least used during a call.
+				This pointed towards the fact that they wanted the note-taking doc to be in the backend, not front-end,
+				during a call.</li>
+			<li>✳︎ Familiarity with the interface was the most important factor in getting a hang of the screen. This
+				pointed towards the fact that when people wanted an experience to a Google or Notion doc.</li>
+		</ul>
+
+		<p>To add structure to user calls, we ran another experiment in which we introduced a Question Script to the
+			live notetaking experience.</p>
+
+		<h3>Part -II : Structured Note taking</h3>
+		<p>We observed researchers were using a template to take notes during research calls. This helped them structure
+			the notes and make sense of it with the transcript later on. But, there were a few problems with this
+			approach</p>
+
+		<ul>
+			<li>✳︎ There was no way to make sense of data according to the note taking template</li>
+			<li>✳︎ It was still difficult to get answers for questions or organize data in sections</li>
+		</ul>
+
+		<h4>Here are some examples of the templates used ⬇ <br><br>
+			Question and section wise note taking</h4>
+
+		<br>
+
+		<div class="img-container"><img src="./images-loop-note/task-1.png" class="img-blog"></div>
+
+		<br>
+
+		<div class="img-container"><img src="./images-loop-note/task-2.png" class="img-blog"></div>
+
+		<br>
+
+		<h3>Usability Testing</h3>
+		<p>We iterated on top of previous designs and added sections to the note-taking view and tested with the users.
+			Since an interactive design was not possible, we used notion toggle lists to test the concept before
+			creating a working prototype in Protopie. Our assumptions before testing were</p>
+
+		<ul>
+			<li>✳︎ There was no way to make sense of data according to the note taking template</li>
+			<li>✳︎ It was still difficult to get answers for questions or organize data in sections</li>
+		</ul>
+
+		<p>Based on these assumptions we iterated a few designs.</p>
+
+		<br>
+
+		<div class="img-container"><img src="./images-loop-note/iteration-1.png" class="img-blog">
+		</div>
+
+		<br>
+
+		<div class="img-container"><img src="./images-loop-note/iteration-2.png" class="img-blog"></div>
+
+		<br>
+
+		<div class="img-container"><img src="./images-loop-note/iteration-3.png" class="img-blog"></div>
+
+		<br>
+
+		<h3>Final Design</h3>
+		<p>Based on usability testing, we decided to remove the navigation from the question script as users didn't face
+			issues with traversing the script. Since they moved progressively between questions, there was no need for a
+			persistent list.</p>
+
+		<br>
+
+		<div class="img-container"><img src="./images-loop-note/final-design.png" class="img-blog"></div>
+
+		<br>
+
+		<h3>What I learned</h3>
+		<ul>
+			<li>Users liked the idea of unstructured notes since it gave a way to take notes that didn't fit in any
+				question</li>
+			<li>Users needed simple ways to capture their thoughts without having to remember a lot of shortcuts</li>
+		</ul>
+		<h4>Details on more experiments soon. 😎</h4>
+
+	</div>
+
+	<div class="nav-bar bottom">
+		<a href="https://Instagram.com/kadankapoor">
+			<p class="nav">Instagram</p>
+		</a>
+		<a href="https://linkedin.com/in/karankapoorux">
+			<p class="nav">LinkedIn</p>
+		</a>
+		<a href="https:twitter.com/kadankapoor">
+			<p class="nav">Twitter</p>
+		</a>
+	</div>
+
+
+</div>
+
+</html>

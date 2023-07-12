@@ -1,0 +1,191 @@
+:root {
+  --primary-color: #1b2026;
+  --accent-color: #222b37;
+  --grey-100: #fff;
+  --grey-200: #f2f2f2;
+  --grey-250: #e3e3e3;
+  --grey-300: #c5c5c5;
+  --grey-400: #808080;
+  --grey-500: #3e3e3e;
+  --grey-600: #0d0d0d;
+  --border-color: #2f3640;
+  --visited-link: #00ff00;
+
+  --padding-blog-horizontal: 80px;
+  --padding-blog-vertical: 64px;
+
+  --padding-home-horizontal: 40px;
+  --padding-nav: 16px;
+}
+
+.nav {
+  font-size: 1.2em;
+  padding: var(--padding-nav) 0 var(--padding-nav) 0;
+  margin: 0;
+  line-height: 150%;
+}
+
+.nav:hover {
+  text-decoration: underline;
+}
+
+.padding-blog {
+  padding: var(--padding-blog-vertical) var(--padding-blog-horizontal);
+}
+
+.padding-home {
+  padding: var(--padding-blog-vertical) var(--padding-home-horizontal);
+}
+
+a {
+  color: var(--grey-100);
+}
+
+a:link {
+  color: var(--grey-100);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--grey-100);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+a:visited {
+  color: var(--visited-link);
+  text-decoration: underline;
+}
+
+h1 {
+  color: var(--grey-100);
+  font-size: 3em;
+  margin: 0px;
+}
+
+h2 {
+  color: var(--grey-100);
+  font-size: 2.2em;
+  margin: 0px;
+}
+
+h3 {
+  color: var(--grey-100);
+  line-height: 130%;
+  font-size: 1.8em;
+  margin: 0px;
+}
+
+h4 {
+  color: var(--grey-100);
+  line-height: 125%;
+  font-size: 1.6em;
+  margin: 0px;
+  letter-spacing: .1px;
+}
+
+h5 {
+  color: var(--grey-100);
+  line-height: 150%;
+  font-size: 1.1em;
+  margin: 0px;
+}
+
+.p-tag {
+  font-size: 1em;
+  font-family: "JetBrains Mono", sans-serif;
+  color: var(--grey-400);
+  margin: 0px;
+}
+
+.p-tag.blog {
+  font-size: 1.4em;
+  margin-top: 16px;
+  text-align: center;
+}
+
+
+p {
+  text-align: left;
+  font-size: 1.4em;
+  margin: 0px;
+  color: var(--grey-300);
+  line-height: 150%;
+  margin-bottom: 4px;
+}
+
+li {
+  font-size: 1.4em;
+  text-align: left;
+  line-height: 150%;
+  color: var(--grey-300);
+  padding-bottom: 10px;
+}
+
+blockquote {
+  background-color: var(--accent-color);
+  font-size: 1.2em;
+  font-family: "JetBrains Mono", sans-serif;
+  color: var(--grey-100);
+  margin: 0 0 24px 0;
+  padding: var(--padding-home-horizontal);
+  line-height: 150%;
+  border-radius: 24px;
+}
+
+@media only screen and (max-width: 1200px) {
+  :root {
+    --padding-blog-horizontal: 80px;
+    --padding-blog-vertical: 64px;
+
+    --padding-home-horizontal: 40px;
+    --padding-nav: 16px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  :root {
+    --padding-blog-horizontal: 64px;
+    --padding-blog-vertical: 40px;
+
+    --padding-home-horizontal: 24px;
+    --padding-nav: 8px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 776px) {
+  :root {
+    --padding-blog-horizontal: 32px;
+    --padding-blog-vertical: 24px;
+
+    --padding-home-horizontal: 32px;
+    --padding-nav: 4px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+}
+
+/* This will work for mobile */
+@media only screen and (max-width: 478px) {
+  :root {
+    --padding-blog-horizontal: 24px;
+    --padding-blog-vertical: 40px;
+
+    --padding-home-horizontal: 32px;
+    --padding-nav: 4px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+}
