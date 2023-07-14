@@ -73,9 +73,6 @@ body {
 }
 
 .root-container.blog {
-  width: var(--width);
-  min-width: var(--min-width);
-  max-width: var(--max-width);
 }
 
 .container-home {
