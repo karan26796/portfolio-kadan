@@ -52,11 +52,6 @@ position: relative;
   animation: 35s slide infinite linear;
 }
 
-/*.logos-slide img {
-  height: 70px;
-  margin: 0 40px;
-}*/
-
 .logos-slide img {
   height: 450px;
 /*  margin: 0 40px;*/

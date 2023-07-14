@@ -9,6 +9,24 @@
 	<link rel="stylesheet" href="../styles.css">
 	<link rel="stylesheet" href="../containers.css">
 	<script src="../actions.js"></script>
+	<style type="text/css">
+
+		.video-container{
+			position: relative;
+			padding-bottom: 60%; /* 16:9 */
+			height: 0;
+			margin-top: -98px;
+		}
+
+		.video-container iframe{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+	</style>
 </head>
 
 <div class="root-container">
@@ -31,19 +49,21 @@
 		</div>
 	</div>
 
-	<div class="container-home padding-home" style="width:-webkit-fill-available;">
+	<div class="container-home padding-home" style="align-items: center;">
 		<h1 style="max-width:20ch; text-align: center;">Hidden in plain sight - a commentary on social media
-			surveillance</h1>
+		surveillance</h1>
 		<p class="p-tag blog">
-			STAGING, COMMENTARY, DESIGN INSTALLATION</p>
+		STAGING, COMMENTARY, DESIGN INSTALLATION</p>
 	</div>
 
-	<iframe height="300" width="500" 
-			src="https://www.youtube.com/embed/Kdw8TDVIkmk" frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen></iframe>
+	<div class="video-container">
+		<iframe height="40em" width="auto" 
+		src="https://www.youtube.com/embed/Kdw8TDVIkmk" frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		allowfullscreen></iframe>
+	</div>
 
-	<div class="container-home padding-blog" style="width:-webkit-fill-available;">
+	<div class="container-home padding-blog" style="width:-webkit-fill-available; background-color: var(--accent-color);">
 
 		<h3> Concept Note </h3>
 
@@ -59,11 +79,11 @@
 	</div>
 
 
-	<div class="nav-bar bottom">
-    <a href="https://instagram.com/kadankapoor"><p class="nav">Instagram</p></a>
-    <a href="https://linkedin.com/in/karankapoorux"><p class="nav">LinkedIn</p></a>
-    <a href="https://twitter.com/kadankapoor"><p class="nav">Twitter</p></a>
-  </div>
+	<div class="nav-bar bottom" style="margin-top: -98px">
+		<a href="https://instagram.com/kadankapoor"><p class="nav">Instagram</p></a>
+		<a href="https://linkedin.com/in/karankapoorux"><p class="nav">LinkedIn</p></a>
+		<a href="https://twitter.com/kadankapoor"><p class="nav">Twitter</p></a>
+	</div>
 
 </div>
 
