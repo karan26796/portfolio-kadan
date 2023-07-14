@@ -207,6 +207,10 @@ body {
   body {
     font-size: 16px;
   }
+
+  .nav-bar.bottom{
+    margin-top: -2px;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -224,6 +228,10 @@ body {
 
   body {
     font-size: 14px;
+  }
+
+  .nav-bar.bottom{
+    margin-top: -2px;
   }
 }
 
@@ -290,6 +298,10 @@ body {
 
   body {
     font-size: 12px;
+  }
+
+  .nav-bar.bottom{
+    margin-top: -2px;
   }
 }
 
@@ -360,5 +372,20 @@ body {
   .img-blog {
     width: 100vw;
     text-align: center;
+  }
+
+  .nav-bar{
+    border-width: 2px 0 2px 0;
+    margin: 0px;
+  }
+
+  .nav-bar.bottom{
+    border-width: 2px 0 2px 0;
+    margin-top: -2px;
+  }
+
+  .container-home{
+        border-width: 2px 0 2px 0;
+        margin-top: -2px;
   }
 }
