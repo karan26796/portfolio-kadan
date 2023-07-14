@@ -65,21 +65,21 @@ h1 {
 
 h2 {
   color: var(--grey-100);
-  font-size: 2.2em;
+  font-size: 2.2 em;
   margin: 0px;
 }
 
 h3 {
   color: var(--grey-100);
   line-height: 130%;
-  font-size: 1.8em;
+  font-size: 1.75em;
   margin: 0px;
 }
 
 h4 {
   color: var(--grey-100);
   line-height: 125%;
-  font-size: 1.6em;
+  font-size: 1.425em;
   margin: 0px;
   letter-spacing: .1px;
 }
@@ -107,7 +107,7 @@ h5 {
 
 p {
   text-align: left;
-  font-size: 1.4em;
+  font-size: 1.25em;
   margin: 0px;
   color: var(--grey-300);
   line-height: 150%;
@@ -115,7 +115,7 @@ p {
 }
 
 li {
-  font-size: 1.4em;
+  font-size: 1.25em;
   text-align: left;
   line-height: 150%;
   color: var(--grey-300);
@@ -124,13 +124,13 @@ li {
 
 blockquote {
   background-color: var(--accent-color);
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-family: "JetBrains Mono", sans-serif;
   color: var(--grey-100);
   margin: 0 0 24px 0;
-  padding: var(--padding-home-horizontal);
+  padding: 1.2em;
   line-height: 150%;
-  border-radius: 24px;
+  border-radius: 1.5em;
 }
 
 @media only screen and (max-width: 1200px) {
