@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="containers.css">
   <link rel="stylesheet" href="infinite-carousel.css">
+  <link rel="stylesheet" href="card-stack.css">
   <script src="actions.js"></script>
 </head>
 
@@ -44,7 +45,7 @@
         solve problems, and talk about the effects of technology on society.<br><br>
 
         I've designed and conducted workshops at leading companies, studios, & institutes in India and abroad. Here are
-        a select few</p>
+      a select few</p>
 
       <a onclick="changeStyle()">Click Me</a>
     </div>
@@ -183,29 +184,54 @@
   </div>
 
   <!--------------------------------------- testimonials - done ----------------------------------------->
-  <div class="container-home">
+  <div class="container-home" style="padding:0px">
     <div class="container-title">
       <h3>Hear from the people I've worked with</h3>
     </div>
 
-    <div class="grid">
+    <div class="card-container" id="demo">
+
+      <div class="card" tabindex="0">
+        <p style="margin-bottom: 2em;"> Karan was a part-time employee at Looppanel but he gave his work his all, took feedback very well, iterated on designs endlessly and learned how to run effective user research.</p>
+        <h4>Kritika Oberoi · co-founder</h4>
+        <p class="p-tag">Worked together at Looppanel</p>
+      </div>
+
+      <div class="card" tabindex="0">
+        <p style="margin-bottom: 2em;">Karan's emphasis on design standardization, by meticulous planning and
+        strategizing, made way for a strong foundation in design for me and all our future projects. His ability to combine technology with art is exceptional.</p>
+        <h4>Malavika Susan · UX Designer</h4>
+        <p class="p-tag">Worked together at Aphelia Innovations</p>
+      </div>
+
+      <div class="card" tabindex="0">
+        <p style="margin-bottom: 2em;"> I had a pleasure of working with Karan. He is not only a good product designer but is also skilled at programming which makes his work outstanding. He has superb skills of UI/UX that help with problems solving.
+        </p>
+        
+        <h4>Nitin Prakash · Android Developer</h4>
+        <p class="p-tag">Worked together at Guesthouser</p>
+      </div>
+
+    </div>
+
+    <!-- <div class="grid">
 
       <div class="project testimonial" style="gap: 4px;">
         <h4>Malavika Susan · UX Designer</h4>
         <p class="p-tag">Worked together at Aphelia Innovations</p>
         <p>Karan's emphasis on design standardization, by meticulous planning and
           strategizing, made way for a strong foundation in design for me and all our future projects. His ability to
-          combine technology with art is exceptional.</p>
+        combine technology with art is exceptional.</p>
       </div>
 
       <div class="project testimonial" style="gap: 4px;">
         <h4>Kritika Oberoi · co-founder</h4>
         <p class="p-tag">Worked together at Looppanel</p>
         <p>Karan was a part-time employee at Looppanel but he gave his work his all, took
-          feedback very well, iterated on designs endlessly and learned how to run effective user research.</p>
+        feedback very well, iterated on designs endlessly and learned how to run effective user research.</p>
       </div>
+    </div> -->
 
-    </div>
   </div>
 
 
@@ -214,54 +240,54 @@
 
     <div class="container-title">
       <h2 style="max-width: 35ch; color: var(--grey-100);">Learn from my Figma files and YouTube tutorials viewed over
-        30k times</h2>
+      30k times</h2>
       <p>Templates and tutorials to help you kickstart any UX Design project</p>
     </div>
 
     <div class="logos">
       <div class="logos-slide">
         <a href="https://www.figma.com/community/file/897091186704896395/Evolve-Component-Library-%7C-Karan-Kapoor"><img
-            src="./resources/evolve.png" /></a>
-        <a href="https://www.youtube.com/watch?v=Rf-cg42id78"><img src="./resources/figma-shortcuts.jpeg" /></a>
-        <a href="https://www.youtube.com/watch?v=LCHQ9MApBGA"><img src="./resources/learn-play.jpeg" />learn-play</a>
-        <a href="https://www.figma.com/community/file/905774038894769917/Animation-%26-Prototype-Playground"><img
+          src="./resources/evolve.png" /></a>
+          <a href="https://www.youtube.com/watch?v=Rf-cg42id78"><img src="./resources/figma-shortcuts.jpeg" /></a>
+          <a href="https://www.youtube.com/watch?v=LCHQ9MApBGA"><img src="./resources/learn-play.jpeg" />learn-play</a>
+          <a href="https://www.figma.com/community/file/905774038894769917/Animation-%26-Prototype-Playground"><img
             src="./resources/prototypes.png" /></a>
-        <a href="https://www.figma.com/community/file/997477366354506560/Twitter-in-Auto-Layout"><img
-            src="./resources/twitter.png" /></a>
-        <a
-          href="https://www.figma.com/community/file/1076867776880340874/Interactive-Presentation-Gradient-Backgrounds"><img
-            src="./resources/gradients.png" /></a>
-      </div>
+            <a href="https://www.figma.com/community/file/997477366354506560/Twitter-in-Auto-Layout"><img
+              src="./resources/twitter.png" /></a>
+              <a
+              href="https://www.figma.com/community/file/1076867776880340874/Interactive-Presentation-Gradient-Backgrounds"><img
+              src="./resources/gradients.png" /></a>
+            </div>
 
-      <div class="logos-slide">
-        <a href="https://www.figma.com/community/file/897091186704896395/Evolve-Component-Library-%7C-Karan-Kapoor"><img
-            src="./resources/evolve.png" /></a>
-        <a href="https://www.youtube.com/watch?v=Rf-cg42id78"><img src="./resources/figma-shortcuts.jpeg" /></a>
-        <a href="https://www.youtube.com/watch?v=LCHQ9MApBGA"><img src="./resources/learn-play.jpeg" />learn-play</a>
-        <a href="https://www.figma.com/community/file/905774038894769917/Animation-%26-Prototype-Playground"><img
-            src="./resources/prototypes.png" /></a>
-        <a href="https://www.figma.com/community/file/997477366354506560/Twitter-in-Auto-Layout"><img
-            src="./resources/twitter.png" /></a>
-        <a
-          href="https://www.figma.com/community/file/1076867776880340874/Interactive-Presentation-Gradient-Backgrounds"><img
-            src="./resources/gradients.png" /></a>
-      </div>
-    </div>
-  </div>
+            <div class="logos-slide">
+              <a href="https://www.figma.com/community/file/897091186704896395/Evolve-Component-Library-%7C-Karan-Kapoor"><img
+                src="./resources/evolve.png" /></a>
+                <a href="https://www.youtube.com/watch?v=Rf-cg42id78"><img src="./resources/figma-shortcuts.jpeg" /></a>
+                <a href="https://www.youtube.com/watch?v=LCHQ9MApBGA"><img src="./resources/learn-play.jpeg" />learn-play</a>
+                <a href="https://www.figma.com/community/file/905774038894769917/Animation-%26-Prototype-Playground"><img
+                  src="./resources/prototypes.png" /></a>
+                  <a href="https://www.figma.com/community/file/997477366354506560/Twitter-in-Auto-Layout"><img
+                    src="./resources/twitter.png" /></a>
+                    <a
+                    href="https://www.figma.com/community/file/1076867776880340874/Interactive-Presentation-Gradient-Backgrounds"><img
+                    src="./resources/gradients.png" /></a>
+                  </div>
+                </div>
+              </div>
 
-  <div class="nav-bar bottom" style="margin-top: -98px;">
-    <a href="https://Instagram.com/kadankapoor">
-      <p class="nav">Instagram</p>
-    </a>
-    <a href="https://linkedin.com/in/karankapoorux">
-      <p class="nav">LinkedIn</p>
-    </a>
-    <a href="https:twitter.com/kadankapoor">
-      <p class="nav">Twitter</p>
-    </a>
-  </div>
+              <div class="nav-bar bottom" style="margin-top: -98px;">
+                <a href="https://Instagram.com/kadankapoor">
+                  <p class="nav">Instagram</p>
+                </a>
+                <a href="https://linkedin.com/in/karankapoorux">
+                  <p class="nav">LinkedIn</p>
+                </a>
+                <a href="https:twitter.com/kadankapoor">
+                  <p class="nav">Twitter</p>
+                </a>
+              </div>
 
-  <!-- root -->
-</div>
+              <!-- root -->
+            </div>
 
-</html>
+            </html>

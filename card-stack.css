@@ -1,0 +1,61 @@
+#demo {
+ // margin-top: 40px;
+ // font-size: 17px;
+}
+
+.card-container {
+ display: flex;
+ // padding: 1rem 0rem;
+ overflow: hidden;
+}
+
+.card-container .card {
+ display: flex;
+ flex-direction:column;
+ gap:8px;
+ transition: all 0.3s ease-in-out;
+ background-color: var(--primary-color);
+ padding: 2em;
+ margin: 0px;
+ gap:8px;
+ // border-radius: 1.2em;
+ // box-shadow: 0px 2px 2px var(--accent-color);
+ border: solid var(--border-color);
+ border-width: 0 2px 0 2px;
+ height: 300px;
+ margin: 0 -2px 0 -2px;
+}
+
+.card-container .card:not(:first-child) {
+ margin-left: -25rem;
+}
+
+.card-container .card:hover, .card-container .card:focus {
+ transform: translateY(0rem); transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); transition: .5s;
+}
+
+.card-container .card:hover ~ .card, .card-container .card:focus ~ .card {
+ transform: translateX(24rem); transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); transition: .3s;
+}
+
+@media only screen and (max-width: 776px) {
+ #demo {
+   margin-top: 0px;
+ }
+ .card-container {
+   flex-wrap: wrap;
+ }
+ .card-container .card {
+   flex: 1 1 100%;
+ }
+ .card-container .card:not(:first-child) {
+   margin-left: 0rem;
+   margin-top: -7rem;
+ }
+ .card-container .card:hover, .card-container .card:focus {
+   transform: translateX(0rem);
+ }
+ .card-container .card:hover ~ .card, .card-container .card:focus ~ .card {
+   transform: translateY(8rem);
+ }
+}

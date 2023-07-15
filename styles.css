@@ -111,7 +111,7 @@ p {
   text-align: left;
   font-size: 1.3em;
   margin: 0px;
-  color: var(--grey-300);
+  color: var(--grey-100);
   line-height: 150%;
   margin-bottom: 4px;
 }
@@ -124,7 +124,7 @@ li {
   font-size: 1.3em;
   text-align: left;
   line-height: 150%;
-  color: var(--grey-300);
+  color: var(--grey-100);
   padding-bottom: 10px;
 }
 
