@@ -237,10 +237,10 @@ blockquote {
 /* This will work for mobile */
 @media only screen and (max-width: 478px) {
   :root {
-    --padding-blog-horizontal: 1em;
+    --padding-blog-horizontal: 2em;
     --padding-blog-vertical: 3.5em;
 
-    --padding-home-horizontal: 3em;
+    --padding-home-horizontal: 2em;
     --padding-nav: .5em;
 
     --max-length:100%;

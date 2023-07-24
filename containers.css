@@ -360,8 +360,8 @@ gap: .2em;
     --max-width: auto;
     --width: 100vw;
 
-    /*--padding-40: 24px;
-    --padding-12: 12px;*/
+    --padding-40: 2em;
+    --padding-12: 1em;
 
     --logo-size: 110px;
 
