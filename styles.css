@@ -10,12 +10,23 @@
   --grey-600: #0d0d0d;
   --border-color: #2f3640;
   --visited-link: #00ff00;
+  --higlight-color: #9DC9FF;
 
-  --padding-blog-horizontal: 80px;
-  --padding-blog-vertical: 64px;
+  --padding-blog-horizontal: 3em;
+  --padding-blog-vertical: 4em;
 
-  --padding-home-horizontal: 40px;
-  --padding-nav: 16px;
+  --padding-home-horizontal: 2.5em;
+  --padding-nav: 1em;
+
+  --max-length:75%;
+}
+
+.container-home h3,h4,p,li,blockquote{
+  max-width:var(--max-length);
+}
+
+.container-title h3{
+  margin: 0;
 }
 
 .nav {
@@ -31,10 +42,16 @@
 
 .padding-blog {
   padding: var(--padding-blog-vertical) var(--padding-blog-horizontal);
+  border-width: 0;
 }
 
 .padding-home {
   padding: var(--padding-blog-vertical) var(--padding-home-horizontal);
+}
+
+.summary{
+  font-size: 1.6em;
+  font-family: "JetBrains Mono", sans-serif;
 }
 
 a {
@@ -59,37 +76,50 @@ a:visited {
 
 h1 {
   color: var(--grey-100);
-  font-size: 3em;
+  font-size: 3.2em;
   margin: 0px;
   letter-spacing: -0.3px;
   line-height: 110%;
+  font-weight: 500;
 }
 
 h2 {
   color: var(--grey-100);
-  font-size: 2.2em;
+  font-size: 2.5em;
   margin: 0px;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 h3 {
   color: var(--grey-100);
-  line-height: 130%;
-  font-size: 1.75em;
-  margin: 0px;
+  line-height: 125%;
+  font-size: 2em;
+  margin:.5em 0 1em 0;
+  font-weight: 600;
+}
+
+.project h3{
+  font-size: 1.6em;
+  font-weight: 400;
 }
 
 h4 {
   color: var(--grey-100);
-  line-height: 125%;
-  font-size: 1.425em;
-  margin: 0px;
-  letter-spacing: .1px;
+  line-height: 120%;
+  font-size: 1.4em;
+  font-weight: 500;
+
+  margin:2em 0 .5em 0;
+  text-transform: uppercase; 
+  font-family: "JetBrains Mono", sans-serif;
+  color: var(--higlight-color);
 }
 
 h5 {
   color: var(--grey-100);
   line-height: 150%;
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin: 0px;
 }
 
@@ -102,38 +132,45 @@ h5 {
 
 .p-tag.blog {
   font-size: 1.4em;
-  margin-top: 16px;
+  margin-top: 1em;
   text-align: center;
 }
 
 
 p {
   text-align: left;
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin: 0px;
-  color: var(--grey-100);
-  line-height: 150%;
+  color: var(--grey-200);
+  line-height: 140%;
   margin-bottom: 4px;
+  font-weight: 400;
 }
 
-ul{
-  margin-top: 4px;
+ul,ol{
+  margin: 1em 0 0 1em;
 }
 
 li {
-  font-size: 1.3em;
+  font-size: 1.5em;
   text-align: left;
-  line-height: 150%;
-  color: var(--grey-100);
-  padding-bottom: 10px;
+  line-height: 140%;
+  color: var(--grey-200);
+  font-weight: 400;
+  padding-bottom: .6em;
+}
+
+li span{
+  font-weight: bold;
+  font-style: bold;
 }
 
 blockquote {
   background-color: var(--accent-color);
-  font-size: 1.3em;
+  font-size: 1.6em;
   font-family: "JetBrains Mono", sans-serif;
   color: var(--grey-100);
-  margin: 0 0 24px 0;
+  margin: 0 0 1.5em 0;
   padding: 1.2em;
   line-height: 150%;
   border-radius: 1.5em;
@@ -141,11 +178,11 @@ blockquote {
 
 @media only screen and (max-width: 1200px) {
   :root {
-    --padding-blog-horizontal: 80px;
-    --padding-blog-vertical: 64px;
+    --padding-blog-horizontal: 3em;
+    --padding-blog-vertical: 4em;
 
-    --padding-home-horizontal: 40px;
-    --padding-nav: 16px;
+    --padding-home-horizontal: 3em;
+    --padding-nav: 1em;
   }
 
   body {
@@ -155,11 +192,13 @@ blockquote {
 
 @media only screen and (max-width: 920px) {
   :root {
-    --padding-blog-horizontal: 64px;
-    --padding-blog-vertical: 40px;
+    --padding-blog-horizontal: 4em;
+    --padding-blog-vertical: 2.5em;
 
-    --padding-home-horizontal: 24px;
-    --padding-nav: 8px;
+    --padding-home-horizontal: 1.5em;
+    --padding-nav: .5em;
+
+    --max-length:75%;
   }
 
   body {
@@ -169,11 +208,13 @@ blockquote {
 
 @media only screen and (max-width: 776px) {
   :root {
-    --padding-blog-horizontal: 32px;
-    --padding-blog-vertical: 24px;
+    --padding-blog-horizontal: 2em;
+    --padding-blog-vertical: 1.5em;
 
-    --padding-home-horizontal: 32px;
-    --padding-nav: 4px;
+    --padding-home-horizontal: 2em;
+    --padding-nav: .33em;
+
+    --max-length:100%;
   }
 
   body {
@@ -184,11 +225,13 @@ blockquote {
 /* This will work for mobile */
 @media only screen and (max-width: 478px) {
   :root {
-    --padding-blog-horizontal: 24px;
-    --padding-blog-vertical: 40px;
+    --padding-blog-horizontal: 3em;
+    --padding-blog-vertical: 2.5em;
 
-    --padding-home-horizontal: 32px;
-    --padding-nav: 4px;
+    --padding-home-horizontal: 2.75em;
+    --padding-nav: .33em;
+
+    --max-length:100%;
   }
 
   body {
