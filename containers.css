@@ -3,8 +3,8 @@
   --max-width: 960px;
   --width: auto;
 
-  --padding-40: 2.75em;
-  --padding-12: .75em;
+  --padding-40: 2.5em;
+  --padding-12: 1em;
 
   --grid-projects: 2;
   --grid-logos: 3;
@@ -16,6 +16,7 @@
 
 *{
   font-weight: 100;
+  font-family: "DM Sans", serif;
 }
 
 body {
@@ -98,7 +99,7 @@ gap: .5em;
   }
 
   .nav-bar.bottom {
-    margin-top: 96px;
+    margin-top: -2px;
   }
 
   .nav-options {
@@ -151,9 +152,9 @@ gap: .5em;
     flex-direction: row;
     align-items: center;
 
-    gap: 24px;
+    gap: 1.5;
     justify-content: space-between;
-    border-bottom: 2px solid var(--border-color);
+/*    border-bottom: 2px solid var(--border-color);*/
 
     text-decoration: none;
   }
@@ -191,12 +192,15 @@ gap: .5em;
     background: var(--accent-color);
   }
 
+
   .grid {
     display: grid;
     column-count: var(--grid-projects);
     grid-template-columns: 1fr 1fr;
     gap: 2px;
-    border-width: 0px;
+/*    border-width: solid var(--border-width);*/
+/*    padding: 0 2px;*/
+/*    border-width: 0 2px;*/
     justify-content: center;
     background: var(--border-color);
     /*  grid-auto-rows: 1fr;*/
@@ -215,7 +219,7 @@ gap: .5em;
   }
 
   .item-logo {
-    padding: 12px;
+    padding: 1.5em;
     align-items: center;
     background: var(--primary-color);
     text-align: center;
@@ -224,12 +228,15 @@ gap: .5em;
   .clients-img {
     width: var(--logo-size);
     height: auto;
-    border-radius: 12px;
   }
 
-  .button {
+  button {
     padding: 20px;
-    background: ;
+    background: transparent;
+    border: transparent;
+    color: var(--grey-100);
+    font-size: 1.5em;
+    padding: 1em 0;
   }
 
   @media only screen and (max-width: 1200px) {
@@ -288,7 +295,7 @@ gap: .5em;
       --logo-size: 120px;
 
       --grid-projects: 1;
-      --grid-logos: 3;
+      --grid-logos: 2;
 
       --project-img: 220px;
       --project-img-main: 220px;
@@ -338,7 +345,7 @@ gap: .5em;
     }
 
     body {
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .nav-bar.bottom{
@@ -371,6 +378,7 @@ gap: .5em;
 
   .grid {
     grid-template-columns: 1fr;
+  border-width: 0;
   }
 
   .grid-logos {
@@ -407,6 +415,8 @@ gap: .5em;
 
   .img-container {
     align-items: center;
+    border: solid var(--border-color);
+  border-width: 2px 0 2px 0;
     /* padding: 12px 0; */
   }
   
@@ -416,17 +426,20 @@ gap: .5em;
   }
 
   .nav-bar{
-    border-width: 2px 0 2px 0;
+    border-width: 0 0 2px 0;
     margin: 0px;
   }
 
   .nav-bar.bottom{
-    border-width: 2px 0 2px 0;
+    border-width: 2px 0 0 0;
     margin-top: -2px;
   }
 
   .container-home{
     border-width: 2px 0 2px 0;
     margin-top: -2px;
+  }
+  .container-title{
+    border-width: 2px 0 2px 0;
   }
 }

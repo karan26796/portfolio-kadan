@@ -17,7 +17,39 @@
   <script src="actions.js"></script>
   <style type="text/css">
     .container-home{
-      margin-bottom:6em ;
+      margin-bottom:8em ;
+    }
+
+    .project h3{
+      max-width: 100%;
+      margin: 0 0 .25em 0;
+    }
+
+    .card h3{
+      max-width: 100%;
+      margin: 0 0 .25em 0;
+    }
+
+    .card p{
+      max-width: 100%;
+    }
+
+    .actions{
+      display: flex;
+      flex-direction: row;
+      gap:1em;
+      margin-top: 2em;
+    }
+
+    .actions a{
+      font-size: 1.5em;
+      text-decoration: none;
+      padding: .8em 1em;
+      border: 2px solid var(--border-color);
+    }
+
+    .actions a:hover{
+      background-color: var(--accent-color);
     }
 
   </style>
@@ -46,17 +78,19 @@
   <!--------------------------------------- introduction ----------------------------------------->
   <div class="container-home">
     <div class="padding-home">
-      <h2>Hello, I'm Karan</h2>
+      <h2 style="margin-bottom:0">Hello, I'm Karan</h2>
 
       <p style="color: var(--grey-400);">Designer — Technologist — Figma Trainer</p>
 
-      <p style="max-width: 35ch; color: var(--grey-100);">I love to integrate tech and design to craft experiences,
-        solve problems, and talk about the effects of technology on society.<br><br>
+      <p style="max-width: 35ch; color: var(--grey-100);">I love to integrate tech and design to craft experiences,solve problems, and talk about the effects of technology on society.<br><br>
 
-        I've designed and conducted workshops at leading companies, studios, & institutes in India and abroad. Here are
-      a select few</p>
+      I've designed and conducted workshops at leading companies, studios, & institutes in India and abroad. Here are a select few</p>
 
-      <a onclick="changeStyle()">Click Me</a>
+      <div class="actions">
+        <a href="https://read.cv/karankapoorux" target="_blank">Resume ↗</a>
+        <a href="https://read.cv/karankapoorux" target="_blank">Drop a mail ↗</a>
+      </div>
+
     </div>
 
     <div class="grid-logos">
@@ -89,57 +123,58 @@
       <h3>Projects</h3>
     </div>
 
-    <a href="./projects/binge-behavior.html" style="text-decoration: none;">
-      <div class="project horizontal">
-        <img class="project-img main" src="./projects/binge-eating/thumb.jpg">
-        <div>
-          <p class="p-tag">MASTERS PROJECT, RESEARCH, PSYCHOLOGY</p>
-          <h3>Dealing with binge behaviour through mindfulness</h3>
-        </div>
-      </div>
-    </a>
-
     <div class="grid">
-      <a href="./projects/loop-note.html">
-        <div class="project">
+
+      <a class="long" href="./projects/binge-behavior.html">
+        <div class="project horizontal">
+          <img class="project-img main" src="./projects/binge-eating/thumb.jpg">
+          <div>
+            <p class="p-tag">MASTERS PROJECT, RESEARCH, PSYCHOLOGY</p>
+            <h3>Dealing with binge behaviour through mindfulness</h3>
+          </div>
+        </div>
+      </a>
+
+      <div class="project">
+        <a href="./projects/loop-note.html">
           <img class="project-img" src="./projects/images-loop-note/thumb.webp">
           <div>
             <p class="p-tag" style="margin-bottom:4px">DESIGN, RESEARCH, USABILITY TESTING</p>
             <h3>Improving note-taking experience for user research calls on Zoom with Looppanel</h3>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
 
-      <a href="./projects/staging-project.html">
-        <div class="project">
+      <div class="project">
+        <a href="./projects/staging-project.html">
           <img class="project-img" src="./projects/staging-project/thumb.jpg">
           <div>
             <p class="p-tag" style="margin-bottom:4px">STAGING, COMMENTARY, EXPERIENTIAL DESIGN , DESIGN INSTALLATION
             </p>
             <h3>Hidden in plain sight - a commentary on social media surveillance</h3>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
 
-      <a href="./projects/loop-research.html">
-        <div class="project">
+      <div class="project">
+        <a href="./projects/loop-research.html">
           <img class="project-img" src="./projects/loop-research/thumb.jpg">
           <div>
             <p class="p-tag" style="margin-bottom:4px">RESEARCH, DESIGN</p>
             <h3>Finding new ways to organize user research data</h3>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
 
-      <a href="./projects/kurakaani.html">
-        <div class="project">
+      <div class="project">
+        <a href="./projects/kurakaani.html">
           <img class="project-img" src="./projects/images-kurakaani/kurakani-thumb.webp">
           <div>
             <p class="p-tag">DESIGN SYSTEM, COMPONENT LIBRARY</p>
-          <h3>How I used Atomic Design principles to redesign Nepal's Superapp</h3>
+            <h3>How I used Atomic Design principles to redesign Nepal's Superapp</h3>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
 
     </div>
   </div>
@@ -151,7 +186,7 @@
     </div>
 
     <a href="./experiments/color-wheel.html" style="text-decoration:none;">
-      <div class="project horizontal">
+      <div class="project horizontal long" style="border: solid var(--border-color); border-width: 0 0 2px 0">
         <div>
           <h3>Creating a color wheel using arduino and creative code</h3>
           <p class="p-tag">ELECTRONICS, CREATIVE CODING</p>
@@ -161,7 +196,7 @@
     </a>
 
     <a href="./experiments/prototypes.html" style="text-decoration:none;">
-      <div class="project horizontal">
+      <div class="project horizontal" style="border: solid var(--border-color); border-width: 0 0 2px 0">
         <div>
           <h3>Animation and Prototyping Experiments in Figma</h3>
           <p class="p-tag">ANIMATION, PROTOTYPING</p>
@@ -171,7 +206,7 @@
     </a>
 
     <a href="./experiments/vedic-square.html" style="text-decoration:none;">
-      <div class="project horizontal">
+      <div class="project horizontal" style="border: solid var(--border-color); border-width: 0 0 2px 0">
         <div>
           <h3>Using vedic mathematics for biometry scanning</h3>
           <p class="p-tag">MATHEMATICS, CLASSROOM PROJECT</p>
@@ -181,7 +216,7 @@
     </a>
 
     <a href="./experiments/data-viz.html" style="text-decoration:none; margin-bottom: -2px;">
-      <div class="project horizontal">
+      <div class="project horizontal" style="border: solid var(--border-color); border-width: 0 0 2px 0">
         <div>
           <h3>Visualising how students participated in NID's Open Elective Module</h3>
           <p class="p-tag">DATA VIZ., SIDE PROJECT</p>
@@ -197,40 +232,24 @@
       <h3>Hear from the people I've worked with</h3>
     </div>
 
-    <div class="card-container" id="demo">
+    <div class="grid">
 
-      <div class="card" tabindex="0">
-        <div style="display: flex; flex-direction: row; align-items: center; gap:12px">
-          <img src="./resources/learn-play.jpeg" style="width:50px; height: 50px;">
-          <div>
-            <h4>Kritika Oberoi · co-founder</h4>
-            <p class="p-tag">Worked together at Looppanel</p>
-          </div>
-        </div>
+      <div class="card">
+        <h3>Kritika Oberoi · co-founder</h3>
+        <p class="p-tag">Worked together at Looppanel</p>
         <p style="margin-bottom: 2em;"> Karan was a part-time employee at Looppanel but he gave his work his all, took feedback very well, iterated on designs endlessly and learned how to run effective user research.</p>
       </div>
 
-      <div class="card" tabindex="0">
-
-        <div style="display: flex; flex-direction: row; align-items: center; gap:12px">
-          <img src="./resources/learn-play.jpeg" style="width:50px; height: 50px;">
-          <div>
-            <h4>Malavika Susan · UX Designer</h4>
-            <p class="p-tag">Worked together at Aphelia Innovations</p>
-          </div>
-        </div>
+      <div class="card">
+        <h3>Malavika Susan · UX Designer</h3>
+        <p class="p-tag">Worked together at Aphelia Innovations</p>
         <p style="margin-bottom: 2em;">Karan's emphasis on design standardization, by meticulous planning and
         strategizing, made way for a strong foundation in design for me and all our future projects. His ability to combine technology with art is exceptional.</p>
       </div>
 
-      <div class="card" tabindex="0">
-        <div style="display: flex; flex-direction: row; align-items: center; gap:12px">
-          <img src="./resources/learn-play.jpeg" style="width:50px; height: 50px;">
-          <div>
-            <h4>Nitin Prakash · Android Developer</h4>
-            <p class="p-tag">Worked together at Guesthouser</p>
-          </div>
-        </div>
+      <div class="card long">
+        <h3>Nitin Prakash · Android Developer</h3>
+        <p class="p-tag">Worked together at Guesthouser</p>
         <p style="margin-bottom: 2em;"> I had a pleasure of working with Karan. He is not only a good product designer but is also skilled at programming which makes his work outstanding. He has superb skills of UI/UX that help with problems solving.
         </p>
       </div>
@@ -254,16 +273,13 @@
         feedback very well, iterated on designs endlessly and learned how to run effective user research.</p>
       </div>
     </div> -->
-
   </div>
 
 
   <!--------------------------------------- resources ----------------------------------------->
-  <div class="container-home">
-
+  <div class="container-home" style="margin-bottom:0">
     <div class="container-title">
-      <h2 style="max-width: 35ch; color: var(--grey-100);">Learn from my Figma files and YouTube tutorials viewed over
-      30k times</h2>
+      <h2 style="max-width: 35ch; color: var(--grey-100);">Learn from my Figma files and YouTube tutorials viewed over 30k times</h2>
       <p>Templates and tutorials to help you kickstart any UX Design project</p>
     </div>
 
@@ -298,7 +314,7 @@
                 </div>
               </div>
 
-              <div class="nav-bar bottom" style="margin-top: -98px;">
+              <div class="nav-bar bottom">
                 <a href="https://Instagram.com/kadankapoor">
                   <p class="nav">Instagram</p>
                 </a>

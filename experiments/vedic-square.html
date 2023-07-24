@@ -5,28 +5,14 @@
   <title>My Design Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../containers.css">
   <script src="../actions.js"></script>
-
-  <style type="text/css">
-    div {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    h3 {
-      margin: 12px 0 8px 0;
-    }
-
-    container-home {
-      border: 0px solid;
-      border-width: 0px;
-    }
-  </style>
 </head>
 
 <div class="root-container blog" style="gap:0px;">
@@ -56,53 +42,67 @@
 
   <!-- Quick Summary -->
   <div class="container-home padding-blog" style="background: var(--accent-color);margin: -2px 0px -2px 0px">
-    <h3 style="margin:0px;">What is a Vedic square</h3>
+    <h4>What is a Vedic square</h4>
     <p>In Indian mathematics, a Vedic square is a variation on a typical 9 × 9 multiplication table where the entry in
       each cell is the digital root of the product of the column and row headings, i.e. the remainder when the product
-      of the row and column headings is divided by 9 (with remainder 0 represented by 9).</p>
+    of the row and column headings is divided by 9 (with remainder 0 represented by 9).</p>
   </div>
 
   <div class="container-home padding-blog" style="margin:0px">
 
-    <p>Numerous geometric patterns and symmetries can be observed in a Vedic square, some of which can be found in
-      traditional Islamic art.</p>
+    <h3>Numerous geometric patterns and symmetries can be observed in a Vedic square, some of which can be found in traditional Islamic art.</h3>
+  </div>
 
-    <div class="img-container"><img src="./vedic square/1.png" class="img-blog"></div>
+  <div class="img-container"><img src="./vedic square/1.png" class="img-blog"></div>
 
-    <div class="img-container"><img src="./vedic square/2.png" class="img-blog"></div>
+  <div class="img-container"><img src="./vedic square/2.png" class="img-blog"></div>
 
-    <p>To understand the vedic square better, I assigned an analogous color to each number and vizualized it as
-      following.</p>
+  <div class="container-home padding-blog" style="margin:0px">
 
-    <div class="img-container"><img src="./vedic square/3.png" class="img-blog"></div>
+    <h3>To understand the vedic square better, I assigned an analogous color to each number and vizualized it as
+    following.</h3>
+  </div>
 
-    <h4>Highlighting specific numbers within the Vedic square reveals distinct shapes each with some form of reflection
-      symmetry.
-    </h4>
+  <div class="img-container"><img src="./vedic square/3.png" class="img-blog"></div>
 
-    <div class="img-container"><img src="./vedic square/4.png" class="img-blog"></div>
 
-    <div class="img-container"><img src="./vedic square/5.png" class="img-blog"></div>
+  <div class="container-home padding-blog" style="margin:0px">
+    <h3>Highlighting specific numbers within the Vedic square reveals distinct shapes each with some form of reflection symmetry.</h3>
+  </div>
 
-    <p>I removed the numbers from the matrix to see what comes up</p>
+  <div class="img-container"><img src="./vedic square/4.png" class="img-blog"></div>
 
-    <div class="img-container"><img src="./vedic square/6.png" class="img-blog"></div>
+  <div class="img-container"><img src="./vedic square/5.png" class="img-blog"></div>
 
-    <h4>The unnumbered grid looked like a pixelated image. So I pixelated one of my images to see what comes up.</h4>
+  <div class="container-home padding-blog" style="margin:0px">
+
+    <h3>I removed the numbers from the matrix to see what comes up</h3>
+
+  </div>
+
+  <div class="img-container"><img src="./vedic square/6.png" class="img-blog"></div>
+
+  <div class="container-home padding-blog" style="margin:0px">
+
+    <h3>The unnumbered grid looked like a pixelated image. So I pixelated one of my images to see what comes up.</h3>
 
     <p>I created a black and white version of the image and then applied the color scheme seen before onto a 9*9 matrix.
-      This gave me a vedic square to which I assigned a number value to the pixels based on their lightness.</p>
+    This gave me a vedic square to which I assigned a number value to the pixels based on their lightness.</p>
 
-    <div class="img-container"><img src="./vedic square/7.png" class="img-blog"></div>
+  </div>
 
-    <h3>👉 Where can this model be applied?</h3>
+  <div class="img-container"><img src="./vedic square/7.png" class="img-blog"></div>
+
+  <div class="container-home padding-blog" style="margin:0px">
+
+    <h3>Where can this model be applied?</h3>
 
     <ul>
       <li>The numbered pixel data from an image can be used to make a unique n*n vedic square. This can be the biometric
         data of a person who bears a photo ID. Since the data is unique for every image, the system would yield high
-        accuracy.</li>
+      accuracy.</li>
       <li>This system can also be used to verify if an image is fake or real. The data of the image at the time of
-        creation can be compared with the current data for verification</li>
+      creation can be compared with the current data for verification</li>
     </ul>
 
   </div>
@@ -115,18 +115,18 @@
     <a href="./experiments/color-wheel.html" style="text-decoration:none;">
       <div class="project horizontal">
         <div>
-          <h4>Creating a color wheel using arduino and creative code</h4>
+          <h3>Creating a color wheel using arduino and creative code</h3>
           <p class="p-tag">ELECTRONICS, CREATIVE CODING</p>
         </div>
         <p class="arrow">↗</p>
       </div>
     </a>
 
-    <a href="./experiments/prototypes.html" style="text-decoration:none;">
+    <a href="./experiments/data-viz.html" style="text-decoration:none; margin-bottom: -2px;">
       <div class="project horizontal">
         <div>
-          <h4>Animation and Prototyping Experiments in Figma</h4>
-          <p class="p-tag">ANIMATION, PROTOTYPING</p>
+          <h3>Visualising how students participated in NID's Open Elective Module</h3>
+          <p class="p-tag">DATA VIZ., SIDE PROJECT</p>
         </div>
         <p class="arrow">↗</p>
       </div>

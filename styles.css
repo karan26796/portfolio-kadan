@@ -9,7 +9,7 @@
   --grey-500: #3e3e3e;
   --grey-600: #0d0d0d;
   --border-color: #2f3640;
-  --visited-link: #00ff00;
+  --visited-link: #ffffff;
   --higlight-color: #9DC9FF;
 
   --padding-blog-horizontal: 3em;
@@ -56,6 +56,7 @@
 
 a {
   color: var(--grey-100);
+  font-weight: 600;
 }
 
 a:link {
@@ -85,9 +86,9 @@ h1 {
 
 h2 {
   color: var(--grey-100);
-  font-size: 2.5em;
+  font-size: 2.2em;
   margin: 0px;
-  font-weight: 4400;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 
@@ -96,12 +97,18 @@ h3 {
   line-height: 125%;
   font-size: 2em;
   margin:.5em 0 1em 0;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .project h3{
   font-size: 1.6em;
-  font-weight: 400;
+  font-weight: 500;
+}
+
+.project-horizontal h3, .card h3{
+  font-size: 1.6em;
+  font-weight: 500;
+  margin: 0;
 }
 
 h4 {
@@ -149,7 +156,7 @@ p {
 
 ul,ol{
   margin: 1em 0 0 1em;
-  padding: 0;
+  padding-left: 2em;
 }
 
 li {
@@ -209,33 +216,41 @@ blockquote {
 
 @media only screen and (max-width: 776px) {
   :root {
-    --padding-blog-horizontal: 2em;
-    --padding-blog-vertical: 1.5em;
+    --padding-blog-horizontal: 3em;
+    --padding-blog-vertical: 2em;
 
-    --padding-home-horizontal: 2em;
-    --padding-nav: .33em;
+    --padding-home-horizontal: 2.5em;
+    --padding-nav: .5em;
 
     --max-length:100%;
   }
 
   body {
     font-size: 12px;
+  }
+
+  ul{
+    padding-left: 1em;
   }
 }
 
 /* This will work for mobile */
 @media only screen and (max-width: 478px) {
   :root {
-    --padding-blog-horizontal: 3em;
-    --padding-blog-vertical: 2.5em;
+    --padding-blog-horizontal: 1em;
+    --padding-blog-vertical: 3.5em;
 
-    --padding-home-horizontal: 2.75em;
-    --padding-nav: .33em;
+    --padding-home-horizontal: 3em;
+    --padding-nav: .5em;
 
     --max-length:100%;
   }
 
   body {
     font-size: 12px;
+  }
+
+  ul{
+    padding: 0;
   }
 }
