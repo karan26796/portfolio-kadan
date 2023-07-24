@@ -55,7 +55,7 @@ body {
   z-index: 2;
   border: 2px solid var(--border-color);
 /*  border-width: 0 2px 0 2px;*/
-gap: .5em;
+gap: .2em;
 }
 
 .img-container p{
@@ -423,6 +423,7 @@ gap: .5em;
   .img-blog {
     width: -webkit-fill-available;
     text-align: center;
+    height: auto;
   }
 
   .nav-bar{
