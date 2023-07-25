@@ -20,9 +20,15 @@
       margin-bottom:8em ;
     }
 
-    .project h3{
+    .project.horizontal h3{
+      font-size:1.4em;
+      font-weight: 400;
       max-width: 100%;
       margin: 0 0 .25em 0;
+    }
+
+    h2{
+      margin: 0;
     }
 
     .card h3{
@@ -42,14 +48,18 @@
     }
 
     .actions a{
-      font-size: 1.5em;
+      font-size: 1.4em;
+      font-weight: 400;
       text-decoration: none;
-      padding: .6em 1em;
-      border: 2px solid var(--border-color);
+      padding: .2em 0;
+      border: solid var(--grey-100);
+      border-width: 0 0 2px 0;
     }
 
     .actions a:hover{
       background-color: var(--accent-color);
+      border: dashed var(--grey-100);
+      border-width: 0 0 2px 0;
     }
 
   </style>
@@ -80,15 +90,15 @@
     <div class="padding-home">
       <h2 style="margin-bottom:0">Hello, I'm Karan</h2>
 
-      <p style="color: var(--grey-400);">Designer — Technologist — Figma Trainer</p>
+      <p style="font-size: 1.6em; color: var(--grey-400);">Designer — Technologist — Figma Trainer</p>
 
       <p style="max-width: 35ch; color: var(--grey-100);">I love to integrate tech and design to craft experiences,solve problems, and talk about the effects of technology on society.<br><br>
 
       I've designed and conducted workshops at leading companies, studios, & institutes in India and abroad. Here are a select few</p>
 
       <div class="actions">
-        <a href="https://read.cv/karankapoorux" target="_blank">Resume</a>
-        <a href="mailto: karan26796@gmail.com" target="_blank">Drop a mail</a>
+        <a href="https://read.cv/karankapoorux" target="_blank">Resume ↗</a>
+        <a href="mailto: karan26796@gmail.com" target="_blank">Drop a mail ↗</a>
       </div>
 
     </div>
@@ -113,14 +123,13 @@
         <img class="clients-img" src="./logos/obvious.webp">
       </div>
     </div>
-
   </div>
 
   <!--------------------------------------- projects - done ----------------------------------------->
   <div class="container-home">
 
     <div class="container-title">
-      <h3>Projects</h3>
+      <h2>Projects</h2>
     </div>
 
     <div class="grid">
@@ -182,7 +191,7 @@
   <!--------------------------------------- experiments - done ----------------------------------------->
   <div class="container-home">
     <div class="container-title">
-      <h3>Experiments</h3>
+      <h2>Experiments</h2>
     </div>
 
     <a href="./experiments/color-wheel.html" style="text-decoration:none;">
@@ -229,7 +238,7 @@
   <!--------------------------------------- testimonials - done ----------------------------------------->
   <div class="container-home" style="padding:0px">
     <div class="container-title">
-      <h3>Hear from the people I've worked with</h3>
+      <h2>Hear from the people I've worked with</h2>
     </div>
 
     <div class="grid">
@@ -247,12 +256,12 @@
         strategizing, made way for a strong foundation in design for me and all our future projects. His ability to combine technology with art is exceptional.</p>
       </div>
 
-      <div class="card long">
+      <!-- <div class="card long">
         <h3>Nitin Prakash · Android Developer</h3>
         <p class="p-tag">Worked together at Guesthouser</p>
         <p style="margin-bottom: 2em;"> I had a pleasure of working with Karan. He is not only a good product designer but is also skilled at programming which makes his work outstanding. He has superb skills of UI/UX that help with problems solving.
         </p>
-      </div>
+      </div> -->
 
     </div>
 
@@ -275,11 +284,60 @@
     </div> -->
   </div>
 
+  <!--------------------------------------- what i can help with ----------------------------------------->
+
+  <div class="container-home">
+    <div class="container-title">
+      <h2 style="margin-bottom: .3em;">What I can help you with</h2>
+      <p> I have helped several startups and orgs in India and abroad scale design teams, build products and design systems from scratch. I have also helped with the launch of 10+ digital products in the last 5 years.
+    </div>
+
+    <div class="grid" style="grid-template-columns: 50% 50%; column-count: 2;">
+
+      <div class="project horizontal">
+        <div>
+          <h3>✳ Website and mobile app redesign</h3>
+        </div>
+      </div>
+
+      <div class="project horizontal">
+        <div>
+          <h3>✳ Design systems</h3>
+        </div>
+      </div>
+
+      <div class="project horizontal">
+        <div>
+          <h3>✳ Electronics and Physical Prototyping and Design</h3>
+        </div>
+      </div>
+
+      <div class="project horizontal">
+        <div>
+          <h3>✳ Figma Design Workshops and Training at Corporates and Institutions</h3>
+        </div>
+      </div>
+
+      <div class="project horizontal">
+        <div>
+          <h3>✳ Design Consultation for Startups</h3>
+        </div>
+      </div>
+
+      <div class="project horizontal">
+        <div>
+          <h3>✳ Corporate Design Training</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 
   <!--------------------------------------- resources ----------------------------------------->
   <div class="container-home" style="margin-bottom:0">
     <div class="container-title">
-      <h2 style="max-width: 35ch; color: var(--grey-100);">Learn from my Figma files and YouTube tutorials viewed over 30k times</h2>
+      <h2 style="color: var(--grey-100);margin-bottom: .3em;">Learn from my Figma files and YouTube tutorials viewed over 30k times</h2>
       <p>Templates and tutorials to help you kickstart any UX Design project</p>
     </div>
 
@@ -306,19 +364,19 @@
     </div>
   </div>
 
-    <div class="nav-bar bottom">
-      <a href="https://Instagram.com/kadankapoor">
-        <p class="nav">Instagram</p>
-      </a>
-      <a href="https://linkedin.com/in/karankapoorux">
-        <p class="nav">LinkedIn</p>
-      </a>
-      <a href="https:twitter.com/kadankapoor">
-        <p class="nav">Twitter</p>
-      </a>
-    </div>
-
-    <!-- root -->
+  <div class="nav-bar bottom">
+    <a href="https://Instagram.com/kadankapoor">
+      <p class="nav">Instagram</p>
+    </a>
+    <a href="https://linkedin.com/in/karankapoorux">
+      <p class="nav">LinkedIn</p>
+    </a>
+    <a href="https:twitter.com/kadankapoor">
+      <p class="nav">Twitter</p>
+    </a>
   </div>
 
-  </html>
+  <!-- root -->
+</div>
+
+</html>

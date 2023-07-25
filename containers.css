@@ -4,7 +4,7 @@
   --width: auto;
 
   --padding-40: 2.5em;
-  --padding-12: 1em;
+  --padding-12: .75em;
 
   --grid-projects: 2;
   --grid-logos: 3;
@@ -63,6 +63,7 @@ gap: .2em;
   font-family: "JetBrains Mono", sans-serif;
   color: var(--grey-400);
   margin: 0px;
+  height: auto;
 }
 
 .img-blog {
@@ -70,6 +71,7 @@ gap: .2em;
   min-width: var(--min-width);
   max-width: var(--max-width);
   text-align: center;
+  height: auto;
 }
 
   /*.root-container .nav-bar{
