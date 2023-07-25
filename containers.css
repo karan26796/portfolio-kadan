@@ -102,12 +102,30 @@ gap: .2em;
 
   .nav-bar.bottom {
     margin-top: -2px;
+    padding: var(--padding-40);
+    align-items: center;
   }
 
   .nav-options {
     display: flex;
     flex-direction: row;
-    gap: 24px
+    gap: 24px;
+    align-items: center;
+  }
+
+  .go-to-top{
+    font-size: 1.4em;
+    font-weight: 400;
+    text-decoration: none;
+    padding: .2em 0;
+    border: solid var(--grey-100);
+    border-width: 0 0 2px 0;
+  }
+
+  .go-to-top:hover{
+    background-color: var(--accent-color);
+    border: dashed var(--grey-100);
+    border-width: 0 0 2px 0;
   }
 
   .root-container {
@@ -158,94 +176,94 @@ gap: .2em;
     justify-content: space-between;
 /*    border-bottom: 2px solid var(--border-color);*/
 
-    text-decoration: none;
-  }
+text-decoration: none;
+}
 
-  .project.testimonial {
-    flex-direction: column;
-    align-items: baseline;
-  }
+.project.testimonial {
+  flex-direction: column;
+  align-items: baseline;
+}
 
-  .project-img {
-    border-radius: 16px;
-    width: 100%;
-    height: var(--project-img);
-    object-fit: cover;
-    margin-bottom: 8px;
-  }
+.project-img {
+  border-radius: 16px;
+  width: 100%;
+  height: var(--project-img);
+  object-fit: cover;
+  margin-bottom: 8px;
+}
 
-  .project-img.main {
-    width: auto;
-    max-width: 65%;
-    height:var(--project-img-main);
-  }
+.project-img.main {
+  width: auto;
+  max-width: 65%;
+  height:var(--project-img-main);
+}
 
-  .arrow {
-    display: block;
-  }
+.arrow {
+  display: block;
+}
 
-  .project a,
-  .grid a,
-  .nav-bar a {
-    text-decoration: none;
-  }
+.project a,
+.grid a,
+.nav-bar a {
+  text-decoration: none;
+}
 
-  .project:hover {
-    background: var(--accent-color);
-  }
+.project:hover {
+  background: var(--accent-color);
+}
 
 
-  .grid {
-    display: grid;
-    column-count: var(--grid-projects);
-    grid-template-columns: 1fr 1fr;
-    gap: 2px;
+.grid {
+  display: grid;
+  column-count: var(--grid-projects);
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
 /*    border-width: solid var(--border-width);*/
 /*    padding: 0 2px;*/
 /*    border-width: 0 2px;*/
-    justify-content: center;
-    background: var(--border-color);
-    /*  grid-auto-rows: 1fr;*/
-  }
+justify-content: center;
+background: var(--border-color);
+/*  grid-auto-rows: 1fr;*/
+}
 
-  .grid-logos {
-    display: grid;
-    column-count: var(--grid-logos);
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 2px;
-    column-gap: 2px;
-    border-width: 0px;
-    justify-content: center;
-    background-color: var(--border-color);
-    border-top: 2px solid var(--border-color);
-  }
+.grid-logos {
+  display: grid;
+  column-count: var(--grid-logos);
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2px;
+  column-gap: 2px;
+  border-width: 0px;
+  justify-content: center;
+  background-color: var(--border-color);
+  border-top: 2px solid var(--border-color);
+}
 
-  .item-logo {
-    padding: 1.5em;
-    align-items: center;
-    background: var(--primary-color);
-    text-align: center;
-  }
+.item-logo {
+  padding: 1.5em;
+  align-items: center;
+  background: var(--primary-color);
+  text-align: center;
+}
 
-  .clients-img {
-    width: var(--logo-size);
-    height: auto;
-  }
+.clients-img {
+  width: var(--logo-size);
+  height: auto;
+}
 
-  button {
-    padding: 20px;
-    background: transparent;
-    border: transparent;
-    color: var(--grey-100);
-    font-size: 1.5em;
-    padding: 1em 0;
-  }
+button {
+  padding: 20px;
+  background: transparent;
+  border: transparent;
+  color: var(--grey-100);
+  font-size: 1.5em;
+  padding: 1em 0;
+}
 
-  @media only screen and (max-width: 1200px) {
-    :root {
-      --min-width: 840px;
-      --max-width: 960px;
-      --width: auto;
+@media only screen and (max-width: 1200px) {
+  :root {
+    --min-width: 840px;
+    --max-width: 960px;
+    --width: auto;
 
       /*--padding-40: 2.5em;
       --padding-12: .75em;*/
@@ -380,7 +398,7 @@ gap: .2em;
 
   .grid {
     grid-template-columns: 1fr;
-  border-width: 0;
+    border-width: 0;
   }
 
   .grid-logos {
@@ -418,7 +436,7 @@ gap: .2em;
   .img-container {
     align-items: center;
     border: solid var(--border-color);
-  border-width: 2px 0 2px 0;
+    border-width: 2px 0 2px 0;
     /* padding: 12px 0; */
   }
   
