@@ -134,7 +134,7 @@ h5 {
 }
 
 .p-tag {
-  font-size: 1.2rem;
+  font-size: 1em;
   font-family: "JetBrains Mono", sans-serif;
   color: var(--grey-400);
   margin: 0px;
@@ -142,10 +142,10 @@ h5 {
 }
 
 .p-tag.blog {
-  font-size: 1.4em;
+  font-size: 1.5em;
   margin-top: 1em;
   text-align: center;
-  width: 60ch;
+  width: 20ch;
 }
 
 

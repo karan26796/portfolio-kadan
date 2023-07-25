@@ -444,6 +444,7 @@ button {
     width: -webkit-fill-available;
     text-align: center;
     height: auto;
+    object-fit: cover;
   }
 
   .nav-bar{
