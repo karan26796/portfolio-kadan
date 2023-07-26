@@ -13,8 +13,29 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
 	<link rel="stylesheet" href="../styles.css">
 	<link rel="stylesheet" href="../containers.css">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
 	<script src="../actions.js"></script>
 	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+	<style type="text/css">
+		.grid{
+			border:2px solid var(--border-color); 
+			border-width: 0 2px
+		}
+
+		.container-title{
+			border:solid var(--border-color);
+			border-width: 0 2px 2px 2px
+		}
+
+
+		@media only screen and (max-width: 478px) {
+
+			.grid, .container-title {
+				border: solid var(--border-color);
+				border-width: 2px 0;
+			}
+		}
+	</style>
 </head>
 
 <div class="root-container blog" style="gap:0px;">
@@ -22,7 +43,7 @@
 	<!-- Done -->
 	<div class="nav-bar">
 		<a href="../index.html">
-			<p class="nav">K3K3</p>
+			<p class="nav">के.के.</p>
 		</a>
 		<div class="nav-options">
 			<a href="../index.html">
@@ -111,30 +132,30 @@
 	</div>
 
 	<div class="container-home">
-    <div class="container-title">
-      <h3>Related Projects</h3>
-    </div>
+		<div class="container-title">
+			<h3>Related Projects</h3>
+		</div>
 
-    <a href="vedic-square.html" style="text-decoration:none;">
-      <div class="project horizontal">
-        <div>
-          <h3>Using vedic mathematics for biometry scanning</h3>
-          <p class="p-tag">MATHEMATICS, CLASSROOM PROJECT</p>
-        </div>
-        <p class="arrow">↗</p>
-      </div>
-    </a>
+		<a href="vedic-square.html" style="text-decoration:none;">
+			<div class="project horizontal">
+				<div>
+					<h3>Using vedic mathematics for biometry scanning</h3>
+					<p class="p-tag">MATHEMATICS, CLASSROOM PROJECT</p>
+				</div>
+				<p class="arrow">↗</p>
+			</div>
+		</a>
 
-    <a href="data-viz.html" style="text-decoration:none; margin-bottom: -2px;">
-      <div class="project horizontal">
-        <div>
-          <h3>Visualising how students participated in NID's Open Elective Module</h3>
-          <p class="p-tag">DATA VIZ., SIDE PROJECT</p>
-        </div>
-        <p class="arrow">↗</p>
-      </div>
-    </a>
-  </div>
+		<a href="data-viz.html" style="text-decoration:none; margin-bottom: -2px;">
+			<div class="project horizontal">
+				<div>
+					<h3>Visualising how students participated in NID's Open Elective Module</h3>
+					<p class="p-tag">DATA VIZ., SIDE PROJECT</p>
+				</div>
+				<p class="arrow">↗</p>
+			</div>
+		</a>
+	</div>
 
 	<div class="nav-bar bottom">
 		<a class="go-to-top" href="#top">Back to top</a>

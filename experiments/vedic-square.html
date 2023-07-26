@@ -12,8 +12,29 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../containers.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
   <script src="../actions.js"></script>
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <style type="text/css">
+    .grid{
+      border:2px solid var(--border-color); 
+      border-width: 0 2px
+    }
+
+    .container-title{
+      border:solid var(--border-color);
+      border-width: 0 2px 2px 2px
+    }
+
+
+    @media only screen and (max-width: 478px) {
+
+      .grid, .container-title {
+        border: solid var(--border-color);
+        border-width: 2px 0;
+      }
+    }
+  </style>
 </head>
 
 <div class="root-container blog" style="gap:0px;">
@@ -21,7 +42,7 @@
   <!-- Done -->
   <div class="nav-bar">
     <a href="../index.html">
-      <p class="nav">K3K3</p>
+      <p class="nav">के.के.</p>
     </a>
     <div class="nav-options">
       <a href="../index.html">
