@@ -64,6 +64,16 @@
       border-width: 0 0 2px 0;
     }
 
+    .grid.service{
+      grid-template-columns: 1fr; 
+      column-count: 2;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media only screen and (max-width: 478px) {
+    }
+
   </style>
 </head>
 
@@ -291,44 +301,50 @@
   <div class="container-home">
     <div class="container-title">
       <h2 style="margin-bottom: .3em;">What I can help you with</h2>
-      <p> I have helped several startups and orgs in India and abroad scale design teams, build products and design systems from scratch. I have also helped with the launch of 10+ digital products in the last 5 years.
+      <p> I have helped several startups and orgs in India and abroad scale design teams, build products and design systems from scratch. I have also helped with the launch of 10+ digital products in the last 5 years.</p>
     </div>
 
-    <div class="grid" style="grid-template-columns: 50% 50%; column-count: 2;">
+    <div class="grid service">
 
-      <div class="project horizontal">
+      <div class="project horizontal" style="justify-content: flex-start; flex-direction: row; align-items: center;">
+        <ion-icon name="color-wand"></ion-icon>
         <div>
-          <h3>✳ Website and mobile app redesign</h3>
+          <h3 style="margin:0">Website and mobile app redesign</h3>
         </div>
       </div>
 
-      <div class="project horizontal">
+      <div class="project horizontal" style="justify-content: flex-start; flex-direction: row; align-items: center;">
+        <ion-icon name="layers"></ion-icon>
         <div>
-          <h3>✳ Design systems</h3>
+          <h3 style="margin:0">Design systems</h3>
         </div>
       </div>
 
-      <div class="project horizontal">
+      <div class="project horizontal" style="justify-content: flex-start; flex-direction: row; align-items: center;">
+        <ion-icon name="code"></ion-icon>
         <div>
-          <h3>✳ Electronics and Physical Prototyping and Design</h3>
+          <h3 style="margin:0">Electronics and Physical Prototyping and Design</h3>
         </div>
       </div>
 
-      <div class="project horizontal">
+      <div class="project horizontal" style="justify-content: flex-start; flex-direction: row; align-items: center;">
+        <ion-icon name="logo-figma"></ion-icon>
         <div>
-          <h3>✳ Figma Design Workshops and Training at Corporates and Institutions</h3>
+          <h3 style="margin:0">Figma Design Workshops and Training at Corporates and Institutions</h3>
         </div>
       </div>
 
-      <div class="project horizontal">
+      <div class="project horizontal" style="justify-content: flex-start; flex-direction: row; align-items: center;">
+        <ion-icon name="people"></ion-icon>
         <div>
-          <h3>✳ Design Consultation for Startups</h3>
+          <h3 style="margin:0">Design Consultation for Startups</h3>
         </div>
       </div>
 
-      <div class="project horizontal">
+      <div class="project horizontal" style="justify-content: flex-start; flex-direction: row; align-items: center;">
+        <ion-icon name="brush"></ion-icon>
         <div>
-          <h3>✳ Corporate Design Training</h3>
+          <h3 style="margin:0">Corporate Design Training</h3>
         </div>
       </div>
 
@@ -369,9 +385,9 @@
   <div class="nav-bar bottom">
     <a class="go-to-top" href="#top">Back to top</a>
     <div class="nav-options">
-      <a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size) name="logo-instagram"></ion-icon></a>
-      <a href="https://linkedin.com/in/karankapoorux" target="_blank"><ion-icon size=var(--icon-size) name="logo-linkedin"></ion-icon></a>
-      <a href="https://twitter.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size) name="logo-twitter"></ion-icon></a>
+      <a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="https://linkedin.com/in/karankapoorux" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+      <a href="https://twitter.com/kadankapoor" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
     </div>
   </div>
 

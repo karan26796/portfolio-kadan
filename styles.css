@@ -22,6 +22,11 @@
   --icon-size:"large";
 }
 
+ion-icon{
+  color: var(--grey-100);
+  font-size: 1.5em;
+}
+
 .container-home h3,h4,p,li,blockquote{
   max-width:var(--max-length);
 }
