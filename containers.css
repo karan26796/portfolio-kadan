@@ -102,7 +102,7 @@ gap: .2em;
 
   .nav-bar.bottom {
     margin-top: -2px;
-    padding: var(--padding-40);
+    padding: var(--padding-12) var(--padding-40);
     align-items: center;
   }
 
@@ -330,15 +330,17 @@ button {
     }
 
     .project-img {
-      min-width: 60%;
-      max-width: 70%;
-      width: 70%;
+      /*min-width: 60%;
+      max-width: 70%;*/
+      width: 100%;
+      height: 300px;
     }
 
     .project-img.main {
-      min-width: 60%;
-      max-width: 70%;
-      width: 70%;
+      /*min-width: 60%;
+      max-width: 70%;*/
+      width: 100%;
+      height: 300px;
     }
 
     .project {
@@ -424,44 +426,48 @@ button {
   } 
 
   .project-img {
-    width: 100%;
-    max-width: 100%;
-  }
+    /*min-width: 60%;
+      max-width: 70%;*/
+      width: 100%;
+      height: 250px;
+    }
 
-  .project-img.main {
-    width: 100%;
-    max-width: 100%;
-  }
+    .project-img.main {
+    /*min-width: 60%;
+      max-width: 70%;*/
+      width: 100%;
+      height: 250px;
+    }
 
-  .img-container {
-    align-items: center;
-    border: solid var(--border-color);
-    border-width: 2px 0 2px 0;
-    /* padding: 12px 0; */
-  }
-  
-  .img-blog {
-    width: 100%;
-    text-align: center;
-    height: auto;
-    object-fit: cover;
-  }
+    .img-container {
+      align-items: center;
+      border: solid var(--border-color);
+      border-width: 2px 0 2px 0;
+      /* padding: 12px 0; */
+    }
 
-  .nav-bar{
-    border-width: 0 0 2px 0;
-    margin: 0px;
-  }
+    .img-blog {
+      width: 100%;
+      text-align: center;
+      height: auto;
+      object-fit: cover;
+    }
 
-  .nav-bar.bottom{
-    border-width: 2px 0 0 0;
-    margin-top: -2px;
-  }
+    .nav-bar{
+      border-width: 0 0 2px 0;
+      margin: 0px;
+    }
 
-  .container-home{
-    border-width: 2px 0 2px 0;
-    margin-top: -2px;
+    .nav-bar.bottom{
+      border-width: 2px 0 0 0;
+      margin-top: -2px;
+    }
+
+    .container-home{
+      border-width: 2px 0 2px 0;
+      margin-top: -2px;
+    }
+    .container-title{
+      border-width: 2px 0 2px 0;
+    }
   }
-  .container-title{
-    border-width: 2px 0 2px 0;
-  }
-}

@@ -19,6 +19,7 @@
   --padding-nav: .5em;
 
   --max-length:75%;
+  --icon-size:"large";
 }
 
 .container-home h3,h4,p,li,blockquote{
@@ -249,6 +250,7 @@ blockquote {
     --padding-nav: .5em;
 
     --max-length:100%;
+    --icon-size:"small";
   }
 
   body {

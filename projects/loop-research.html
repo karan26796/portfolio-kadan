@@ -12,6 +12,29 @@
 	<link rel="stylesheet" href="../styles.css">
 	<link rel="stylesheet" href="../containers.css">
 	<script src="../actions.js"></script>
+	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+	<style type="text/css">
+
+		.grid{
+			border:2px solid var(--border-color); 
+			border-width: 0 2px
+		}
+
+		.container-title{
+			border:solid var(--border-color);
+			border-width: 0 2px 2px 2px
+		}
+
+
+		@media only screen and (max-width: 478px) {
+
+			.grid, .container-title {
+				border: solid var(--border-color);
+				border-width: 2px 0;
+			}
+		}
+
+	</style>
 </head>
 
 <div class="root-container blog" style="gap:0px;justify-content:center;">
@@ -145,11 +168,11 @@
 
 	</div>
 
-	<div class="container-title" style="border: solid var(--border-color); border-width: 0 2px 2px 2px;">
+	<div class="container-title">
 		<h3>Related Projects</h3>
 	</div>
 
-	<div class="grid" style="border:2px solid var(--border-color); border-width: 0 2px">
+	<div class="grid">
 		
 		<div class="project">
 			<a href="./staging-project.html">
@@ -161,7 +184,7 @@
 				</div>
 			</a>
 		</div>
-				
+
 		<div class="project">
 			<a href="./kurakaani.html">
 				<img class="project-img" src="./images-kurakaani/kurakani-thumb.webp">
@@ -176,9 +199,9 @@
 	<div class="nav-bar bottom">
 		<a class="go-to-top" href="#top">Back to top</a>
 		<div class="nav-options">
-			<a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon size="large" name="logo-instagram"></ion-icon></a>
-			<a href="https://linkedin.com/in/karankapoorux" target="_blank"><ion-icon size="large" name="logo-linkedin"></ion-icon></a>
-			<a href="https://twitter.com/kadankapoor" target="_blank"><ion-icon size="large" name="logo-twitter"></ion-icon></a>
+			<a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size) name="logo-instagram"></ion-icon></a>
+			<a href="https://linkedin.com/in/karankapoorux" target="_blank"><ion-icon size=var(--icon-size) name="logo-linkedin"></ion-icon></a>
+			<a href="https://twitter.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size) name="logo-twitter"></ion-icon></a>
 		</div>
 	</div>
 

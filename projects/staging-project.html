@@ -39,6 +39,25 @@ h3 {
 	margin: .8em 0 .5em 0;
 }
 
+.grid{
+	border:2px solid var(--border-color); 
+	border-width: 0 2px
+}
+
+.container-title{
+	border:solid var(--border-color);
+	border-width: 0 2px 2px 2px
+}
+
+
+@media only screen and (max-width: 478px) {
+
+	.grid, .container-title {
+		border: solid var(--border-color);
+		border-width: 2px 0;
+	}
+}
+
 </style>
 </head>
 
@@ -91,11 +110,11 @@ h3 {
 		</p>
 	</div>
 
-	<div class="container-title" style="border: solid var(--border-color); border-width: 0 2px 2px 2px;">
+	<div class="container-title">
 		<h3>Related Projects</h3>
 	</div>
 
-	<div class="grid" style="border:2px solid var(--border-color); border-width: 0 2px">
+	<div class="grid">
 		
 		<div class="project">
 			<a href="./kurakaani.html">
@@ -125,9 +144,9 @@ h3 {
 	<div class="nav-bar bottom">
 		<a class="go-to-top" href="#top">Back to top</a>
 		<div class="nav-options">
-			<a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon size="large" name="logo-instagram"></ion-icon></a>
-			<a href="https://linkedin.com/in/karankapoorux" target="_blank"><ion-icon size="large" name="logo-linkedin"></ion-icon></a>
-			<a href="https://twitter.com/kadankapoor" target="_blank"><ion-icon size="large" name="logo-twitter"></ion-icon></a>
+			<a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size) name="logo-instagram"></ion-icon></a>
+			<a href="https://linkedin.com/in/karankapoorux" target="_blank"><ion-icon size=var(--icon-size) name="logo-linkedin"></ion-icon></a>
+			<a href="https://twitter.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size) name="logo-twitter"></ion-icon></a>
 		</div>
 	</div>
 
