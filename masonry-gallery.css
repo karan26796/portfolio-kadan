@@ -35,7 +35,6 @@ figcaption {
   background-color: var(--primary-color);
   border-width: 0 2px 0 2px;
   border:solid var(--border-color);
-  margin-top: -98px;
 }
 
 /*@media only screen and (max-width: 776px) {
