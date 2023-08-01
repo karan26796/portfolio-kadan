@@ -16,6 +16,30 @@
 	<link rel="icon" type="image/x-icon" href="favicon.png">
 	<script src="actions.js"></script>
 	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+	<style type="text/css">
+		#table{
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 1.5em;
+		}
+		#column{
+			display: flex;
+			flex-direction: column;
+			gap:.3em;
+		}
+
+		@media only screen and (max-width: 478px) {
+			#table{
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+			}
+		}
+
+		@media only screen and (max-width: 776px) {
+			#table{
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+			}
+		}
+	</style>
 </head>
 
 <div class="root-container blog" style="gap:0px;justify-content:center;">
@@ -42,26 +66,69 @@
 	</div>
 
 	<div class="container-home padding-blog">
-		<h3>Hello, it's me, Karan. I'm a masters student at NID specialising in mix media experiences.</h3>
+		<h3>Hello, it's me, Karan. I'm a digital product designer, code learner, electronics prototyper, amateur photo clicker, &  traveller.</h3>
 
 		<p>When I'm not saving the world with design, I watch standup comedy, travel the country, photograph landscapes, play lawn tennis, and learn to code. One at a time.
 
 			<br><br>
 
-		I started learning Figma during the pandemic & thought - why not share what I'm doing with others. Since then, I've taught 10k+ people through my design workshops & Youtube tutorials.</p>
-	</div>
+			I started off as an Android Developer but soon moved to UX Design. Since then I've had a lot of fun designing digital products for studios & product companies. 
 
-	<div class="nav-bar bottom">
-		<a class="go-to-top" href="#top">Back to top</a>
-		<div class="nav-options">
-			<a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size) name="logo-instagram"></ion-icon></a>
-			<a href="https://linkedin.com/in/karankapoorux" target="_blank"><ion-icon size=var(--icon-size) name="logo-linkedin"></ion-icon></a>
-			<a href="https://twitter.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size) name="logo-twitter"></ion-icon></a>
+			<br><br>
+
+			<h3>The first company I joined as a designer got shut during the pandemic. Due to a lot of free time and a strong hold on design software like Sketch & Adobe XD, I started learning Figma during the pandemic & thought - why not share what I know with others? <br><br>Since then, I've taught 10k+ people through my design workshops & Youtube tutorials.</h3>
 		</div>
+
+		<div class="container-home padding-blog" id="table">
+
+			<div id="column">
+				<h4 style="margin-top:0">Clients & Collaborators</h4>
+				<p>Obvious</p>
+				<p>FrontRow</p>
+				<p>Looppanel</p>
+				<p>IIM-Ahmedabad</p>
+				<p>IIT-Madras</p>
+				<p>Indiana University</p>
+				<p>Zuddl</p>
+				<p>Qoohoo</p>
+				<p>Pixis</p>
+				<p>VectorEdge</p>
+				<p>Media.net</p>
+			</div>
+
+
+			<div id="column">
+				<h4 style="margin-top:0">Expertise in</h4>
+				<p>Digital Product Design</p>
+				<p>Design Systems</p>
+				<p>Figma Training</p>
+				<p>Design Consultancy</p>
+				<p>Webflow</p>
+				<p>Landscape Photography</p>
+				<p>Risky Car Driving</p>
+			</div>
+
+
+			<div id="column">
+				<h4 style="margin-top:0">Noob in</h4>
+				<p>Blender</p>
+				<p>Unity</p>
+				<p>React.js</p>
+				<p>Sketching</p>
+			</div>
+
+			
+		</div>
+
+		<div class="nav-bar bottom">
+			<a class="go-to-top" href="#top">Back to top</a>
+			<div class="nav-options">
+				<a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size) name="logo-instagram"></ion-icon></a>
+				<a href="https://linkedin.com/in/karankapoorux" target="_blank"><ion-icon size=var(--icon-size) name="logo-linkedin"></ion-icon></a>
+				<a href="https://twitter.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size) name="logo-twitter"></ion-icon></a>
+			</div>
+		</div>
+
 	</div>
 
-</div>
-
-
-
-</html>
+	</html>
