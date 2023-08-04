@@ -10,7 +10,7 @@
   --grid-logos: 3;
   --logo-size: 160px;
 
-  --project-img-main: 400px;
+  --project-img-main: 350px;
   --project-img: 300px;
 }
 
@@ -194,7 +194,7 @@ text-decoration: none;
 
 .project-img.main {
   width: auto;
-  max-width: 65%;
+  max-width: 60%;
   height:var(--project-img-main);
 }
 
@@ -349,7 +349,7 @@ button {
     }
 
     .project.horizontal {
-      flex-direction: row;
+      flex-direction: column;
       align-items: left;
       justify-content: space-between;
     }
