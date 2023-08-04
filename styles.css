@@ -140,7 +140,7 @@ h5 {
 }
 
 .p-tag {
-  font-size: 1em;
+  font-size: .92em;
   font-family: "JetBrains Mono", sans-serif;
   color: var(--grey-400);
   margin: 0px;
@@ -154,6 +154,15 @@ h5 {
   width: 35ch;
 }
 
+.project.horizontal p{
+  font-size: 1.15em;
+  color: var(--grey-400);
+  max-width: none;
+}
+
+.project.horizontal h3{
+  max-width: none;
+}
 
 p {
   text-align: left;
