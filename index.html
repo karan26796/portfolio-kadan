@@ -14,10 +14,23 @@
   <link rel="stylesheet" href="containers.css">
   <link rel="stylesheet" href="infinite-carousel.css">
   <link rel="stylesheet" href="card-stack.css">
-  <script src="actions.js"></script>
+
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+  
   <link rel="icon" type="image/x-icon" href="favicon.png">
-  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+
+
   <style type="text/css">
+
+    .k12 {
+    }
+
+    .letter {
+      display: inline-block;
+    }
 
     span{
       font-weight: 600;
@@ -79,9 +92,10 @@
 
     @media only screen and (max-width: 478px) {
     }
-
   </style>
 </head>
+
+<body>
 
 <div class="root-container">
 
@@ -106,180 +120,180 @@
   <!--------------------------------------- introduction ----------------------------------------->
   <div class="container-home">
     <div class="padding-home">
-      <h2 style="margin-bottom:0">Hello, I'm Karan</h2>
+      <h2 class="k12" style="margin-bottom:0">Hello, I'm Karan</h2>
 
-      <p style="font-size: 1.6em; color: var(--grey-400);">Designer — Technologist — Figma Trainer</p>
+      <p class="ml12" style="font-size: 1.6em; color: var(--grey-400);">Designer — Technologist — Figma Trainer</p>
 
-      <p style="max-width: 35ch; color: var(--grey-100);">I love to integrate tech and design to craft experiences,solve problems, and talk about the effects of technology on society.<br><br>
+      <p class="ml12" style="max-width: 35ch; color: var(--grey-100);">I love to integrate tech and design to craft experiences,solve problems, and talk about the effects of technology on society.<br><br>
 
-      <span>I help startups build 0-1 products, achieve product market fit through design, conduct design & Figma workshops at leading orgs & institutes in India and abroad. Past clients ↓ </span></p>
+        <span>I help startups build 0-1 products, achieve product market fit through design, conduct design & Figma workshops at leading orgs & institutes in India and abroad. Past clients ↓ </span></p>
 
-      <div class="actions">
-        <a href="https://read.cv/karankapoorux" target="_blank">Resume ↗</a>
-        <a href="mailto: karan26796@gmail.com" target="_blank">Drop a mail ↗</a>
+        <div class="actions">
+          <a href="https://read.cv/karankapoorux" target="_blank">Resume ↗</a>
+          <a href="mailto: karan26796@gmail.com" target="_blank">Drop a mail ↗</a>
+        </div>
+
       </div>
 
+      <div class="grid-logos">
+        <div class="item-logo">
+          <img class="clients-img" src="./logos/iima.webp">
+        </div>
+        <div class="item-logo">
+          <img class="clients-img" src="./logos/obvious.webp">
+        </div>
+        <div class="item-logo">
+          <img class="clients-img" src="./logos/indiana.webp">
+        </div>
+        <div class="item-logo">
+          <img class="clients-img" src="./logos/looppanel.webp">
+        </div>
+        <div class="item-logo">
+          <img class="clients-img" src="./logos/shaadi.webp">
+        </div>
+        <div class="item-logo">
+          <img class="clients-img" src="./logos/frontrow.webp">
+        </div>
+      </div>
     </div>
 
-    <div class="grid-logos">
-      <div class="item-logo">
-        <img class="clients-img" src="./logos/iima.webp">
-      </div>
-      <div class="item-logo">
-        <img class="clients-img" src="./logos/obvious.webp">
-      </div>
-      <div class="item-logo">
-        <img class="clients-img" src="./logos/indiana.webp">
-      </div>
-      <div class="item-logo">
-        <img class="clients-img" src="./logos/looppanel.webp">
-      </div>
-      <div class="item-logo">
-        <img class="clients-img" src="./logos/shaadi.webp">
-      </div>
-      <div class="item-logo">
-        <img class="clients-img" src="./logos/frontrow.webp">
-      </div>
-    </div>
-  </div>
+    <!--------------------------------------- projects - done ----------------------------------------->
+    <div class="container-home">
 
-  <!--------------------------------------- projects - done ----------------------------------------->
-  <div class="container-home">
+      <div class="container-title">
+        <h2>Projects</h2>
+      </div>
 
-    <div class="container-title">
-      <h2>Projects</h2>
-    </div>
+      <div class="grid">
 
-    <div class="grid">
-
-      <a class="long" href="./projects/loop-note.html">
-        <div class="project horizontal">
-          <img class="project-img main" src="./projects/images-loop-note/thumb.webp">
-          <div>
-            <h5 class="p-tag" style="margin-bottom:4px">DESIGN, RESEARCH, USABILITY TESTING</h5>
-            <h3>Improving note-taking for user research calls on Zoom with Looppanel</h3>
-            <p>Increased discoverabilty of features and customer satisfaction by 40%.</p>
+        <a class="long" href="./projects/loop-note.html">
+          <div class="project horizontal">
+            <img class="project-img main" src="./projects/images-loop-note/thumb.webp">
+            <div>
+              <h5 class="p-tag" style="margin-bottom:4px">DESIGN, RESEARCH, USABILITY TESTING</h5>
+              <h3>Improving note-taking for user research calls on Zoom with Looppanel</h3>
+              <p>Increased discoverabilty of features and customer satisfaction by 40%.</p>
+            </div>
           </div>
+        </a>
+
+
+        <a class="long" href="./projects/loop-research.html">
+          <div class="project horizontal">
+            <img class="project-img main" src="./projects/loop-research/thumb.jpg">
+            <div>
+              <h5 class="p-tag" style="margin-bottom:4px">RESEARCH, DESIGN</h5>
+              <h3>Finding new ways to organize user research data</h3>
+              <p>Created a data organization view that bridges the gap between table view and card view.</p>
+            </div>
+
+          </div>
+        </a>
+
+        <a class="long" href="./projects/binge-behavior.html">
+          <div class="project horizontal">
+            <img class="project-img main" src="./projects/binge-eating/thumb.jpg">
+            <div>
+              <h5 class="p-tag">MASTERS PROJECT, RESEARCH, PSYCHOLOGY</h5>
+              <h3>Dealing with binge behaviour through mindfulness</h3>
+              <p>Found ways in which people can deal with binge behavior</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="long" href="./projects/staging-project.html">
+          <div class="project horizontal">
+            <img class="project-img main" src="./projects/staging-project/thumb.jpg">
+            <div>
+              <h5 class="p-tag" style="margin-bottom:4px">STAGING, COMMENTARY, EXPERIENTIAL DESIGN , DESIGN INSTALLATION
+              </h5>
+              <h3>Hidden in plain sight - a commentary on social media surveillance</h3>
+              <p></p>
+            </div>
+          </div>
+        </a>
+
+        <a class="long" href="./projects/kurakaani.html">
+          <div class="project horizontal">
+            <img class="project-img main" src="./projects/images-kurakaani/kurakani-thumb.webp">
+            <div>
+              <h5 class="p-tag">DESIGN SYSTEM, COMPONENT LIBRARY</h5>
+              <h3>How I used Atomic Design principles to redesign Nepal's Superapp</h3>
+              <p></p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!--------------------------------------- experiments - done ----------------------------------------->
+    <div class="container-home">
+      <div class="container-title">
+        <h2>Experiments</h2>
+      </div>
+
+      <a href="./experiments/color-wheel.html" style="text-decoration:none;">
+        <div class="project horizontal long" style="border: solid var(--border-color); border-width: 0 0 2px 0">
+          <div>
+            <h3>Creating a color wheel using arduino and creative code</h3>
+            <h5 class="p-tag">ELECTRONICS, CREATIVE CODING</h5>
+          </div>
+          <p class="arrow">↗</p>
         </div>
       </a>
 
-      
-      <a class="long" href="./projects/loop-research.html">
-        <div class="project horizontal">
-          <img class="project-img main" src="./projects/loop-research/thumb.jpg">
+      <a href="./experiments/prototypes.html" style="text-decoration:none;">
+        <div class="project horizontal" style="border: solid var(--border-color); border-width: 0 0 2px 0">
           <div>
-            <h5 class="p-tag" style="margin-bottom:4px">RESEARCH, DESIGN</h5>
-            <h3>Finding new ways to organize user research data</h3>
-            <p>Created a data organization view that bridges the gap between table view and card view.</p>
+            <h3>Animation and Prototyping Experiments in Figma</h3>
+            <h5 class="p-tag">ANIMATION, PROTOTYPING</h5>
           </div>
-
+          <p class="arrow">↗</p>
         </div>
       </a>
 
-      <a class="long" href="./projects/binge-behavior.html">
-        <div class="project horizontal">
-          <img class="project-img main" src="./projects/binge-eating/thumb.jpg">
+      <a href="./experiments/vedic-square.html" style="text-decoration:none;">
+        <div class="project horizontal" style="border: solid var(--border-color); border-width: 0 0 2px 0">
           <div>
-            <h5 class="p-tag">MASTERS PROJECT, RESEARCH, PSYCHOLOGY</h5>
-            <h3>Dealing with binge behaviour through mindfulness</h3>
-            <p>Found ways in which people can deal with binge behavior</p>
+            <h3>Using vedic mathematics for biometry scanning</h3>
+            <h5 class="p-tag">MATHEMATICS, CLASSROOM PROJECT</h5>
           </div>
+          <p class="arrow">↗</p>
         </div>
       </a>
 
-      <a class="long" href="./projects/staging-project.html">
-        <div class="project horizontal">
-          <img class="project-img main" src="./projects/staging-project/thumb.jpg">
+      <a href="./experiments/data-viz.html" style="text-decoration:none; margin-bottom: -2px;">
+        <div class="project horizontal" style="border: solid var(--border-color); border-width: 0 0 2px 0">
           <div>
-            <h5 class="p-tag" style="margin-bottom:4px">STAGING, COMMENTARY, EXPERIENTIAL DESIGN , DESIGN INSTALLATION
-            </h5>
-            <h3>Hidden in plain sight - a commentary on social media surveillance</h3>
-            <p></p>
+            <h3>Visualising how students participated in NID's Open Elective Module</h3>
+            <h5 class="p-tag">DATA VIZ., SIDE PROJECT</h5>
           </div>
+          <p class="arrow">↗</p>
         </div>
       </a>
-
-      <a class="long" href="./projects/kurakaani.html">
-        <div class="project horizontal">
-          <img class="project-img main" src="./projects/images-kurakaani/kurakani-thumb.webp">
-          <div>
-            <h5 class="p-tag">DESIGN SYSTEM, COMPONENT LIBRARY</h5>
-            <h3>How I used Atomic Design principles to redesign Nepal's Superapp</h3>
-            <p></p>
-          </div>
-        </div>
-      </a>
-
-    </div>
-  </div>
-
-  <!--------------------------------------- experiments - done ----------------------------------------->
-  <div class="container-home">
-    <div class="container-title">
-      <h2>Experiments</h2>
     </div>
 
-    <a href="./experiments/color-wheel.html" style="text-decoration:none;">
-      <div class="project horizontal long" style="border: solid var(--border-color); border-width: 0 0 2px 0">
-        <div>
-          <h3>Creating a color wheel using arduino and creative code</h3>
-          <h5 class="p-tag">ELECTRONICS, CREATIVE CODING</h5>
+    <!--------------------------------------- testimonials - done ----------------------------------------->
+    <div class="container-home" style="padding:0px">
+      <div class="container-title">
+        <h2>Hear from the people I've worked with</h2>
+      </div>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Kritika Oberoi · co-founder</h3>
+          <h5 class="p-tag">Worked together at Looppanel</h5>
+          <p style="margin-bottom: 2em;"> Karan was a part-time employee at Looppanel but he gave his work his all, took feedback very well, iterated on designs endlessly and learned how to run effective user research.</p>
         </div>
-        <p class="arrow">↗</p>
-      </div>
-    </a>
 
-    <a href="./experiments/prototypes.html" style="text-decoration:none;">
-      <div class="project horizontal" style="border: solid var(--border-color); border-width: 0 0 2px 0">
-        <div>
-          <h3>Animation and Prototyping Experiments in Figma</h3>
-          <h5 class="p-tag">ANIMATION, PROTOTYPING</h5>
+        <div class="card">
+          <h3>Malavika Susan · UX Designer</h3>
+          <h5 class="p-tag">Worked together at Aphelia Innovations</h5>
+          <p style="margin-bottom: 2em;">Karan's emphasis on design standardization, by meticulous planning and
+          strategizing, made way for a strong foundation in design for me and all our future projects. His ability to combine technology with art is exceptional.</p>
         </div>
-        <p class="arrow">↗</p>
-      </div>
-    </a>
-
-    <a href="./experiments/vedic-square.html" style="text-decoration:none;">
-      <div class="project horizontal" style="border: solid var(--border-color); border-width: 0 0 2px 0">
-        <div>
-          <h3>Using vedic mathematics for biometry scanning</h3>
-          <h5 class="p-tag">MATHEMATICS, CLASSROOM PROJECT</h5>
-        </div>
-        <p class="arrow">↗</p>
-      </div>
-    </a>
-
-    <a href="./experiments/data-viz.html" style="text-decoration:none; margin-bottom: -2px;">
-      <div class="project horizontal" style="border: solid var(--border-color); border-width: 0 0 2px 0">
-        <div>
-          <h3>Visualising how students participated in NID's Open Elective Module</h3>
-          <h5 class="p-tag">DATA VIZ., SIDE PROJECT</h5>
-        </div>
-        <p class="arrow">↗</p>
-      </div>
-    </a>
-  </div>
-
-  <!--------------------------------------- testimonials - done ----------------------------------------->
-  <div class="container-home" style="padding:0px">
-    <div class="container-title">
-      <h2>Hear from the people I've worked with</h2>
-    </div>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Kritika Oberoi · co-founder</h3>
-        <h5 class="p-tag">Worked together at Looppanel</h5>
-        <p style="margin-bottom: 2em;"> Karan was a part-time employee at Looppanel but he gave his work his all, took feedback very well, iterated on designs endlessly and learned how to run effective user research.</p>
-      </div>
-
-      <div class="card">
-        <h3>Malavika Susan · UX Designer</h3>
-        <h5 class="p-tag">Worked together at Aphelia Innovations</h5>
-        <p style="margin-bottom: 2em;">Karan's emphasis on design standardization, by meticulous planning and
-        strategizing, made way for a strong foundation in design for me and all our future projects. His ability to combine technology with art is exceptional.</p>
-      </div>
 
       <!-- <div class="card long">
         <h3>Nitin Prakash · Android Developer</h3>
@@ -408,6 +422,9 @@
 
   <!-- root -->
 </div>
+
+<script src="actions.js"></script>
+</body>
 
 <!-- <div style="border: solid white; padding: 1em; display: flex; flex-direction:column; position: absolute;top:5em;left:100px">
   <a href="#">Introduction</a>
