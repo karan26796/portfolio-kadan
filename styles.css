@@ -292,5 +292,6 @@ blockquote {
 
   .tag-align {
     text-align: left;
+    max-width:none;
   }
 }
