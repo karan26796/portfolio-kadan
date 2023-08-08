@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="infinite-carousel.css">
   <link rel="stylesheet" href="card-stack.css">
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src= "https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
   
   <link rel="icon" type="image/x-icon" href="favicon.png">
@@ -22,18 +25,18 @@
   <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
 
-
   <style type="text/css">
 
     .k12 {
+      display: block;
     }
 
-    .letter {
+    .k12 .letter {
       display: inline-block;
     }
 
-    span{
-      font-weight: 600;
+    .mono{
+      font-weight: 500;
       font-family: "JetBrains Mono", sans-serif;
     }
 
@@ -100,7 +103,7 @@
 <div class="root-container">
 
   <!-- Done -->
-  <div class="nav-bar">
+  <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="nav-bar">
     <a href="index.html">
       <p class="nav">के.के.</p>
     </a>
@@ -118,15 +121,15 @@
   </div>
 
   <!--------------------------------------- introduction ----------------------------------------->
-  <div class="container-home">
+  <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="container-home">
     <div class="padding-home">
       <h2 class="k12" style="margin-bottom:0">Hello, I'm Karan</h2>
 
-      <p class="ml12" style="font-size: 1.6em; color: var(--grey-400);">Designer — Technologist — Figma Trainer</p>
+      <p class="k12" style="font-size: 1.6em; color: var(--grey-400);">Designer — Technologist — Figma Trainer</p>
 
-      <p class="ml12" style="max-width: 35ch; color: var(--grey-100);">I love to integrate tech and design to craft experiences,solve problems, and talk about the effects of technology on society.<br><br>
+      <p class="k12" style="max-width: 35ch; color: var(--grey-100);">I love to integrate tech and design to craft experiences, solve problems, and talk about the effects of technology on society.<br><br>
 
-        <span>I help startups build 0-1 products, achieve product market fit through design, conduct design & Figma workshops at leading orgs & institutes in India and abroad. Past clients ↓ </span></p>
+        <span class="mono">I help startups build 0-1 products, achieve product market fit through design, conduct design & Figma workshops at leading orgs & institutes in India and abroad. Past clients ↓ </span></p>
 
         <div class="actions">
           <a href="https://read.cv/karankapoorux" target="_blank">Resume ↗</a>
@@ -158,7 +161,7 @@
     </div>
 
     <!--------------------------------------- projects - done ----------------------------------------->
-    <div class="container-home">
+    <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="container-home">
 
       <div class="container-title">
         <h2>Projects</h2>
@@ -167,7 +170,7 @@
       <div class="grid">
 
         <a class="long" href="./projects/loop-note.html">
-          <div class="project horizontal">
+          <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="100" data-aos-duration="500" class="project horizontal">
             <img class="project-img main" src="./projects/images-loop-note/thumb.webp">
             <div>
               <h5 class="p-tag" style="margin-bottom:4px">DESIGN, RESEARCH, USABILITY TESTING</h5>
@@ -179,7 +182,7 @@
 
 
         <a class="long" href="./projects/loop-research.html">
-          <div class="project horizontal">
+          <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="100" data-aos-duration="500" class="project horizontal">
             <img class="project-img main" src="./projects/loop-research/thumb.jpg">
             <div>
               <h5 class="p-tag" style="margin-bottom:4px">RESEARCH, DESIGN</h5>
@@ -191,7 +194,7 @@
         </a>
 
         <a class="long" href="./projects/binge-behavior.html">
-          <div class="project horizontal">
+          <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="100" data-aos-duration="500" class="project horizontal">
             <img class="project-img main" src="./projects/binge-eating/thumb.jpg">
             <div>
               <h5 class="p-tag">MASTERS PROJECT, RESEARCH, PSYCHOLOGY</h5>
@@ -202,7 +205,7 @@
         </a>
 
         <a class="long" href="./projects/staging-project.html">
-          <div class="project horizontal">
+          <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="100" data-aos-duration="500" class="project horizontal">
             <img class="project-img main" src="./projects/staging-project/thumb.jpg">
             <div>
               <h5 class="p-tag" style="margin-bottom:4px">STAGING, COMMENTARY, EXPERIENTIAL DESIGN , DESIGN INSTALLATION
@@ -214,7 +217,7 @@
         </a>
 
         <a class="long" href="./projects/kurakaani.html">
-          <div class="project horizontal">
+          <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="100" data-aos-duration="500" class="project horizontal">
             <img class="project-img main" src="./projects/images-kurakaani/kurakani-thumb.webp">
             <div>
               <h5 class="p-tag">DESIGN SYSTEM, COMPONENT LIBRARY</h5>
@@ -228,7 +231,7 @@
     </div>
 
     <!--------------------------------------- experiments - done ----------------------------------------->
-    <div class="container-home">
+    <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="container-home">
       <div class="container-title">
         <h2>Experiments</h2>
       </div>
@@ -275,7 +278,7 @@
     </div>
 
     <!--------------------------------------- testimonials - done ----------------------------------------->
-    <div class="container-home" style="padding:0px">
+    <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="container-home" style="padding:0px">
       <div class="container-title">
         <h2>Hear from the people I've worked with</h2>
       </div>
@@ -325,7 +328,7 @@
 
   <!--------------------------------------- what i can help with ----------------------------------------->
 
-  <div class="container-home">
+  <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="container-home">
     <div class="container-title">
       <h2 style="margin-bottom: .3em;">What I can help you with</h2>
     </div>
@@ -382,7 +385,7 @@
 
 
   <!--------------------------------------- resources ----------------------------------------->
-  <div class="container-home" style="margin-bottom:0">
+  <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="container-home" style="margin-bottom:0">
     <div class="container-title">
       <h2 style="color: var(--grey-100);margin-bottom: .3em;">Learn from my Figma files and YouTube tutorials viewed over 30k times</h2>
       <p>Templates and tutorials to help you kickstart any UX Design project</p>
@@ -424,6 +427,10 @@
 </div>
 
 <script src="actions.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 <!-- <div style="border: solid white; padding: 1em; display: flex; flex-direction:column; position: absolute;top:5em;left:100px">
