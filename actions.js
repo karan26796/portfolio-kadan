@@ -53,3 +53,8 @@ text.innerHTML = text.textContent.replace(/\S/g, "<span class='letter'>$&</span>
 //     autoplay: false,
 //     easing: 'easeInOutSine'
 //   });
+
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
