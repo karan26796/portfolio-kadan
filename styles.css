@@ -164,6 +164,7 @@ h5 {
 
 .tag-align {
   text-align: right;
+  max-width: 20ch;
 }
 
 .p-tag.blog {
