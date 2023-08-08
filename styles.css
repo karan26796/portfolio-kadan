@@ -110,7 +110,7 @@ h3 {
 .project h3{
   font-size:1.4em;
   font-weight: 400;
-  max-width: 100%;
+  max-width: 25ch;
   margin: 0 0 .25em 0;
 }
 
@@ -118,6 +118,16 @@ h3 {
   font-size: 1.5em;
   font-weight: 500;
   margin: 0;
+}
+
+.project p{
+  font-size: 1.15em;
+  color: var(--grey-300);
+  max-width: 25ch;
+}
+
+.project.horizontal h3{
+  max-width: none;
 }
 
 h4 {
@@ -147,21 +157,15 @@ h5 {
   max-width: 60ch;
 }
 
+.tag-align{
+text-align: right;
+}
+
 .p-tag.blog {
   font-size: 1.5em;
   margin-top: 1em;
   text-align: center;
   width: 35ch;
-}
-
-.project.horizontal p{
-  font-size: 1.15em;
-  color: var(--grey-300);
-  max-width: none;
-}
-
-.project.horizontal h3{
-  max-width: none;
 }
 
 p {
@@ -252,6 +256,10 @@ blockquote {
   ul{
     padding-left: 1em;
   }
+
+  .tag-align{
+    text-align: left;
+    }
 }
 
 /* This will work for mobile */
@@ -274,4 +282,8 @@ blockquote {
   ul{
     padding: 1em;
   }
+
+  .tag-align{
+    text-align: left;
+    }
 }

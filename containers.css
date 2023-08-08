@@ -10,7 +10,7 @@
   --grid-logos: 3;
   --logo-size: 160px;
 
-  --project-img-main: 350px;
+  --project-img-main: 550px;
   --project-img: 300px;
 }
 
@@ -161,7 +161,7 @@ gap: .2em;
   .project {
     padding: var(--padding-40) var(--padding-40);
     background: var(--primary-color);
-    gap: 16px;
+    gap: 1em;
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -193,8 +193,8 @@ text-decoration: none;
 }
 
 .project-img.main {
-  width: auto;
-  max-width: 60%;
+  width: 100%;
+  max-width: 100%;
   height:var(--project-img-main);
 }
 
@@ -329,31 +329,6 @@ button {
       grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .project-img {
-      /*min-width: 60%;
-      max-width: 70%;*/
-      width: 100%;
-      height: 300px;
-    }
-
-    .project-img.main {
-      min-width: 60%;
-      max-width: 100%;
-      width: 100%;
-    }
-
-    .project {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .project.horizontal {
-      flex-direction: column;
-      align-items: left;
-      justify-content: space-between;
-    }
-
     .img-container {
       align-items: center;
       /* padding: 12px 0; */
@@ -371,6 +346,10 @@ button {
 
     .nav-bar.bottom{
       margin-top: -2px;
+    }
+
+    .arrow {
+      display: none;
     }
   }
 
@@ -404,10 +383,6 @@ button {
 
   .grid-logos {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .project-img.main {
-    width: 100%;
   }
 
   .arrow {
