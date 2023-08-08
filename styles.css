@@ -18,20 +18,24 @@
   --padding-home-horizontal: 2.5em;
   --padding-nav: .5em;
 
-  --max-length:75%;
-  --icon-size:"large";
+  --max-length: 75%;
+  --icon-size: "large";
 }
 
-ion-icon{
+ion-icon {
   color: var(--grey-100);
   font-size: 1.5em;
 }
 
-.container-home h3,h4,p,li,blockquote{
-  max-width:var(--max-length);
+.container-home h3,
+h4,
+p,
+li,
+blockquote {
+  max-width: var(--max-length);
 }
 
-.container-title h3{
+.container-title h3 {
   margin: 0;
 }
 
@@ -55,13 +59,13 @@ ion-icon{
   padding: var(--padding-blog-vertical) var(--padding-home-horizontal);
 }
 
-.summary{
+.summary {
   font-size: 1.6em;
   font-family: "JetBrains Mono", sans-serif;
 }
 
 a {
-  font-size:1.25em ;
+  font-size: 1.25em;
   color: var(--grey-300);
   font-weight: 500;
 }
@@ -103,30 +107,31 @@ h3 {
   color: var(--grey-100);
   line-height: 125%;
   font-size: 1.75em;
-  margin:.5em 0 1em 0;
+  margin: .5em 0 1em 0;
   font-weight: 500;
 }
 
-.project h3{
-  font-size:1.4em;
+.project h3 {
+  font-size: 1.4em;
   font-weight: 400;
   max-width: 25ch;
   margin: 0 0 .25em 0;
 }
 
-.project-horizontal h3, .card h3{
+.project-horizontal h3,
+.card h3 {
   font-size: 1.5em;
   font-weight: 500;
   margin: 0;
 }
 
-.project p{
+.project p {
   font-size: 1.15em;
   color: var(--grey-300);
   max-width: 25ch;
 }
 
-.project.horizontal h3{
+.project.horizontal h3 {
   max-width: none;
 }
 
@@ -136,8 +141,8 @@ h4 {
   font-size: 1.4em;
   font-weight: 500;
 
-  margin:2em 0 .5em 0;
-  text-transform: uppercase; 
+  margin: 2em 0 .5em 0;
+  text-transform: uppercase;
   font-family: "JetBrains Mono", sans-serif;
   color: var(--higlight-color);
 }
@@ -157,8 +162,8 @@ h5 {
   max-width: 60ch;
 }
 
-.tag-align{
-text-align: right;
+.tag-align {
+  text-align: right;
 }
 
 .p-tag.blog {
@@ -178,7 +183,8 @@ p {
   font-weight: 400;
 }
 
-ul,ol{
+ul,
+ol {
   margin: 1em 0 0 1em;
   padding-left: 2em;
 }
@@ -192,7 +198,7 @@ li {
   padding-bottom: .6em;
 }
 
-li span{
+li span {
   font-weight: bold;
   font-style: bold;
 }
@@ -230,7 +236,7 @@ blockquote {
     --padding-home-horizontal: 1.5em;
     --padding-nav: .5em;
 
-    --max-length:75%;
+    --max-length: 75%;
   }
 
   body {
@@ -246,20 +252,20 @@ blockquote {
     --padding-home-horizontal: 2.5em;
     --padding-nav: .5em;
 
-    --max-length:100%;
+    --max-length: 100%;
   }
 
   body {
     font-size: 12px;
   }
 
-  ul{
+  ul {
     padding-left: 1em;
   }
 
-  .tag-align{
+  .tag-align {
     text-align: left;
-    }
+  }
 }
 
 /* This will work for mobile */
@@ -271,19 +277,19 @@ blockquote {
     --padding-home-horizontal: 2em;
     --padding-nav: .5em;
 
-    --max-length:100%;
-    --icon-size:"small";
+    --max-length: 100%;
+    --icon-size: "small";
   }
 
   body {
     font-size: 12px;
   }
 
-  ul{
+  ul {
     padding: 1em;
   }
 
-  .tag-align{
+  .tag-align {
     text-align: left;
-    }
+  }
 }
