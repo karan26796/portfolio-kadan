@@ -13,6 +13,12 @@
 	<link rel="stylesheet" href="containers.css">
 	<link rel="stylesheet" href="infinite-carousel.css">
 	<link rel="stylesheet" href="card-stack.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
 	<link rel="icon" type="image/x-icon" href="favicon.png">
 	<script src="actions.js"></script>
 	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
@@ -45,27 +51,28 @@
 <div class="root-container blog" style="gap:0px;justify-content:center;">
 
 	<!-- Done -->
-	<div class="nav-bar">
+	<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="nav-bar">
 		<a href="index.html">
-			<p class="nav">के.के.</p>
+		  <p class="nav">के.के.</p>
 		</a>
 		<div class="nav-options">
-			<a href="index.html">
-				<p class="nav">Home</p>
-			</a>
-			<a href="about.html">
-				<p class="nav">About</p>
-			</a>
-			<a href="images.html">
-				<p class="nav">Photos</p>
-			</a>
+		  <a href="index.html">
+			<p class="nav">Home</p>
+		  </a>
+		  <a href="about.html">
+			<p class="nav">About</p>
+		  </a>
+		  <a href="images.html">
+			<p class="nav">Photos</p>
+		  </a>
+		  <!-- <ion-icon name="moon" onclick="myFunction()"></ion-icon> -->
 		</div>
+	  </div>
+
+	<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="img-container"><img src="./about/profile.webp" class="img-blog">
 	</div>
 
-	<div class="img-container"><img src="./about/profile.webp" class="img-blog">
-	</div>
-
-	<div class="container-home padding-blog">
+	<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="container-home padding-blog">
 		<h3>Hello, it's me, Karan. I'm a digital product designer, code learner, electronics prototyper, amateur photo clicker, &  traveller.</h3>
 
 		<p>When I'm not saving the world with design, I watch standup comedy, travel the country, photograph landscapes, play lawn tennis, and learn to code. One at a time.
