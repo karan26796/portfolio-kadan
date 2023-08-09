@@ -27,6 +27,10 @@
   <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
 
   <style type="text/css">
+    html {
+      scroll-behavior: smooth;
+    }
+
     .k12 {
       display: block;
     }
@@ -183,7 +187,7 @@
     <!--------------------------------------- projects - done ----------------------------------------->
     <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="container-home">
 
-      <div class="container-title">
+      <div id="#top" class="container-title">
         <h2>Projects</h2>
       </div>
 
@@ -215,7 +219,7 @@
             </div>
           </div>
         </a>
-        
+
 
         <a class="long" href="./projects/binge-behavior.html">
           <div data-aos="fade-up" data-aos-offset="50" data-aos-delay="100" data-aos-duration="500" class="project">
@@ -434,7 +438,7 @@
     </div>
 
     <div class="nav-bar bottom">
-      <a class="go-to-top" href="#top">Back to top</a>
+      <a class="go-to-top" onclick="scrollToTop()">Back to top</a>
       <div class="nav-options">
         <a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
         <a href="https://linkedin.com/in/karankapoorux" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
