@@ -6,7 +6,8 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
 	<link rel="stylesheet" href="../styles.css">
@@ -16,196 +17,218 @@
 	<script src="../actions.js"></script>
 	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 	<style type="text/css">
-
-		.grid{
-			border:2px solid var(--border-color); 
+		.grid {
+			border: 2px solid var(--border-color);
 			border-width: 0 2px
 		}
 
-		.container-title{
-			border:solid var(--border-color);
+		.container-title {
+			border: solid var(--border-color);
 			border-width: 0 2px 2px 2px
 		}
 
 		@media only screen and (max-width: 478px) {
 
-			.grid, .container-title {
+			.grid,
+			.container-title {
 				border: solid var(--border-color);
 				border-width: 2px 0;
 			}
 		}
-
 	</style>
 </head>
 
-<div class="root-container blog" style="gap:0px;justify-content:center;">
+<body>
+	<div class="root-container blog" style="gap:0px;justify-content:center;">
 
-	<!-- Done -->
-	<div class="nav-bar">
-		<a href="../index.html">
-			<p class="nav">के.के.</p>
-		</a>
-		<div class="nav-options">
+		<!-- Done -->
+		<div class="nav-bar">
 			<a href="../index.html">
-				<p class="nav">Home</p>
+				<p class="nav">के.के.</p>
 			</a>
-			<a href="../about.html">
-				<p class="nav">About</p>
-			</a>
-			<a href="../images.html">
-				<p class="nav">Photos</p>
-			</a>
-		</div>
-	</div>
-
-	<div class="container-home padding-blog" style="align-items: center; margin-bottom: -2px;">
-		<h1 style="max-width:20ch; text-align: center;">Finding new ways to organize user research data</h1>
-		<p class="p-tag blog">
-		DESIGN, RESEARCH, USABILITY TESTING</p>
-	</div>
-
-	<div class="img-container"><img src="./loop-research/thumb.jpg" class="img-blog"></div>
-
-	<div class="container-home padding-blog" style="margin:0px; background: var(--accent-color);">
-
-		<h4 style="margin-top:0"> Quick Summary </h4>
-
-		<p>One of my biggest projects at Looppanel was to figure out a way to organize research data across calls which
-			would make the life of a UX researcher easier.<br><br>
-
-			Through research, we realized people constantly converge and diverge at every step to synthesize the data.
-			To replicate this mental model, we prototyped and tested a few variations with the people so they could get
-		to insights faster.</p>
-	</div>
-
-	<div class="container-home padding-blog" style="align-items: left; margin: -2px 0 0 0;">
-		<h3> Context </h3>
-		<p>In our conversations with researchers across the industry, we found that organizing and analysing research
-			data is one of their biggest pain points. All of them mentioned the need to be able to get to insights
-			faster. Since all of them had a different way of working and gathering this data, we wanted to create a way
-		for them to use the tool as they deem fit.</p>
-	</div>
-
-	<div class="img-container"><img src="./loop-research/1.webp" class="img-blog"></div>
-	<div class="img-container"><img src="./loop-research/2.webp" class="img-blog"></div>
-
-	<div class="container-home padding-blog" style="align-items: left; margin: -2px 0 0 0;">
-		<h3>To make getting to insights faster, we introduced a question script across the product for easier segmentation of data which could lead to faster analysis and insights.</h3>
-
-		<p>We put a lot of thought into the question script interface, from the script creation, to viewing call data, all up to the point of analysis. The interface is flexible and easy to use so that people can use it in their research process.</p>
-	</div>
-
-	<div class="img-container"><img src="./loop-research/3.webp" class="img-blog"></div>
-	<div class="img-container"><img src="./loop-research/4.webp" class="img-blog"></div>
-
-	<div class="container-home padding-blog" style="margin: -2px 0 0 0;">
-		<h3>Updates to the home screen</h3>
-
-		<ol>
-			<li><span>Updated horizontal nav bar</span> - As a information architechture rehaul exercise we made the nav bar at top
-			to reflect the file structure.</li>
-			<li><span>Recent Calls </span> - Quick way to get into the last call and start the workflow.</li>
-			<li><span>Link paste to start a call</span> - Easy way to invite the looppanel note taker into the zoom call.</li>
-			<li><span>Folders/Projects</span> - All the calls would be put into projects so it's easier to attach them to a
-			discussion guide/question script.</li>
-		</ol>
-
-		<h3>The home page was redesigned to make it look like a file explorer & have touchpoints to get into the
-		workflow quickly.</h3>
-
-	</div>
-
-
-	<div class="img-container"><img src="./loop-research/6.webp" class="img-blog"></div>
-	<div class="img-container"><img src="./loop-research/6.webp" class="img-blog"></div>
-
-	<div class="container-home padding-blog" style="align-items: left; margin: -2px 0 0 0;">
-		<h4>Updates to the note taking screen</h4>
-		<ol>
-			<li>Option to invite collaborators - We made the note taking screen a collaborative space where more than 1
-			person(s) can take notes simultaneously.</li>
-			<li>Question script - Space to take notes directly within the question.</li>
-			<li>Space for new note - Pressing enter creates a new space to type a new note.</li>
-		</ol>
-		<h3>The additions to the note taking screen were made in accordance with the research data from conversations
-		with people and the direction company wanted to take w.r.t the question script.</h3>
-	</div>
-	<div class="img-container"><img src="./loop-research/7.webp" class="img-blog"></div>
-	<div class="img-container"><img src="./loop-research/8.webp" class="img-blog"></div>
-
-	<div class="container-home padding-blog" style="align-items: left; margin: -2px 0 0 0;">
-
-		<h3>Updates to the call screen</h3>
-		<ol>
-			<li>CTA to Analysis page - Easier way to jump to the analysis page to see data across calls for the same
-			question script</li>
-			<li>Question script - Notes taken under specific questions in accordance with the question script used
-			during note taking.</li>
-			<li>Call notes with tags and other options - New view in which a summary can be added on top of the note
-				taken during user interview. Other options show that the note can be converted to a video clip* or
-			tagged.</li>
-			<li>Overall uniform view - Cleaner view to add tags, see the time stamp etc.</li>
-		</ol>
-		<h3>Earlier, every note had to be attached to a video clip. But through our research we realized people don't
-		always want a video clip. Also, they wanted to see a concise version of the notes in their own words.</h3>
-	</div>
-	<div class="img-container"><img src="./loop-research/9.webp" class="img-blog"></div>
-	<div class="img-container"><img src="./loop-research/10.webp" class="img-blog"></div>
-
-	<div class="container-home padding-blog" style="align-items: left; margin: -2px 0 0 0;">
-
-		<h3>Updates to the Analysis Screen</h3>
-		<ol>
-			<li>Questions from the script - Concise version of the question script within a project with all call data.
-			</li>
-			<li>Individual call notes in a questions</li>
-			<li>Project Summary</li>
-			<li>Individual call data</li>
-		</ol>
-		<h3>In this screen we tried to create a view in which data across calls can be viewed easily and tagged.</h3>
-
-		<p>The project took 3 months to execute and plan. If you want to know more, reach out on Twitter or
-		karan26796@gmail.com.</p>
-
-	</div>
-
-	<div class="container-title">
-		<h3>Related Projects</h3>
-	</div>
-
-	<div class="grid">
-		
-		<div class="project">
-			<a href="./staging-project.html">
-				<img class="project-img" src="./staging-project/thumb.jpg">
-				<div>
-					<p class="p-tag" style="margin-bottom:4px">STAGING, COMMENTARY, EXPERIENTIAL DESIGN , DESIGN INSTALLATION
-					</p>
-					<h3>Hidden in plain sight - a commentary on social media surveillance</h3>
-				</div>
-			</a>
+			<div class="nav-options">
+				<a href="../index.html">
+					<p class="nav">Home</p>
+				</a>
+				<a href="../about.html">
+					<p class="nav">About</p>
+				</a>
+				<a href="../images.html">
+					<p class="nav">Photos</p>
+				</a>
+			</div>
 		</div>
 
-		<div class="project">
-			<a href="./kurakaani.html">
-				<img class="project-img" src="./images-kurakaani/kurakani-thumb.webp">
-				<div>
-					<p class="p-tag" style="margin-bottom:4px">DESIGN SYSTEM, COMPONENT LIBRARY</p>
-					<h3>How I used Atomic Design principles to redesign Nepal's Superapp</h3>
-				</div>
-			</a>
+		<div class="container-home padding-blog" style="align-items: center; margin-bottom: -2px;">
+			<h1 style="max-width:20ch; text-align: center;">Finding new ways to organize user research data</h1>
+			<p class="p-tag blog">
+				DESIGN, RESEARCH, USABILITY TESTING</p>
 		</div>
-	</div>
 
-	<div class="nav-bar bottom">
-		<a class="go-to-top" href="#top">Back to top</a>
-		<div class="nav-options">
-			<a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size) name="logo-instagram"></ion-icon></a>
-			<a href="https://linkedin.com/in/karankapoorux" target="_blank"><ion-icon size=var(--icon-size) name="logo-linkedin"></ion-icon></a>
-			<a href="https://twitter.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size) name="logo-twitter"></ion-icon></a>
+		<div class="img-container"><img src="./loop-research/thumb.jpg" class="img-blog"></div>
+
+		<div class="container-home padding-blog" style="margin:0px; background: var(--accent-color);">
+
+			<h4 style="margin-top:0"> Quick Summary </h4>
+
+			<p>One of my biggest projects at Looppanel was to figure out a way to organize research data across calls
+				which
+				would make the life of a UX researcher easier.<br><br>
+
+				Through research, we realized people constantly converge and diverge at every step to synthesize the
+				data.
+				To replicate this mental model, we prototyped and tested a few variations with the people so they could
+				get
+				to insights faster.</p>
 		</div>
-	</div>
 
-</div>
+		<div class="container-home padding-blog" style="align-items: left; margin: -2px 0 0 0;">
+			<h3> Context </h3>
+			<p>In our conversations with researchers across the industry, we found that organizing and analysing
+				research
+				data is one of their biggest pain points. All of them mentioned the need to be able to get to insights
+				faster. Since all of them had a different way of working and gathering this data, we wanted to create a
+				way
+				for them to use the tool as they deem fit.</p>
+		</div>
+
+		<div class="img-container"><img src="./loop-research/1.webp" class="img-blog"></div>
+		<div class="img-container"><img src="./loop-research/2.webp" class="img-blog"></div>
+
+		<div class="container-home padding-blog" style="align-items: left; margin: -2px 0 0 0;">
+			<h3>To make getting to insights faster, we introduced a question script across the product for easier
+				segmentation of data which could lead to faster analysis and insights.</h3>
+
+			<p>We put a lot of thought into the question script interface, from the script creation, to viewing call
+				data, all up to the point of analysis. The interface is flexible and easy to use so that people can use
+				it in their research process.</p>
+		</div>
+
+		<div class="img-container"><img src="./loop-research/3.webp" class="img-blog"></div>
+		<div class="img-container"><img src="./loop-research/4.webp" class="img-blog"></div>
+
+		<div class="container-home padding-blog" style="margin: -2px 0 0 0;">
+			<h3>Updates to the home screen</h3>
+
+			<ol>
+				<li><span>Updated horizontal nav bar</span> - As a information architechture rehaul exercise we made the
+					nav bar at top
+					to reflect the file structure.</li>
+				<li><span>Recent Calls </span> - Quick way to get into the last call and start the workflow.</li>
+				<li><span>Link paste to start a call</span> - Easy way to invite the looppanel note taker into the zoom
+					call.</li>
+				<li><span>Folders/Projects</span> - All the calls would be put into projects so it's easier to attach
+					them to a
+					discussion guide/question script.</li>
+			</ol>
+
+			<h3>The home page was redesigned to make it look like a file explorer & have touchpoints to get into the
+				workflow quickly.</h3>
+
+		</div>
+
+
+		<div class="img-container"><img src="./loop-research/6.webp" class="img-blog"></div>
+		<div class="img-container"><img src="./loop-research/6.webp" class="img-blog"></div>
+
+		<div class="container-home padding-blog" style="align-items: left; margin: -2px 0 0 0;">
+			<h4>Updates to the note taking screen</h4>
+			<ol>
+				<li>Option to invite collaborators - We made the note taking screen a collaborative space where more
+					than 1
+					person(s) can take notes simultaneously.</li>
+				<li>Question script - Space to take notes directly within the question.</li>
+				<li>Space for new note - Pressing enter creates a new space to type a new note.</li>
+			</ol>
+			<h3>The additions to the note taking screen were made in accordance with the research data from
+				conversations
+				with people and the direction company wanted to take w.r.t the question script.</h3>
+		</div>
+		<div class="img-container"><img src="./loop-research/7.webp" class="img-blog"></div>
+		<div class="img-container"><img src="./loop-research/8.webp" class="img-blog"></div>
+
+		<div class="container-home padding-blog" style="align-items: left; margin: -2px 0 0 0;">
+
+			<h3>Updates to the call screen</h3>
+			<ol>
+				<li>CTA to Analysis page - Easier way to jump to the analysis page to see data across calls for the same
+					question script</li>
+				<li>Question script - Notes taken under specific questions in accordance with the question script used
+					during note taking.</li>
+				<li>Call notes with tags and other options - New view in which a summary can be added on top of the note
+					taken during user interview. Other options show that the note can be converted to a video clip* or
+					tagged.</li>
+				<li>Overall uniform view - Cleaner view to add tags, see the time stamp etc.</li>
+			</ol>
+			<h3>Earlier, every note had to be attached to a video clip. But through our research we realized people
+				don't
+				always want a video clip. Also, they wanted to see a concise version of the notes in their own words.
+			</h3>
+		</div>
+		<div class="img-container"><img src="./loop-research/9.webp" class="img-blog"></div>
+		<div class="img-container"><img src="./loop-research/10.webp" class="img-blog"></div>
+
+		<div class="container-home padding-blog" style="align-items: left; margin: -2px 0 0 0;">
+
+			<h3>Updates to the Analysis Screen</h3>
+			<ol>
+				<li>Questions from the script - Concise version of the question script within a project with all call
+					data.
+				</li>
+				<li>Individual call notes in a questions</li>
+				<li>Project Summary</li>
+				<li>Individual call data</li>
+			</ol>
+			<h3>In this screen we tried to create a view in which data across calls can be viewed easily and tagged.
+			</h3>
+
+			<p>The project took 3 months to execute and plan. If you want to know more, reach out on Twitter or
+				karan26796@gmail.com.</p>
+
+		</div>
+
+		<div class="container-title">
+			<h3>Related Projects</h3>
+		</div>
+
+		<div class="grid">
+
+			<div class="project">
+				<a href="./staging-project.html">
+					<img class="project-img" src="./staging-project/thumb.jpg">
+					<div>
+						<p class="p-tag" style="margin-bottom:4px">STAGING, COMMENTARY, EXPERIENTIAL DESIGN , DESIGN
+							INSTALLATION
+						</p>
+						<h3>Hidden in plain sight - a commentary on social media surveillance</h3>
+					</div>
+				</a>
+			</div>
+
+			<div class="project">
+				<a href="./kurakaani.html">
+					<img class="project-img" src="./images-kurakaani/kurakani-thumb.webp">
+					<div>
+						<p class="p-tag" style="margin-bottom:4px">DESIGN SYSTEM, COMPONENT LIBRARY</p>
+						<h3>How I used Atomic Design principles to redesign Nepal's Superapp</h3>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="nav-bar bottom">
+			<a class="go-to-top" href="#top">Back to top</a>
+			<div class="nav-options">
+				<a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size)
+						name="logo-instagram"></ion-icon></a>
+				<a href="https://linkedin.com/in/karankapoorux" target="_blank"><ion-icon size=var(--icon-size)
+						name="logo-linkedin"></ion-icon></a>
+				<a href="https://twitter.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size)
+						name="logo-twitter"></ion-icon></a>
+			</div>
+		</div>
+
+	</div>
+</body>
 
 </html>

@@ -1,4 +1,15 @@
 :root {
+  --padding-blog-horizontal: 3em;
+  --padding-blog-vertical: 4em;
+
+  --padding-home-horizontal: 2.5em;
+  --padding-nav: .5em;
+
+  --max-length: 75%;
+  --icon-size: "large";
+}
+
+body{
   --primary-color: #1b2026;
   --accent-color: #222b37;
   --grey-100: #fff;
@@ -10,16 +21,22 @@
   --grey-600: #0d0d0d;
   --border-color: #2f3640;
   --visited-link: #ffffff;
-  --higlight-color: #9DC9FF;
+  --highlight-color: #9DC9FF;
+}
 
-  --padding-blog-horizontal: 3em;
-  --padding-blog-vertical: 4em;
-
-  --padding-home-horizontal: 2.5em;
-  --padding-nav: .5em;
-
-  --max-length: 75%;
-  --icon-size: "large";
+.dark-mode{
+  --primary-color: #ffffff;
+  --accent-color: #ebebeb;
+  --grey-100: #181818;
+  --grey-200: #383838;
+  --grey-250: #535353;
+  --grey-300: #686868;
+  --grey-400: #9c9c9c;
+  --grey-500: #8b8b8b;
+  --grey-600: #b9b9b9;
+  --border-color: #ebeef1;
+  --visited-link: #ffffff;
+  --highlight-color: #2185ff;
 }
 
 ion-icon {
@@ -88,7 +105,7 @@ a:visited {
 
 h1 {
   color: var(--grey-100);
-  font-size: 3em;
+  font-size: 2.75em;
   margin: 0px;
   letter-spacing: -0.3px;
   line-height: 110%;
@@ -168,7 +185,7 @@ h5 {
 }
 
 .p-tag.blog {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-top: 1em;
   text-align: center;
   width: 35ch;

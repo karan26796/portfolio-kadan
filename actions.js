@@ -1,8 +1,8 @@
-const text = document.querySelector(".k12");
-const strText = text.textContent.length;
+// const text = document.querySelector(".k12");
+// const strText = text.textContent.length;
 
-console.log(strText);
-text.innerHTML = text.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// console.log(strText);
+// text.innerHTML = text.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 // anime.timeline({loop: false})
 //   .add({
@@ -30,7 +30,7 @@ text.innerHTML = text.textContent.replace(/\S/g, "<span class='letter'>$&</span>
 //   }
 
   
-  animation.seek(100);
+  // animation.seek(100);
 
 //   anime.timeline({loop: false})
 //   .add({
@@ -54,7 +54,27 @@ text.innerHTML = text.textContent.replace(/\S/g, "<span class='letter'>$&</span>
 //     easing: 'easeInOutSine'
 //   });
 
-function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
- }
+// let darkMode = localStorage.getItem("dark-mode");
+// var element = document.body;
+
+// const enableDarkMode = () => {
+//   localStorage.setItem("dark-mode", "enabled");
+//   element.classList.toggle("dark-mode");
+// };
+
+// const disableDarkMode = () => {
+//   localStorage.setItem("dark-mode", "disabled");
+// };
+
+// if (darkMode === "enabled") {
+//   enableDarkMode(); // set state of darkMode on page load
+// }
+
+// function myFunction() {
+//   darkMode = localStorage.getItem("dark-mode"); // update darkMode when clicked
+//   if (darkMode === "disabled") {
+//     enableDarkMode();
+//   } else {
+//     disableDarkMode();
+//   }
+// }
