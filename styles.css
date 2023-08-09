@@ -161,7 +161,7 @@ h4 {
   margin: 2em 0 .5em 0;
   text-transform: uppercase;
   font-family: "JetBrains Mono", sans-serif;
-  color: var(--higlight-color);
+  color: var(--highlight-color);
 }
 
 h5 {
