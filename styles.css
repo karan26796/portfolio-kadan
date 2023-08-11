@@ -3,6 +3,7 @@
   --padding-blog-vertical: 4em;
 
   --padding-home-horizontal: 2.5em;
+  --padding-home-vertical: 4em;
   --padding-nav: .5em;
 
   --max-length: 75%;
@@ -73,7 +74,7 @@ blockquote {
 }
 
 .padding-home {
-  padding: var(--padding-blog-vertical) var(--padding-home-horizontal);
+  padding: var(--padding-home-vertical) var(--padding-home-horizontal);
 }
 
 .summary {
@@ -237,6 +238,7 @@ blockquote {
     --padding-blog-horizontal: 3em;
     --padding-blog-vertical: 4em;
 
+    --padding-home-vertical: 4em;
     --padding-home-horizontal: 3em;
     --padding-nav: 1em;
   }
@@ -251,6 +253,7 @@ blockquote {
     --padding-blog-horizontal: 4em;
     --padding-blog-vertical: 2.5em;
 
+    --padding-home-vertical: 2.5em;
     --padding-home-horizontal: 1.5em;
     --padding-nav: .5em;
 
@@ -268,6 +271,7 @@ blockquote {
     --padding-blog-vertical: 2em;
 
     --padding-home-horizontal: 2.5em;
+    --padding-home-vertical: 2em;
     --padding-nav: .5em;
 
     --max-length: 100%;
@@ -292,6 +296,7 @@ blockquote {
     --padding-blog-horizontal: 2em;
     --padding-blog-vertical: 5em;
 
+    --padding-home-vertical: 6em;
     --padding-home-horizontal: 2em;
     --padding-nav: .5em;
 
