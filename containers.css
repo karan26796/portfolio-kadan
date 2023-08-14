@@ -10,7 +10,7 @@
   --grid-logos: 3;
   --logo-size: 160px;
 
-  --project-img-main: 550px;
+  --project-img-main: 500px;
   --project-img: 300px;
 }
 
@@ -239,7 +239,7 @@ background: var(--border-color);
 }
 
 .item-logo {
-  padding: 1.5em;
+  padding: .8em;
   align-items: center;
   background: var(--primary-color);
   text-align: center;
@@ -368,8 +368,8 @@ button {
     --grid-projects: 1;
     --grid-logos: 2;
 
-    --project-img: 220px;
-    --project-img-main: 220px;
+    --project-img: 180px;
+    --project-img-main: 180px;
   }
 
   body {
@@ -409,7 +409,6 @@ button {
     min-width: 60%;
     max-width: 100%;
     width: 100%;
-    height: 250px;
   }
 
   .img-container {

@@ -168,12 +168,12 @@ h4 {
 h5 {
   color: var(--grey-100);
   line-height: 150%;
-  font-size: 1.2em;
+  font-size: .95em;
   margin: 0px;
 }
 
 .p-tag {
-  font-size: .92em;
+/*  font-size: .92em;*/
   font-family: "JetBrains Mono", sans-serif;
   color: var(--grey-400);
   margin: 0px;
