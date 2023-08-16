@@ -174,7 +174,7 @@ h5 {
 }
 
 .p-tag {
-/*  font-size: .92em;*/
+ font-size: .92rem;
   font-family: "JetBrains Mono", sans-serif;
   color: var(--grey-400);
   margin: 0px;
@@ -202,6 +202,13 @@ p {
   margin-bottom: 4px;
   font-weight: 400;
 }
+
+p span{
+      font-size: 1.8rem;
+      font-family: "JetBrains Mono", sans-serif;
+      line-height: 125%;
+      letter-spacing: -1.5px;
+    }
 
 ul,
 ol {

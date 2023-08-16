@@ -59,15 +59,15 @@ gap: .2em;
 }
 
 .img-container p{
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: "JetBrains Mono", sans-serif;
-  color: var(--grey-400);
+  color: var(--grey-300);
   margin: .50em 0 .75em 0;
   height: auto;
 }
 
 .img-blog {
-  width: auto;
+  width: -webkit-fill-available;
   min-width: var(--min-width);
   max-width: var(--max-width);
   text-align: center;
