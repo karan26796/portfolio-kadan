@@ -242,7 +242,7 @@ background: var(--border-color);
 }
 
 .item-logo {
-  padding: .8em;
+  padding: 1.5em;
   align-items: center;
   background: var(--primary-color);
   text-align: center;
