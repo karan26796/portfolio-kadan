@@ -84,6 +84,19 @@ gap: .2em;
     margin-top: 64px;
   }*/
 
+  .card {
+    display: flex;
+    flex-direction:column;
+    gap:2em;
+    background-color: var(--primary-color);
+    padding: 2em;
+    margin: 0px;
+    gap:.2em;
+    border: solid var(--border-color);
+    border-width: 0 2px 0 2px;
+    margin: 0 -2px 0 -2px;
+   }
+
   .nav-bar {
     display: flex;
     flex-direction: row;
