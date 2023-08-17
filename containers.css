@@ -27,6 +27,10 @@ body {
   color: var(--grey-100);
 }
 
+.long{
+  grid-column: span 2;
+ }
+
 .small-div{
   height: 2px;
   background: var(--border-color);
@@ -323,6 +327,10 @@ button {
       --project-img: 250px;
       --project-img-main: 300px;
     }
+
+    .long{
+      grid-column: span 1;
+     }
 
     .grid {
       grid-template-columns: 1fr;
