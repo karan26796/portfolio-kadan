@@ -8,7 +8,7 @@
 
   --grid-projects: 2;
   --grid-logos: 3;
-  --logo-size: 160px;
+  --logo-size: 125px;
 
   --project-img-main: 550px;
   --project-img: 300px;
@@ -249,7 +249,7 @@ background: var(--border-color);
 .grid-logos {
   display: grid;
   column-count: var(--grid-logos);
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 2px;
   column-gap: 2px;
   border-width: 0px;
@@ -259,8 +259,10 @@ background: var(--border-color);
 }
 
 .item-logo {
-  padding: 1.5em;
+  display: flex;
+  padding: 1em;
   align-items: center;
+  justify-content: center;
   background: var(--primary-color);
   text-align: center;
 }
@@ -332,10 +334,10 @@ button {
       /*--padding-40: 32px;
       --padding-12: 16px;*/
 
-      --logo-size: 120px;
+      --logo-size: 80px;
 
       --grid-projects: 1;
-      --grid-logos: 2;
+      --grid-logos: 3;
 
       --project-img: 250px;
       --project-img-main: 300px;
@@ -387,10 +389,10 @@ button {
     --padding-40: 2em;
     --padding-12: 1em;
 
-    --logo-size: 110px;
+    --logo-size: 80px;
 
     --grid-projects: 1;
-    --grid-logos: 2;
+    --grid-logos: 3;
 
     --project-img: 220px;
     --project-img-main: 220px;
@@ -406,7 +408,7 @@ button {
   }
 
   .grid-logos {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .arrow {
