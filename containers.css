@@ -86,15 +86,19 @@ gap: .2em;
 
   .card {
     display: flex;
-    flex-direction:column;
-    gap:2em;
+    flex-direction:row;
     background-color: var(--primary-color);
     padding: 2em;
     margin: 0px;
-    gap:.2em;
+    gap:1em;
     border: solid var(--border-color);
     border-width: 0 2px 0 2px;
     margin: 0 -2px 0 -2px;
+   }
+
+   .card-text {
+    display: flex;
+    flex-direction:column;
    }
 
   .nav-bar {
