@@ -1,0 +1,256 @@
+<html>
+
+<head>
+	<title>About Me</title>
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="containers.css">
+	<link rel="stylesheet" href="infinite-carousel.css">
+	<link rel="stylesheet" href="card-stack.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+	<style type="text/css">
+		#table {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 1.5em;
+			margin-top: -2px;
+		}
+
+		#column {
+			display: flex;
+			flex-direction: column;
+			gap: .3em;
+		}
+
+		.flex {
+			display: flex;
+			flex-direction: row;
+			border: solid var(--border-color);
+			border-width: 0 2px 2px 2px;
+		}
+
+		.reverse {
+			flex-direction: row-reverse;
+		}
+
+		.item-text {
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+			gap: 0.5em;
+			align-items: flex-start;
+			justify-content: center;
+			padding: 0 1.5em;
+		}
+
+		.item-img {
+			width: 50%;
+			object-fit: cover;
+			aspect-ratio: 1/1;
+			height: auto;
+		}
+
+		p{
+			max-width: none;
+		}
+
+		h3{
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+
+		h2{
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+
+		@media only screen and (max-width: 478px) {
+			#table {
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+			}
+
+			.flex {
+				flex-direction: column;
+				border-width: 0 2px;
+			}
+
+			.item-text {
+				width: 100%;
+			}
+
+			.item-img {
+				width: 100%;
+			}
+		}
+
+		@media only screen and (max-width: 776px) {
+			#table {
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+			}
+
+			.reverse {
+				flex-direction: column;
+			}
+
+			.item-text {
+				width: 100%;
+			}
+
+			.item-img {
+				width: 100%;
+			}
+		}
+	</style>
+
+	<script type="text/javascript">
+		(function (c, l, a, r, i, t, y) {
+			c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+			t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+			y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+		})(window, document, "clarity", "script", "icz6p1ntmg");
+	</script>
+
+
+	<script async src="https://analytics.umami.is/script.js"
+		data-website-id="be1cb1ad-62fd-4845-9093-8bc90c705477"></script>
+</head>
+
+<body>
+
+	<div class="root-container">
+
+		<!-- Done -->
+		<div class="nav-bar">
+			<a href="index.html">
+				<p class="nav">के.के.</p>
+			</a>
+			<div class="nav-options">
+				<a href="index.html">
+					<p class="nav">Home</p>
+				</a>
+				<a href="about.html">
+					<p class="nav">About Me</p>
+				</a>
+				<a href="images.html">
+					<p class="nav">Photos</p>
+				</a>
+				<!-- <ion-icon name="moon" onclick="myFunction()"></ion-icon> -->
+			</div>
+		</div>
+
+		<div class="flex">
+			<img src="./about/pic.webp" class="item-img">
+			<div class="item-text">
+				<h3>Hello, it's me, Karan. I'm a digital product designer, code learner, electronics prototyper, amateur
+					photo clicker, & traveller.</h3>
+			</div>
+		</div>
+
+		<div class="flex reverse">
+			<img src="./about/andux.webp" class="item-img">
+			<div class="item-text">
+				<h3>Android Dev to UX Design</h3>
+				<p>I started learning Android Dev in college, worked as an Android dev for ~6 months and then switched to UX Design.</p>
+			</div>
+		</div>
+
+		<div class="flex">
+			<img src="./about/fig.webp" class="item-img">
+			<div class="item-text">
+				<h3>Figma Workshops and Training</h3>
+				<p>I started doing workshops online for my love of Figma and then suddenly it turned into something I hadn't expected</p>
+			</div>
+		</div>
+
+		<div class="flex reverse">
+			<img src="./about/uxm.webp" class="item-img">
+			<div class="item-text">
+				<h3>UX Design to Master's at NID</h3>
+				<p>Just when I thought I had it all figured out, I got into a master's program at NID. Well, it took 4 attempts </p>
+			</div>
+		</div>
+
+		<div class="flex">
+			<img src="./about/int.webp" class="item-img">
+			<div class="item-text">
+				<h3>Android Dev to UX Design</h3>
+				<p>When I'm not saving the world with design, I watch standup comedy, travel the country, photograph
+					landscapes, play lawn tennis, and learn to code. One at a time.
+
+					I started off as an Android Developer but soon moved to UX Design. Since then I've had a lot of fun
+					designing digital products for studios & product companies.</p>
+			</div>
+		</div>
+
+		<div class="container-home padding-blog" id="table">
+
+			<div id="column">
+				<h4 style="margin-top:0">Clients & Collaborators</h4>
+				<p>Obvious</p>
+				<p>FrontRow</p>
+				<p>Looppanel</p>
+				<p>IIM-Ahmedabad</p>
+				<p>IIT-Madras</p>
+				<p>Indiana University</p>
+				<p>Zuddl</p>
+				<p>Qoohoo</p>
+				<p>Pixis</p>
+				<p>VectorEdge</p>
+				<p>Media.net</p>
+			</div>
+
+
+			<div id="column">
+				<h4 style="margin-top:0">Expertise in</h4>
+				<p>Digital Product Design</p>
+				<p>Design Systems</p>
+				<p>Figma Training</p>
+				<p>Design Consultancy</p>
+				<p>Webflow</p>
+				<p>Landscape Photography</p>
+				<p>Risky Car Driving</p>
+			</div>
+
+
+			<div id="column">
+				<h4 style="margin-top:0">Still learning</h4>
+				<p>Blender</p>
+				<p>Unity</p>
+				<p>React.js</p>
+				<p>Sketching</p>
+			</div>
+
+
+		</div>
+
+		<div class="nav-bar bottom">
+			<a class="go-to-top" href="#top">Back to top</a>
+			<div class="nav-options">
+				<a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size)
+						name="logo-instagram"></ion-icon></a>
+				<a href="https://linkedin.com/in/karankapoorux" target="_blank"><ion-icon size=var(--icon-size)
+						name="logo-linkedin"></ion-icon></a>
+				<a href="https://twitter.com/kadankapoor" target="_blank"><ion-icon size=var(--icon-size)
+						name="logo-twitter"></ion-icon></a>
+			</div>
+		</div>
+
+	</div>
+	<script src="actions.js"></script>
+</body>
+
+</html>
