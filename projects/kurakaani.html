@@ -16,11 +16,29 @@
   <link rel="icon" type="image/x-icon" href="../favicon.png">
   <script src="../actions.js"></script>
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-  <style>
-    .project .p-tag {
-      font-size: 1em;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <style type="text/css">
+		.container-title {
+			grid-column: span 2;
+			background-color: var(--primary-color);
+			border: 0px;
+		}
+
+		.project-rel h3 {
+			font-size: 1.5em;
+			margin: 0;
+		}
+
+		.project-rel .p-tag {
+			font-size: 1em;
+		}
+
+		@media only screen and (max-width: 776px) {
+			.container-title {
+				grid-column: span 1;
+			}
+		}
+	</style>
 
   <script type="text/javascript">
     (function (c, l, a, r, i, t, y) {
@@ -41,10 +59,10 @@
     <!-- Done -->
     <div class="nav-bar">
       <a href="../index.html">
-        <p class="nav">&larr; Back To Home</p>
+        <p class="nav"><i class="ri-arrow-left-line"></i> Back To Home</p>
       </a>
       <a href="loop-research.html">
-				<p class="nav">Next Project &rarr;</p>
+				<p class="nav">Next Project <i class="ri-arrow-right-line"></i></p>
 			</a>
     </div>
 
@@ -55,7 +73,7 @@
     </div>
 
 
-    <div class="img-container"><img src="./images-kurakaani/kurakani-thumb.webp" class="img-blog"></div>
+    <div class="img-container"><img src="./images-kurakaani/thumb.gif" class="img-blog"></div>
 
     <!-- Quick Summary -->
     <div class="container-home padding-blog" style="background-color:var(--accent-color); margin: -2px 0px -2px 0px">
@@ -176,34 +194,30 @@
       </ul>
     </div>
 
-    <div class="container-title" style="border: solid var(--border-color); border-width: 0 2px 2px 2px;">
-      <h3>Related Projects</h3>
-    </div>
 
-    <div class="grid" style="border:2px solid var(--border-color); border-width: 0 2px">
+    <div class="grid-rel">
 
-      <div class="project">
-        <a href="./binge-behavior.html">
-          <img class="project-img" src="./binge-eating/thumb.jpg">
-          <div>
-            <p class="p-tag" style="margin-bottom:4px">MASTERS PROJECT - RESEARCH - PSYCHOLOGY</p>
-            <h3>Dealing with binge behaviour through mindfulness</h3>
-          </div>
-        </a>
-      </div>
+			<div class="container-title">
+				<h3>Related Projects</h3>
+			</div>
 
+			<a href="./binge-behavior.html" style="text-decoration: none;">
+				<img class="project-img" src="./binge-eating/binge.gif">
+				<div class="project-rel">
+					<p class="p-tag" style="margin-bottom:4px">PRODUCT DESIGN - USABILITY TESTING</p>
+					<h3>Looppanel : Creating a Zoom note-taking sidekick for user researchers</h3>
+				</div>
+			</a>
 
-      <div class="project">
-        <a href="./loop-note.html">
-          <img class="project-img" src="./images-loop-note/thumb.webp">
-          <div>
-            <p class="p-tag" style="margin-bottom:4px">DESIGN - RESEARCH - USABILITY TESTING</p>
-            <h3>Improving note-taking experience for user research calls on Zoom with Looppanel</h3>
-          </div>
-        </a>
-      </div>
+      <a href="./loop-research.html" style="text-decoration: none;">
+				<img class="project-img" src="./loop-research/loop-research.gif">
+				<div class="project-rel">
+					<p class="p-tag" style="margin-bottom:4px">DESIGN SYSTEM - COMPONENT LIBRARY</p>
+					<h3>Redesigning Nepal's Superapp by creating a design system</h3>
+				</div>
+			</a>
 
-    </div>
+		</div>
 
     <div class="nav-bar bottom">
     <a class="go-to-top" href="#top">Back to top<i class="ri-arrow-up-line"></i></a>

@@ -217,7 +217,7 @@ ol {
 }
 
 li {
-  font-size: 1.4rem;
+  font-size: 1.4em;
   text-align: left;
   line-height: 140%;
   color: var(--grey-200);

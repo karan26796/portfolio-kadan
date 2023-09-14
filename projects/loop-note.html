@@ -15,27 +15,26 @@
 	<link rel="icon" type="image/x-icon" href="../favicon.png">
 	<script src="../actions.js"></script>
 	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 	<style type="text/css">
-		.grid {
-			border: 2px solid var(--border-color);
-			border-width: 0 2px
-		}
-
 		.container-title {
-			border: solid var(--border-color);
-			border-width: 0 2px 2px 2px
+			grid-column: span 2;
+			background-color: var(--primary-color);
+			border: 0px;
 		}
 
-		.project .p-tag {
+		.project-rel h3 {
+			font-size: 1.5em;
+			margin: 0;
+		}
+
+		.project-rel .p-tag {
 			font-size: 1em;
 		}
 
-		@media only screen and (max-width: 478px) {
-
-			.grid,
+		@media only screen and (max-width: 776px) {
 			.container-title {
-				border: solid var(--border-color);
-				border-width: 2px 0;
+				grid-column: span 1;
 			}
 		}
 	</style>
@@ -59,10 +58,10 @@
 		<!-- Done -->
 		<div class="nav-bar">
 			<a href="../index.html">
-				<p class="nav">&larr; Back To Home</p>
+				<p class="nav"><i class="ri-arrow-left-line"></i> Back To Home</p>
 			</a>
 			<a href="kurakaani.html">
-				<p class="nav">Next Project &rarr;</p>
+				<p class="nav">Next Project <i class="ri-arrow-right-line"></i></p>
 			</a>
 		</div>
 
@@ -71,7 +70,7 @@
 			<p class="p-tag blog">UX DESIGN - UX RESEARCH - USABILITY TESTING</p>
 		</div>
 
-		<div class="img-container"><img src="./images-loop-note/thumb.webp" class="img-blog">
+		<div class="img-container"><img src="./images-loop-note/loop-note.gif" class="img-blog">
 		</div>
 
 		<!-- <div class="small-div"></div> -->
@@ -225,36 +224,27 @@
 
 		</div>
 
+		<div class="grid-rel">
 
-		<div class="container-title" style="border:2px solid var(--border-color); border-width:2px">
-			<h3>Related Projects</h3>
-		</div>
-
-		<div class="grid" style="border:2px solid var(--border-color); border-width: 0 2px">
-
-			<div class="project">
-				<a href="./loop-research.html">
-					<img class="project-img" src="./loop-research/thumb.webp">
-					<div>
-						<p class="p-tag" style="margin-bottom:4px">UX RESEARCH - UX DESIGN
-						</p>
-						<h3>Finding new ways to organize research data</h3>
-					</div>
-				</a>
+			<div class="container-title">
+				<h3>Related Projects</h3>
 			</div>
 
+			<a href="./kurakaani.html" style="text-decoration: none;">
+				<img class="project-img" src="./images-kurakaani/thumb.gif">
+				<div class="project-rel">
+					<p class="p-tag" style="margin-bottom:4px">DESIGN SYSTEM - COMPONENT LIBRARY</p>
+					<h3>Redesigning Nepal's Superapp by creating a design system</h3>
+				</div>
+			</a>
 
-			<div class="project">
-				<a href="./staging-project.html">
-					<img class="project-img" src="./staging-project/thumb.jpg">
-					<div>
-						<p class="p-tag" style="margin-bottom:4px">EXPERIENTIAL DESIGN - INSTALLATION
-						</p>
-						<h3>Hidden in plain sight - a commentary on social media surveillance</h3>
-					</div>
-				</a>
-			</div>
-
+			<a href="./binge-behavior.html" style="text-decoration: none;">
+				<img class="project-img" src="./binge-eating/binge.gif">
+				<div class="project-rel">
+					<p class="p-tag" style="margin-bottom:4px">DESIGN - RESEARCH - PSYCHOLOGY</p>
+					<h3>AWACON: A mindful device for overcoming binge behavior and boredom</h3>
+				</div>
+			</a>
 		</div>
 
 		<div class="nav-bar bottom">

@@ -15,6 +15,7 @@
 	<link rel="icon" type="image/x-icon" href="../favicon.png">
 	<script src="../actions.js"></script>
 	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
 	<style type="text/css">
 		.ion-icons {
@@ -37,31 +38,24 @@
 			height: 100%;
 		}
 
-		h3 {
-			margin: .8em 0 .5em 0;
-		}
-
-		.grid {
-			border: 2px solid var(--border-color);
-			border-width: 0 2px
-		}
-
 		.container-title {
-			border: solid var(--border-color);
-			border-width: 0 2px 2px 2px
+			grid-column: span 2;
+			background-color: var(--primary-color);
+			border: 0px;
 		}
 
-		.project .p-tag {
+		.project-rel h3 {
+			font-size: 1.5em;
+			margin: 0;
+		}
+
+		.project-rel .p-tag {
 			font-size: 1em;
 		}
 
-
-		@media only screen and (max-width: 478px) {
-
-			.grid,
+		@media only screen and (max-width: 776px) {
 			.container-title {
-				border: solid var(--border-color);
-				border-width: 2px 0;
+				grid-column: span 1;
 			}
 		}
 	</style>
@@ -85,10 +79,10 @@
 		<!-- Done -->
 		<div class="nav-bar">
 			<a href="../index.html">
-				<p class="nav">&larr; Back To Home</p>
+				<p class="nav"><i class="ri-arrow-left-line"></i> Back To Home</p>
 			</a>
 			<a href="../experiments/color-wheel.html">
-				<p class="nav">Experiments &rarr;</p>
+				<p class="nav">Experiments <i class="ri-arrow-right-line"></i></p>
 			</a>
 		</div>
 
@@ -122,35 +116,28 @@
 		</p>
 	</div>
 
-	<div class="container-title">
-		<h3>Related Projects</h3>
-	</div>
+	<div class="grid-rel">
 
-	<div class="grid">
+			<div class="container-title">
+				<h3>Related Projects</h3>
+			</div>
 
-		<div class="project">
-			<a href="./kurakaani.html">
-				<img class="project-img" src="./images-kurakaani/kurakani-thumb.webp">
-				<div>
-					<p class="p-tag" style="margin-bottom:4px">DESIGN SYSTEM, COMPONENT LIBRARY</p>
-					<h3>How I used Atomic Design principles to redesign Nepal's Superapp</h3>
+			<a href="./loop-note.html" style="text-decoration: none;">
+				<img class="project-img" src="./images-loop-note/loop-note.gif">
+				<div class="project-rel">
+					<p class="p-tag" style="margin-bottom:4px">PRODUCT DESIGN - USABILITY TESTING</p>
+					<h3>Looppanel : Creating a Zoom note-taking sidekick for user researchers</h3>
+				</div>
+			</a>
+
+			<a href="./kurakaani.html" style="text-decoration: none;">
+				<img class="project-img" src="./images-kurakaani/thumb.gif">
+				<div class="project-rel">
+					<p class="p-tag" style="margin-bottom:4px">DESIGN SYSTEM - COMPONENT LIBRARY</p>
+					<h3>Redesigning Nepal's Superapp by creating a design system</h3>
 				</div>
 			</a>
 		</div>
-
-
-
-		<div class="project">
-			<a href="./binge-behavior.html">
-				<img class="project-img" src="./binge-eating/thumb.jpg">
-				<div>
-					<p class="p-tag" style="margin-bottom:4px">MASTERS PROJECT, RESEARCH, PSYCHOLOGY</p>
-					<h3>Dealing with binge behaviour through mindfulness</h3>
-				</div>
-			</a>
-		</div>
-
-	</div>
 
 
 	<div class="nav-bar bottom">
