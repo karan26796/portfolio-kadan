@@ -428,6 +428,7 @@ button {
   .grid-rel {
     grid-template-columns: repeat(1, 1fr);;
     column-count: var(--grid-projects);
+    border-width: 2px 0;
   }
 
   .grid {
