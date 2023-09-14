@@ -10,7 +10,7 @@
   --grid-logos: 3;
   --logo-size: 125px;
 
-  --project-img-main: 550px;
+  --project-img-main: 600px;
   --project-img: 300px;
 }
 
@@ -187,6 +187,7 @@ gap: .2em;
     padding: var(--padding-40) var(--padding-40);
     background: var(--primary-color);
     gap: 1em;
+    margin-top: -4px;
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -210,11 +211,9 @@ text-decoration: none;
 }
 
 .project-img {
-  border-radius: 16px;
   width: 100%;
   height: var(--project-img);
   object-fit: cover;
-  margin-bottom: 8px;
 }
 
 .project-img.main {
@@ -295,7 +294,7 @@ button {
       /*--padding-40: 2.5em;
       --padding-12: .75em;*/
 
-      --project-img-main: 400px;
+      --project-img-main: 500px;
       --project-img: 300px;
     }
 
@@ -400,7 +399,7 @@ button {
     --grid-logos: 3;
 
     --project-img: 220px;
-    --project-img-main: 220px;
+    --project-img-main: 250px;
   }
 
   body {
