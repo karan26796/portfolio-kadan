@@ -28,6 +28,63 @@ body {
   color: var(--grey-100);
 }
 
+input {
+  color: var(--grey-300);
+  font-size: 1.25em;
+  background-color: var(--primary-color);
+  padding: var(--padding-24);
+  --highlight-color: var(--border-color);
+  border: 2px solid var(--border-color);
+}
+
+input:focus {
+  color: var(--grey-100);
+  background-color: var(--accent-color);
+  border: 2px solid var(--border-color);
+}
+
+input::after {
+  color: var(--grey-100);
+  background-color: var(--accent-color);
+  border: 2px solid var(--border-color);
+}
+
+input::placeholder {
+  color: var(--grey-250);
+}
+
+textarea {
+  color: var(--grey-300);
+  font-size: 1.25em;
+  background-color: var(--primary-color);
+  padding: var(--padding-24);
+  --highlight-color: var(--border-color);
+  border: 2px solid var(--border-color);
+  grid-column: span 2;
+}
+
+textarea:focus {
+  color: var(--grey-100);
+  background-color: var(--accent-color);
+}
+
+textarea::placeholder {
+  color: var(--grey-250);
+}
+
+button {
+  padding: var(--padding-24);
+  font-size: 1.25em;
+  background-color: var(--accent-color);
+  color: white;
+  border: 2px solid var(--border-color);
+  grid-column: span 2;
+}
+
+button:hover {
+  background-color: var(--border-color);
+}
+
 .long {
   grid-column: span 2;
 }
@@ -204,7 +261,8 @@ body {
 
 .grid-rel {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);;
+  grid-template-columns: repeat(2, 1fr);
+  ;
   column-count: var(--grid-projects);
   border: 2px solid var(--border-color);
   gap: 2px;
@@ -219,7 +277,7 @@ body {
   background-color: var(--primary-color);
 }
 
-.project-rel:hover{
+.project-rel:hover {
   background-color: var(--accent-color);
 }
 
@@ -288,15 +346,6 @@ body {
 .clients-img {
   width: var(--logo-size);
   height: auto;
-}
-
-button {
-  padding: 20px;
-  background: transparent;
-  border: transparent;
-  color: var(--grey-100);
-  font-size: 1.5em;
-  padding: 1em 0;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -379,7 +428,8 @@ button {
   }
 
   .grid-rel {
-    grid-template-columns: repeat(1, 1fr);;
+    grid-template-columns: repeat(1, 1fr);
+    ;
     column-count: var(--grid-projects);
   }
 
@@ -426,7 +476,8 @@ button {
   }
 
   .grid-rel {
-    grid-template-columns: repeat(1, 1fr);;
+    grid-template-columns: repeat(1, 1fr);
+    ;
     column-count: var(--grid-projects);
     border-width: 2px 0;
   }
