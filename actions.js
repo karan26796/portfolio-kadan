@@ -83,3 +83,13 @@
 function scrollToTop() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
+async function myFunction(){
+  let response = await fetch("https://cloud.activepieces.com/api/v1/webhooks/7ckCHZ0dsehCNUI2lidF8/sync");
+  console.log(response);
+if (response.ok) { // if HTTP-status is 200-299
+  // get the response body (the method explained below)
+  // let json = await response.json();
+} else {
+  alert("HTTP-Error: " + response.status);
+}
+}
