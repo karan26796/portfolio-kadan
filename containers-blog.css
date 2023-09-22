@@ -1,0 +1,20 @@
+.grid-summary {
+  display: grid;
+  border: 2px solid var(--border-color);
+  column-count: var(--grid-projects);
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  justify-content: center;
+  background: var(--border-color);
+}
+
+.item-summary{
+  padding: var(--padding-40);
+  background: var(--accent-color);
+}
+
+@media only screen and (max-width: 776px) {
+  .grid-summary {
+    grid-template-columns: 1fr;
+  }
+}
