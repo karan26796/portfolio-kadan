@@ -226,7 +226,7 @@ button:hover {
   border: 2px solid var(--border-color);
   background: var(--primary-color);
   margin: -2px 0 -2px 0;
-  display: flex;w
+  display: flex;
   flex-direction: column;
   width: auto;
   min-width: var(--min-width);
