@@ -81,15 +81,45 @@
 
 // Scroll To Top
 function scrollToTop() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
-async function myFunction(){
-  let response = await fetch("https://cloud.activepieces.com/api/v1/webhooks/7ckCHZ0dsehCNUI2lidF8/sync");
-  console.log(response);
-if (response.ok) { // if HTTP-status is 200-299
-  // get the response body (the method explained below)
-  // let json = await response.json();
-} else {
-  alert("HTTP-Error: " + response.status);
+
+async function myFunction(e) {
+  e.preventDefault();
+  let data = {
+    Name: "wow what?",
+    Email: "test@gmail.com",
+    Message: "wow",
+  };
+
+  try {
+    let res = await fetch(
+      "https://cloud.activepieces.com/api/v1/webhooks/7ckCHZ0dsehCNUI2lidF8/sync",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    );
+    console.log(typeof res);
+    console.log(res);
+    responseData = res.json();
+    console.log(responseData);
+  } catch (err) {
+    console.log(typeof err);
+    console.log(err);
+  }
 }
-}
+
+let submitBtn = document.getElementById("submit");
+
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  myFunction(e);
+});
+submitBtn.addEventListener("submit", (e) => {
+  e.preventDefault();
+  myFunction(e);
+});
