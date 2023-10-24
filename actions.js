@@ -85,11 +85,14 @@ function scrollToTop() {
 }
 
 async function myFunction(e) {
+
+  let status;
+
   e.preventDefault();
   let data = {
-    Name: "wow what?",
-    Email: "test@gmail.com",
-    Message: "wow",
+    Name: document.getElementById("name").value, 
+    Email: document.getElementById("email").value,
+    Message: document.getElementById("message").value,
   };
 
   try {
@@ -107,9 +110,20 @@ async function myFunction(e) {
     console.log(res);
     responseData = res.json();
     console.log(responseData);
+    status=responseData.status;
+    console.log(status);
+
+    if(status==200 || 201){      
+    document.getElementById("success").style.display="block";
+    }
+    else{
+      document.getElementById("error").style.display="block";
+    }
+
   } catch (err) {
     console.log(typeof err);
     console.log(err);
+    document.getElementById("error").style.display="block";
   }
 }
 
