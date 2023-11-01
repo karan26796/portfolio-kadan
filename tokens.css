@@ -1,0 +1,21 @@
+*{
+    --spacing-xs:.2em;
+    --spacing-s:.4em;
+    --spacing-m:.6em;
+    --spacing-l:.8em;
+    --spacing-xl:.1em;
+    --spacing-xxl:2em;
+
+    --padding-xs: .2em;
+    --padding-m: .5em;
+    --padding-l: 1em;
+    --padding-xl: 2em;
+    --padding-xxl: 3em;
+    --padding-xxl: 4em;
+
+    --margin-s: 1em;
+    --margin-m: 2em;
+    --margin-m: 4em;
+    --margin-l: 6em;
+    --margin-xl: 8em;
+}
