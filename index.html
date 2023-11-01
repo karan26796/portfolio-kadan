@@ -118,16 +118,30 @@
       width: -webkit-fill-available;
     }
 
+    #phone{
+      grid-column: span 2;
+    }
+
     @media only screen and (max-width: 776px) {
       .proj-detail {
         flex-direction: column;
       }
+      #phone{
+      grid-column: span 2;
+    }
     }
 
     @media only screen and (max-width: 478px) {
       .proj-detail {
         flex-direction: column;
       }
+      #phone{
+      grid-column: span 2;
+    }
+    .form{
+      display: flex;
+      flex-direction: column;
+    }
     }
   </style>
 
@@ -516,12 +530,11 @@
         <h2 style="margin-bottom: 0.3em">Let's collaborate</h2>
       </div>
 
-      <form class="grid" style="background-color: transparent; padding: var(--padding-40); gap: 2em;">
+      <form class="grid form" style="background-color: transparent; padding: var(--padding-40); gap: 2em;">
         <input type="text" id="name" name="Name" placeholder="Your/Company Name*" required />
         <input type="email" id="email" name="Email" placeholder="Email*" required />
         <textarea id="message" name="Message" placeholder="Describe your project in a few lines*" required></textarea>
-        <input type="text" id="phone" name="Phone" style="grid-column: span 2;"
-          placeholder="Phone Number for quick turn around" />
+        <input type="text" id="phone" name="Phone" placeholder="Phone Number for quick turn around" />
         <button id="submit" type="submit">Send Request</button>
       </form>
       <div class="padding-home" style="padding-top: 0; padding-bottom: 0;">
@@ -564,7 +577,6 @@
   </div>
 
   <script src="actions.js"></script>
-  </script>
 </body>
 
 </html>
