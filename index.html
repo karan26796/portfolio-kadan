@@ -181,7 +181,7 @@
 
         <div class="actions">
           <a href="https://read.cv/karankapoorux" target="_blank">Resume <i class="ri-arrow-right-up-line"></i></a>
-          <a href="mailto: karan26796@gmail.com" target="_blank">Inquire <i class="ri-arrow-right-up-line"></i></a>
+          <a href="#collaborate" onclick="scrollToBottom()">Let's collaborate <i class="ri-arrow-right-up-line"></i></a>
         </div>
 
       </div>
@@ -270,14 +270,15 @@
             <div style="width: -webkit-fill-available;">
               <div class="proj-detail">
                 <h3>AWACON: A mindful device for overcoming binge behavior and boredom</h3>
-                <h5 class="p-tag tag-align" style="max-width:-webkit-fill-available; text-align:left;">DESIGN - RESEARCH- PSYCHOLOGY</h5>
+                <h5 class="p-tag tag-align" style="max-width:-webkit-fill-available; text-align:left;">DESIGN -
+                  RESEARCH- PSYCHOLOGY</h5>
               </div>
             </div>
           </div>
         </a>
 
         <a class="long" href="./projects/loop-research.html">
-         <img class="project-img main" src="./projects/loop-research/loop-research.gif">
+          <img class="project-img main" src="./projects/loop-research/loop-research.gif">
           <div class="project" style="margin-top: -4px;">
             <div style="width: -webkit-fill-available;">
               <div class="proj-detail">
@@ -290,7 +291,7 @@
         </a>
 
         <a class="long" href="./projects/staging-project.html">
-            <img class="project-img main" src="./projects/staging-project/staging.gif">
+          <img class="project-img main" src="./projects/staging-project/staging.gif">
           <div class="project" style="margin-top: -4px;">
             <div style="width: -webkit-fill-available;">
               <div class="proj-detail">
@@ -321,7 +322,8 @@
               <h5 class="p-tag">Worked together at Looppanel</h5>
             </div>
           </div>
-          <p style="margin-bottom: 2em; max-width: none;"> Karan was a part-time employee at Looppanel but he gave his work his all,
+          <p style="margin-bottom: 2em; max-width: none;"> Karan was a part-time employee at Looppanel but he gave his
+            work his all,
             took feedback very well, iterated on designs endlessly and learned how to run effective user research.</p>
         </div>
 
@@ -333,7 +335,8 @@
               <h5 class="p-tag">Worked together at Aphelia Innovations</h5>
             </div>
           </div>
-          <p style="margin-bottom: 2em; max-width: none;">Karan's emphasis on design standardization, by meticulous planning and
+          <p style="margin-bottom: 2em; max-width: none;">Karan's emphasis on design standardization, by meticulous
+            planning and
             strategizing, made way for a strong foundation in design for me and all our future projects. His ability
             to combine technology with art is exceptional.</p>
         </div>
@@ -452,15 +455,14 @@
 
         <div class="project horizontal"
           style="justify-content: flex-start; flex-direction: row; align-items: center; background: var(--accent-color);">
-          <a style="border:solid var(--grey-100); border-width: 0 0 2px 0;" href="mailto: karan26796@gmail.com"
-            target="_blank">Reach out for collaboration ↗</a>
+          <a style="border:solid var(--grey-100); border-width: 0 0 2px 0;" href="#collaborate" onclick="scrollToBottom()">Reach out for collaboration ↗</a>
         </div>
       </div>
     </div>
 
 
     <!--------------------------------------- resources ----------------------------------------->
-    <div class="container-home" style="margin-bottom:0">
+    <div class="container-home">
       <div class="container-title">
         <h2 style="color: var(--grey-100);margin-bottom: .3em;">Learn from my Figma files and YouTube tutorials viewed
           over 30k times</h2>
@@ -508,18 +510,27 @@
     </div>
 
 
-    <!-- <div class="container-home" style="margin-bottom: 0">
+    <!--------------------------------------- collaborate ----------------------------------------->
+    <div class="container-home" style="margin-bottom: 0" id="collaborate">
       <div class="container-title">
         <h2 style="margin-bottom: 0.3em">Let's collaborate</h2>
       </div>
 
-      <form class="grid"style="background-color: transparent; padding: var(--padding-40); gap: 2em;">
-        <input type="text" name="Name" placeholder="Full Name" required />
-        <input type="email" name="Email" placeholder="Email" required />
-        <textarea name="Message" placeholder="Message" required></textarea>
-        <button id="submit" type="submit">Send</button>
+      <form class="grid" style="background-color: transparent; padding: var(--padding-40); gap: 2em;">
+        <input type="text" id="name" name="Name" placeholder="Your/Company Name*" required />
+        <input type="email" id="email" name="Email" placeholder="Email*" required />
+        <textarea id="message" name="Message" placeholder="Describe your project in a few lines*" required></textarea>
+        <input type="text" id="phone" name="Phone" style="grid-column: span 2;"
+          placeholder="Phone Number for quick turn around" />
+        <button id="submit" type="submit">Send Request</button>
       </form>
-    </div> -->
+      <div class="padding-home" style="padding-top: 0; padding-bottom: 0;">
+      <p id="success" style="display: none; color: #00FFC2; margin-bottom: .5em;">Project request sent successfully! Let's collaborate.</p>
+      <p id="error" style="display: none; color: #FF3115; margin-bottom: .5em;">An error occurred while recording your request. Please try
+        again</p>
+      <p id="empty-fields" style="display: none; color: #FF3115; margin-bottom: .5em;">Please fill in all the required fields.</p>
+    </div>
+    </div>
 
     <div class="nav-bar bottom" style="margin-top: -2px;">
       <a class="go-to-top" href="#top" onclick="scrollToTop()">Back to top<i class="ri-arrow-up-line"></i></a>
@@ -551,8 +562,6 @@
 
     <!-- root -->
   </div>
-
-  
 
   <script src="actions.js"></script>
   </script>

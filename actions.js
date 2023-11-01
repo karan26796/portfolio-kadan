@@ -1,98 +1,38 @@
-// const text = document.querySelector(".k12");
-// const strText = text.textContent.length;
-
-// console.log(strText);
-// text.innerHTML = text.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-// anime.timeline({loop: false})
-//   .add({
-//     targets: '.k12',
-//     translateY: [200,0],
-//     translateZ: 0,
-//     opacity: [0,1],
-//     easing: "easeOutExpo",
-//     duration: 2500,
-//     delay: function(el, i) { return i * 500; }
-//     // delay: (el, i) => 300 + 50 * i
-//   });
-
-//   var animation = anime({
-//     // targets:".container-home",
-//     translateY:600,
-//     opacity:1,
-//     easing:"easeInOutSine",
-//     autoPlay:false
-//   })
-
-//   window.onscroll=function(e){
-//     animation.seek(window.pageYOffset*2);
-//     console.log(window.pageYOffset);
-//   }
-
-  
-  // animation.seek(100);
-
-//   anime.timeline({loop: false})
-//   .add({
-//     targets: '.container-home',
-//     translateY: [200,0],
-//     translateZ: 0,
-//     opacity: [0,1],
-//     easing: "easeOutExpo",
-//     duration: 2500,
-//     delay: function(el, i) { return i * 500; }
-//     // delay: (el, i) => 300 + 50 * i
-//   });
-
-//   var animation = anime({
-//     targets: '.play-pause-demo .el',
-//     translateX: 270,
-//     delay: function(el, i) { return i * 100; },
-//     direction: 'alternate',
-//     loop: true,
-//     autoplay: false,
-//     easing: 'easeInOutSine'
-//   });
-
-// let darkMode = localStorage.getItem("dark-mode");
-// var element = document.body;
-
-// const enableDarkMode = () => {
-//   localStorage.setItem("dark-mode", "enabled");
-//   element.classList.toggle("dark-mode");
-// };
-
-// const disableDarkMode = () => {
-//   localStorage.setItem("dark-mode", "disabled");
-// };
-
-// if (darkMode === "enabled") {
-//   enableDarkMode(); // set state of darkMode on page load
-// }
-
-// function myFunction() {
-//   darkMode = localStorage.getItem("dark-mode"); // update darkMode when clicked
-//   if (darkMode === "disabled") {
-//     enableDarkMode();
-//   } else {
-//     disableDarkMode();
-//   }
-// }
-
 // Scroll To Top
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+function scrollToBottom() {
+  window.scrollTo({ bottom: 0, behavior: "smooth" });
+}
+
 async function myFunction(e) {
-
-  let status;
-
   e.preventDefault();
+  let nameField = document.getElementById("name");
+  let emailField = document.getElementById("email");
+  let phoneField = document.getElementById("phone");
+  let messageField = document.getElementById("message");
+  let submitBtn = document.getElementById("submit");
+  
+  let errorText = document.getElementById("error");
+  let successText = document.getElementById("success");
+
+  // Check if any of the required fields are empty
+  if (!nameField.value || !emailField.value || !messageField.value) {
+    document.getElementById("empty-fields").style.display = "block";
+    return;
+  } else {
+    document.getElementById("empty-fields").style.display = "none";
+  }
+
+  submitBtn.textContent = "Sending..."; // Change button text on click
+
   let data = {
-    Name: document.getElementById("name").value, 
-    Email: document.getElementById("email").value,
-    Message: document.getElementById("message").value,
+    Name: nameField.value,
+    Email: emailField.value,
+    Phone: phoneField.value, // Include phone number
+    Message: messageField.value,
   };
 
   try {
@@ -106,34 +46,47 @@ async function myFunction(e) {
         body: JSON.stringify(data),
       }
     );
-    console.log(typeof res);
-    console.log(res);
-    responseData = res.json();
-    console.log(responseData);
-    status=responseData.status;
-    console.log(status);
 
-    if(status==200 || 201){      
-    document.getElementById("success").style.display="block";
-    }
-    else{
-      document.getElementById("error").style.display="block";
-    }
+    if (res.status === 200 || res.status === 201) {
+      successText.style.display = "block";
+      errorText.style.display = "none";
 
+      // Clear the input fields
+      nameField.value = "";
+      emailField.value = "";
+      phoneField.value = "";
+      messageField.value = "";
+
+    setTimeout(() => {
+      successText.style.display = "none"; // Hide the error message after a second
+    }, 3000);
+
+      // Reset the button text after success
+      submitBtn.textContent = "Send Request";
+    } else {
+      successText.style.display = "none";
+      errorText.style.display = "block";
+
+      // Reset the button text after error
+      submitBtn.textContent = "Send Request";
+    }
   } catch (err) {
-    console.log(typeof err);
-    console.log(err);
-    document.getElementById("error").style.display="block";
+    console.error(err);
+    document.getElementById("success").style.display = "none";
+    document.getElementById("error").style.display = "block";
+
+    setTimeout(() => {
+      errorText.style.display = "none"; // Hide the error message after a second
+    }, 3000);
+
+    // Reset the button text after error
+    submitBtn.textContent = "Send Request";
   }
 }
 
 let submitBtn = document.getElementById("submit");
 
 submitBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  myFunction(e);
-});
-submitBtn.addEventListener("submit", (e) => {
   e.preventDefault();
   myFunction(e);
 });
