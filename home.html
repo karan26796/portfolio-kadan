@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Karan Kapoor's Portfolio</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="containers.css">
+    <link rel="stylesheet" href="infinite-carousel.css">
+    <link rel="stylesheet" href="card-stack.css">
+    <link rel="stylesheet" href="masonry-home.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .img-workshop {
+            width: auto;
+        }
+
+        .mono {
+            font-weight: 500;
+            font-family: "JetBrains Mono", sans-serif;
+        }
+
+        .container-home {
+            margin-bottom: 8em;
+        }
+
+        .project.horizontal h3 {
+            font-size: 1.4em;
+            font-weight: 400;
+            max-width: 100%;
+            margin: 0 0 .25em 0;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        .card h3 {
+            max-width: 100%;
+            margin: 0 0 .25em 0;
+        }
+
+        .card p {
+            max-width: 100%;
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+            margin-top: 2em;
+        }
+
+        .actions a {
+            font-size: 1.4em;
+            font-weight: 400;
+            text-decoration: none;
+            padding: .2em 0;
+            border: solid var(--grey-100);
+            border-width: 0 0 2px 0;
+        }
+
+        .actions a:hover {
+            background-color: var(--accent-color);
+            border: dashed var(--grey-100);
+            border-width: 0 0 2px 0;
+        }
+
+        .grid.service {
+            grid-template-columns: 1fr;
+            column-count: 2;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .proj-detail {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: -webkit-fill-available;
+        }
+
+        #phone {
+            grid-column: span 2;
+        }
+
+        @media only screen and (max-width: 776px) {
+            .proj-detail {
+                flex-direction: column;
+            }
+
+            #phone {
+                grid-column: span 2;
+            }
+        }
+
+        @media only screen and (max-width: 478px) {
+            .proj-detail {
+                flex-direction: column;
+            }
+
+            #phone {
+                grid-column: span 2;
+            }
+
+            .form {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "icz6p1ntmg");
+    </script>
+
+    <script async src="https://analytics.umami.is/script.js"
+        data-website-id="be1cb1ad-62fd-4845-9093-8bc90c705477"></script>
+</head>
+
+<body>
+
+    <div class="root-container">
+
+        <!-- Done -->
+        <div class="nav-bar">
+            <a href="index.html" class="nav">के.के.</a>
+
+            <div class="nav-options">
+                <a href="index.html" class="nav">Home</a>
+                <a href="about.html" class="nav">About Me</a>
+                <a href="images.html" class="nav">Photos</a>
+                <!-- <ion-icon name="moon" onclick="myFunction()"></ion-icon> -->
+            </div>
+        </div>
+
+        <!--------------------------------------- introduction ----------------------------------------->
+        <div class="container-home padding-home">
+            <h2>Hello, I'm Karan</h2>
+
+            <h4 style="color: var(--grey-400); max-width: 35ch; margin-top: 0.4em;">Designer — NID Grad — Figma Trainer
+            </h4>
+
+            <p style="max-width: 30ch; font-size: 1.65em;">In my 5 years as a designer, I have helped startups build 0-1
+                products, achieve product market fit through design, & conducted design & Figma workshops at leading
+                orgs in
+                India and the US.</p>
+
+            <div class="actions">
+                <a href="https://read.cv/karankapoorux" target="_blank">Resume <i
+                        class="ri-arrow-right-up-line"></i></a>
+                <a href="#collaborate" onclick="scrollToBottom()">Let's collaborate <i
+                        class="ri-arrow-right-up-line"></i></a>
+            </div>
+
+        </div>
+
+
+
+        <div class="grid-logos">
+
+            <div class="item-logo">
+                <img class="clients-img" src="./logos/iima.webp">
+            </div>
+            <div class="item-logo">
+                <img class="clients-img" src="./logos/obvious.webp">
+            </div>
+            <div class="item-logo">
+                <img class="clients-img" src="./logos/indiana.webp">
+            </div>
+            <div class="item-logo">
+                <img class="clients-img" src="./logos/looppanel.webp">
+            </div>
+            <div class="item-logo">
+                <img class="clients-img" src="./logos/shaadi.webp">
+            </div>
+            <div class="item-logo">
+                <img class="clients-img" src="./logos/frontrow.webp">
+            </div>
+            <div class="item-logo">
+                <img class="clients-img" src="./logos/IIT-M.webp">
+            </div>
+            <div class="item-logo">
+                <img class="clients-img" src="./logos/qoohoo.webp">
+            </div>
+            <div class="item-logo">
+                <img class="clients-img" src="./logos/zuddl.webp">
+            </div>
+            <div class="item-logo">
+                <img class="clients-img" src="./logos/media-net.webp">
+            </div>
+            <div class="item-logo">
+                <img class="clients-img" src="./logos/pixis.webp">
+            </div>
+            <div class="item-logo">
+                <img class="clients-img" src="./logos/Vector.webp">
+            </div>
+        </div>
+
+        <!--------------------------------------- projects - done ----------------------------------------->
+        <div class="container-home">
+
+            <div id="#top" class="container-title">
+                <h2>Projects</h2>
+            </div>
+
+            <div class="grid">
+
+                <a class="long" href="./projects/loop-note.html">
+                    <img class="project-img main" src="./projects/images-loop-note/loop-note.gif">
+                    <div class="project" style="margin-top: -4px; width: -webkit-fill-available;">
+                        <div class="proj-detail">
+                            <h3>Looppanel : Creating a Zoom note-taking sidekick for user interviews </h3>
+                            <h5 class="p-tag tag-align" style="margin-bottom:4px">PRODUCT DESIGN - USABILITY TESTING
+                            </h5>
+                        </div>
+                        <p>Recorded 1 lac notes in 2 months of note-taker launch. </p>
+                    </div>
+                </a>
+
+                <a class="long" href="./projects/kurakaani.html">
+                    <img class="project-img main" src="./projects/images-kurakaani/thumb.gif">
+                    <div class="project" style="margin-top: -4px; width: -webkit-fill-available;">
+                        <div class="proj-detail">
+                            <h3>Redesigning Nepal's Superapp by creating a design system</h3>
+                            <h5 class="p-tag tag-align">DESIGN SYSTEM - COMPONENT LIBRARY</h5>
+                        </div>
+                        <p>Successfully launched a component library and reduced time to development.</p>
+                    </div>
+                </a>
+
+                <a class="long" href="./projects/binge-behavior.html">
+                    <img class="project-img main" src="./projects/binge-eating/binge.gif">
+                    <div class="project" style="margin-top: -4px; width: -webkit-fill-available;">
+                        <div class="proj-detail">
+                            <h3>AWACON: A mindful device for overcoming binge behavior and boredom</h3>
+                            <h5 class="p-tag tag-align" style="max-width:-webkit-fill-available; text-align:left;">
+                                DESIGN - RESEARCH- PSYCHOLOGY</h5>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="long" href="./projects/loop-research.html">
+                    <img class="project-img main" src="./projects/loop-research/loop-research.gif">
+                    <div class="project" style="margin-top: -4px; width: -webkit-fill-available;">
+                        <div class="proj-detail">
+                            <h3>Information Architechture revamp for better discoverabilty of features & data
+                                organization</h3>
+                            <h5 class="p-tag tag-align" style="margin-bottom:4px">PRODUCT - DESIGN RESEARCH</h5>
+                        </div>
+                        <p>Increased discoverabilty of features and customer satisfaction.</p>
+                    </div>
+                </a>
+
+                <a class="long" href="./projects/staging-project.html">
+                    <img class="project-img main" src="./projects/staging-project/staging.gif">
+                    <div class="project" style="margin-top: -4px; width: -webkit-fill-available;">
+                        <div class="proj-detail">
+                            <h3>Hidden in plain sight - a commentary on social media surveillance</h3>
+                            <h5 class="p-tag tag-align" style="max-width:-webkit-fill-available; text-align:left;">
+                                EXPERIENTIALDESIGN - INSTALLATIONS</h5>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!--------------------------------------- testimonials - done ----------------------------------------->
+        <div class="container-home" style="padding:0px">
+            <div class="container-title">
+                <h2>Hear from the people I've worked with</h2>
+            </div>
+
+            <div class="grid">
+
+                <div class="card-text">
+                    <div class="card">
+                        <img src="resources/pfp-02.jpg" style="border-radius: 100px; height: 50px; width: 50px;">
+                        <div>
+                            <h3>Kritika Oberoi · co-founder</h3>
+                            <h5 class="p-tag">Worked together at Looppanel</h5>
+                        </div>
+                    </div>
+                    <p style="margin-bottom: 2em; max-width: none;"> Karan was a part-time employee at Looppanel but he
+                        gave his work his all, took feedback very well, iterated on designs endlessly and learned how to
+                        run effective user research.</p>
+                </div>
+
+                <div class="card-text">
+                    <div class="card">
+                        <img src="resources/pfp-03.jpg" style="border-radius: 100px; height: 50px; width: 50px;">
+                        <div>
+                            <h3>Malavika Susan · UX Designer</h3>
+                            <h5 class="p-tag">Worked together at Aphelia Innovations</h5>
+                        </div>
+                    </div>
+                    <p style="margin-bottom: 2em; max-width: none;">Karan's emphasis on design standardization, by
+                        meticulous
+                        planning and
+                        strategizing, made way for a strong foundation in design for me and all our future projects. His
+                        ability
+                        to combine technology with art is exceptional.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--------------------------------------- experiments - done ----------------------------------------->
+        <div class="container-home">
+            <div class="container-title">
+                <h2>Experiments</h2>
+            </div>
+
+            <div class="container">
+                <a href="./experiments/vedic-square.html"><img class="img-exp"
+                        src="./experiments/vedic square/vedic-square.gif" /></a>
+                <a href="./experiments/prototypes.html"><img class="img-exp" src="./experiments/prototypes/1.gif" /></a>
+                <a href="./experiments/prototypes.html"><img class="img-exp" src="./experiments/prototypes/2.gif" /></a>
+                <a href="./experiments/color-wheel.html"><video class="img-exp" autoplay loop muted>
+                        <source src="./experiments/color-wheel/color-wheel.mp4" type="video/mp4" />
+                    </video></a>
+                <a href="./experiments/prototypes.html"><img class="img-exp" src="./experiments/prototypes/3.gif" /></a>
+                <a href="./experiments/prototypes.html"><img class="img-exp" src="./experiments/prototypes/4.gif" /></a>
+            </div>
+
+        </div>
+
+        <!--------------------------------------- what i can help with ----------------------------------------->
+
+        <div class="container-home">
+            <div class="container-title">
+                <h2 style="margin-bottom: .3em;">What I can help you with</h2>
+            </div>
+
+            <div class="grid service">
+
+                <div class="project horizontal"
+                    style="justify-content: flex-start; flex-direction: row; align-items: center;">
+                    <ion-icon name="color-wand"></ion-icon>
+                    <div>
+                        <h3 style="margin:0">Website and mobile app redesign</h3>
+                    </div>
+                </div>
+
+                <div class="project horizontal"
+                    style="justify-content: flex-start; flex-direction: row; align-items: center;">
+                    <ion-icon name="layers"></ion-icon>
+                    <div>
+                        <h3 style="margin:0">Design systems</h3>
+                    </div>
+                </div>
+
+                <div class="project horizontal"
+                    style="justify-content: flex-start; flex-direction: row; align-items: center;">
+                    <ion-icon name="code"></ion-icon>
+                    <div>
+                        <h3 style="margin:0">Electronics Prototyping and Design</h3>
+                    </div>
+                </div>
+
+                <div class="project horizontal"
+                    style="justify-content: flex-start; flex-direction: row; align-items: center;">
+                    <ion-icon name="rocket"></ion-icon>
+                    <div>
+                        <h3 style="margin:0">Design Workshops and Figma Training for Corporates and Institutions</h3>
+                    </div>
+                </div>
+
+                <div class="project horizontal"
+                    style="justify-content: flex-start; flex-direction: row; align-items: center;">
+                    <ion-icon name="people"></ion-icon>
+                    <div>
+                        <h3 style="margin:0">Design Consultation for Startups</h3>
+                    </div>
+                </div>
+
+                <div class="project horizontal"
+                    style="justify-content: flex-start; flex-direction: row; align-items: center; background: var(--accent-color);">
+                    <a style="border:solid var(--grey-100); border-width: 0 0 2px 0;" href="#collaborate"
+                        onclick="scrollToBottom()">Reach out for collaboration ↗</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--------------------------------------- resources ----------------------------------------->
+        <div class="container-home">
+            <div class="container-title">
+                <h2 style="color: var(--grey-100);margin-bottom: .3em;">Learn from my Figma files and YouTube tutorials
+                    viewed over 30k times</h2>
+                <p>Templates and tutorials to help you kickstart any UX Design project</p>
+            </div>
+
+            <div class="logos">
+
+                <div class="logos-slide">
+                    <a target="_blank"
+                        href="https://www.figma.com/community/file/897091186704896395/Evolve-Component-Library-%7C-Karan-Kapoor"><img
+                            src="./resources/evolve.webp" /></a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=Rf-cg42id78"><img
+                            src="./resources/figma-shortcuts.webp" /></a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=LCHQ9MApBGA"><img
+                            src="./resources/learn-play.webp" /></a>
+                    <a target="_blank"
+                        href="https://www.figma.com/community/file/905774038894769917/Animation-%26-Prototype-Playground"><img
+                            src="./resources/prototypes.webp" /></a>
+                    <a target="_blank"
+                        href="https://www.figma.com/community/file/997477366354506560/Twitter-in-Auto-Layout"><img
+                            src="./resources/twitter.webp" /></a>
+                    <a target="_blank"
+                        href="https://www.figma.com/community/file/1076867776880340874/Interactive-Presentation-Gradient-Backgrounds"><img
+                            src="./resources/gradients.webp" /></a>
+                </div>
+
+                <div class="logos-slide">
+                    <a
+                        href="https://www.figma.com/community/file/897091186704896395/Evolve-Component-Library-%7C-Karan-Kapoor"><img
+                            src="./resources/evolve.webp" /></a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=Rf-cg42id78"><img
+                            src="./resources/figma-shortcuts.webp" /></a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=LCHQ9MApBGA"><img
+                            src="./resources/learn-play.webp" /></a>
+                    <a target="_blank"
+                        href="https://www.figma.com/community/file/905774038894769917/Animation-%26-Prototype-Playground"><img
+                            src="./resources/prototypes.webp" /></a>
+                    <a target="_blank"
+                        href="https://www.figma.com/community/file/997477366354506560/Twitter-in-Auto-Layout"><img
+                            src="./resources/twitter.webp" /></a>
+                    <a target="_blank"
+                        href="https://www.figma.com/community/file/1076867776880340874/Interactive-Presentation-Gradient-Backgrounds"><img
+                            src="./resources/gradients.webp" /></a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--------------------------------------- collaborate ----------------------------------------->
+        <div class="container-home" style="margin-bottom: 0" id="collaborate">
+            <div class="container-title">
+                <h2 style="margin-bottom: 0.3em">Let's collaborate</h2>
+            </div>
+
+            <form class="grid form" style="background-color: transparent; padding: var(--padding-40); gap: 2em;">
+                <input type="text" id="name" name="Name" placeholder="Your/Company Name*" required />
+                <input type="email" id="email" name="Email" placeholder="Email*" required />
+                <textarea id="message" name="Message" placeholder="Describe your project in a few lines*"
+                    required></textarea>
+                <input type="text" id="phone" name="Phone" placeholder="Phone Number for quick turn around" />
+                <button id="submit" type="submit">Send Request</button>
+            </form>
+            <div class="padding-home" style="padding-top: 0; padding-bottom: 0;">
+                <p id="success" style="display: none; color: #00FFC2; margin-bottom: .5em;">Project request sent
+                    successfully! Let's collaborate.</p>
+                <p id="error" style="display: none; color: #FF3115; margin-bottom: .5em;">An error occurred while
+                    recording your request. Please try
+                    again</p>
+                <p id="empty-fields" style="display: none; color: #FF3115; margin-bottom: .5em;">Please fill in all the
+                    required fields.</p>
+            </div>
+        </div>
+
+        <div class="nav-bar bottom" style="margin-top: -2px;">
+            <a class="go-to-top" href="#top" onclick="scrollToTop()">Back to top<i class="ri-arrow-up-line"></i></a>
+            <div class="nav-options">
+                <a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon
+                        name="logo-instagram"></ion-icon></a>
+                <a href="https://linkedin.com/in/karankapoorux" target="_blank"><ion-icon
+                        name="logo-linkedin"></ion-icon></a>
+                <a href="https://twitter.com/kadankapoor" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+        </div>
+
+        <!-- root -->
+    </div>
+
+    <script src="actions.js"></script>
+</body>
+
+</html>
