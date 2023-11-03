@@ -87,6 +87,7 @@ button:hover {
 
 .long {
   grid-column: span 2;
+  text-decoration: none;
 }
 
 .small-div {
@@ -136,12 +137,6 @@ button:hover {
   height: auto;
 }
 
-/*.root-container .nav-bar{
-    border:solid var(--grey-300);
-    border-width: 2px 0 4px 0;
-    margin-top: 64px;
-  }*/
-
 .card {
   display: flex;
   flex-direction: row;
@@ -152,12 +147,8 @@ button:hover {
   display: flex;
   flex-direction: column;
   background-color: var(--primary-color);
-  padding: 2em;
-  margin: 0px;
+  padding: 2.5em;
   gap: 1em;
-  border: solid var(--border-color);
-  border-width: 0 2px 0 2px;
-  margin: 0 -2px 0 -2px;
 }
 
 .nav-bar {
@@ -220,12 +211,8 @@ button:hover {
   position: relative;
 }
 
-.root-container.blog {}
-
 .container-home {
   border: 2px solid var(--border-color);
-  background: var(--primary-color);
-  margin: -2px 0 -2px 0;
   display: flex;
   flex-direction: column;
   width: auto;
