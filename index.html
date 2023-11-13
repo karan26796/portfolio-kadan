@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  rel="stylesheet">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono">
   <link rel="stylesheet" href="styles.css">
@@ -33,6 +33,10 @@
   <style type="text/css">
     html {
       scroll-behavior: smooth;
+    }
+
+    .element-big{
+      grid-column: span 2;
     }
 
     .img-workshop {
@@ -90,11 +94,24 @@
       border-width: 0 0 2px 0;
     }
 
-    .grid.service {
-      grid-template-columns: 1fr;
-      column-count: 2;
-      justify-content: center;
-      align-items: center;
+    #message{
+      grid-row: 1/span 3; grid-column: 2/span 1;
+    }
+
+    #email{
+      grid-row: 2/span 1; grid-column: 1/span 1;"
+    }
+
+    #phone {
+      grid-row: 3/span 1; grid-column: 1/span 1;
+    }
+
+    #name{
+      grid-row: 1/span 1; grid-column: 1/span 1;
+    }
+
+    #work{
+      grid-column: 1/ span 2;
     }
 
     .proj-detail {
@@ -104,23 +121,40 @@
       width: -webkit-fill-available;
     }
 
-    #phone {
-      grid-column: span 2;
-    }
-
     @media only screen and (max-width: 776px) {
       .proj-detail {
         flex-direction: column;
       }
 
-      #phone {
-        grid-column: span 2;
+      #work{
+      grid-column: 1/ span 2;
+    }
+
+    #message{
+        grid-row: auto; grid-column: span 2;
       }
+
+      #email{
+        grid-row: auto; grid-column: span 2;
+      }
+
+      #phone {
+        grid-row: auto; grid-column: span 2;
+      }
+
+      #name{
+        grid-row: auto; grid-column: span 2;
+      }
+
     }
 
     @media only screen and (max-width: 478px) {
       .proj-detail {
         flex-direction: column;
+      }
+
+      #work{
+        grid-column: auto;
       }
 
       #phone {
@@ -131,7 +165,13 @@
         display: flex;
         flex-direction: column;
       }
+
+      .element-big{
+        grid-column: span 1;
+      }
+
     }
+
   </style>
 
   <script type="text/javascript">
@@ -143,7 +183,7 @@
   </script>
 
   <script async src="https://analytics.umami.is/script.js"
-    data-website-id="be1cb1ad-62fd-4845-9093-8bc90c705477"></script>
+  data-website-id="be1cb1ad-62fd-4845-9093-8bc90c705477"></script>
 </head>
 
 <body>
@@ -180,316 +220,294 @@
 
         <p style="max-width: 30ch; font-size: 1.65em;">In my 5 years as a designer, I have helped startups build 0-1
           products, achieve product market fit through design, & conducted design & Figma workshops at leading orgs in
-          India and the US.</p>
+        India and the US.</p>
 
         <div class="actions">
-          <a href="https://read.cv/karankapoorux" target="_blank" style="text-decoration: none;">Resume <i
-              class="ri-arrow-right-up-line"></i></a>
-          <a href="#collaborate" onclick="scrollToBottom()" style="text-decoration: none;">Work with me <i
-              class="ri-arrow-right-up-line"></i></a>
+          <a href="#collaborate" onclick="scrollToBottom()" style="text-decoration: none;">Work with me →</a>
+          <a href="https://read.cv/karankapoorux" target="_blank" style="text-decoration: none;">Resume <i class="ri-arrow-right-up-line"></i></a>
+          </div>
+
+        </div>
+
+        <div class="grid-logos">
+
+          <div class="item-logo">
+            <img class="clients-img" src="./logos/iima.webp">
+          </div>
+          <div class="item-logo">
+            <img class="clients-img" src="./logos/obvious.webp">
+          </div>
+          <div class="item-logo">
+            <img class="clients-img" src="./logos/indiana.webp">
+          </div>
+          <div class="item-logo">
+            <img class="clients-img" src="./logos/looppanel.webp">
+          </div>
+          <div class="item-logo">
+            <img class="clients-img" src="./logos/shaadi.webp">
+          </div>
+          <div class="item-logo">
+            <img class="clients-img" src="./logos/frontrow.webp">
+          </div>
+          <div class="item-logo">
+            <img class="clients-img" src="./logos/IIT-M.webp">
+          </div>
+          <div class="item-logo">
+            <img class="clients-img" src="./logos/qoohoo.webp">
+          </div>
+          <div class="item-logo">
+            <img class="clients-img" src="./logos/zuddl.webp">
+          </div>
+          <div class="item-logo">
+            <img class="clients-img" src="./logos/media-net.webp">
+          </div>
+          <div class="item-logo">
+            <img class="clients-img" src="./logos/pixis.webp">
+          </div>
+          <div class="item-logo">
+            <img class="clients-img" src="./logos/Vector.webp">
+          </div>
         </div>
 
       </div>
 
-      <div class="grid-logos">
+      <!--------------------------------------- projects - done ----------------------------------------->
+      <div class="container-home">
 
-        <div class="item-logo">
-          <img class="clients-img" src="./logos/iima.webp">
+        <div id="#top" class="container-title">
+          <h2>Projects</h2>
         </div>
-        <div class="item-logo">
-          <img class="clients-img" src="./logos/obvious.webp">
-        </div>
-        <div class="item-logo">
-          <img class="clients-img" src="./logos/indiana.webp">
-        </div>
-        <div class="item-logo">
-          <img class="clients-img" src="./logos/looppanel.webp">
-        </div>
-        <div class="item-logo">
-          <img class="clients-img" src="./logos/shaadi.webp">
-        </div>
-        <div class="item-logo">
-          <img class="clients-img" src="./logos/frontrow.webp">
-        </div>
-        <div class="item-logo">
-          <img class="clients-img" src="./logos/IIT-M.webp">
-        </div>
-        <div class="item-logo">
-          <img class="clients-img" src="./logos/qoohoo.webp">
-        </div>
-        <div class="item-logo">
-          <img class="clients-img" src="./logos/zuddl.webp">
-        </div>
-        <div class="item-logo">
-          <img class="clients-img" src="./logos/media-net.webp">
-        </div>
-        <div class="item-logo">
-          <img class="clients-img" src="./logos/pixis.webp">
-        </div>
-        <div class="item-logo">
-          <img class="clients-img" src="./logos/Vector.webp">
-        </div>
+
+        <a href="./projects/loop-note.html" style="text-decoration: none;">
+          <img class="project-img main" src="./projects/images-loop-note/loop-note.gif">
+          <div class="project">
+            <div class="proj-detail">
+              <h3>Looppanel : Creating a Zoom note-taking sidekick for user interviews </h3>
+              <h5 class="p-tag">PRODUCT DESIGN - USABILITY TESTING</h5>
+            </div>
+            <p>Recorded 1 lac notes in 2 months of note-taker launch. </p>
+          </div>
+        </a>
+
+        <a href="./projects/kurakaani.html" style="text-decoration: none;">
+          <img class="project-img main" src="./projects/images-kurakaani/thumb.gif">
+          <div class="project">
+            <div class="proj-detail">
+              <h3>Redesigning Nepal's Superapp by creating a design system</h3>
+              <h5 class="p-tag">DESIGN SYSTEM - COMPONENT LIBRARY</h5>
+            </div>
+            <p>Successfully launched a component library and reduced time to development.</p>
+          </div>
+        </a>
+
+        <a href="./projects/binge-behavior.html" style="text-decoration: none;">
+          <img class="project-img main" src="./projects/binge-eating/binge.gif">
+          <div class="project">
+            <div class="proj-detail">
+              <h3>AWACON: A mindful device for overcoming binge behavior and boredom</h3>
+              <h5 class="p-tag">DESIGN - RESEARCH- PSYCHOLOGY</h5>
+            </div>
+          </div>
+        </a>
+
+        <a href="./projects/loop-research.html" style="text-decoration: none;">
+          <img class="project-img main" src="./projects/loop-research/loop-research.gif">
+          <div class="project">
+            <div class="proj-detail">
+              <h3>Information Architechture revamp for better discoverabilty of features & data organization</h3>
+              <h5 class="p-tag">PRODUCT - DESIGN RESEARCH</h5>
+            </div>
+            <p>Increased discoverabilty of features and customer satisfaction.</p>
+          </div>
+        </a>
+
+        <a href="./projects/staging-project.html" style="text-decoration: none;">
+          <img class="project-img main" src="./projects/staging-project/staging.gif">
+          <div class="project">
+            <div class="proj-detail">
+              <h3>Hidden in plain sight - a commentary on social media surveillance</h3>
+              <h5 class="p-tag">EXPERIENTIAL DESIGN - INSTALLATIONS</h5>
+            </div>
+          </div>
+        </a>
+
       </div>
 
-    </div>
+      <!--------------------------------------- testimonials - done ----------------------------------------->
+      <div class="grid">
 
-    <!--------------------------------------- projects - done ----------------------------------------->
-    <div class="container-home">
-
-      <div id="#top" class="container-title">
-        <h2>Projects</h2>
-      </div>
-
-      <a href="./projects/loop-note.html" style="text-decoration: none;">
-        <img class="project-img main" src="./projects/images-loop-note/loop-note.gif">
-        <div class="project">
-          <div class="proj-detail">
-            <h3>Looppanel : Creating a Zoom note-taking sidekick for user interviews </h3>
-            <h5 class="p-tag">PRODUCT DESIGN - USABILITY TESTING</h5>
-          </div>
-          <p>Recorded 1 lac notes in 2 months of note-taker launch. </p>
+        <div style="padding: var(--padding-40); background-color: var(--primary-color);">
+          <h2>Hear from the people I've worked with</h2>
         </div>
-      </a>
 
-      <a href="./projects/kurakaani.html" style="text-decoration: none;">
-        <img class="project-img main" src="./projects/images-kurakaani/thumb.gif">
-        <div class="project">
-          <div class="proj-detail">
-            <h3>Redesigning Nepal's Superapp by creating a design system</h3>
-            <h5 class="p-tag">DESIGN SYSTEM - COMPONENT LIBRARY</h5>
+        <div class="card-text">
+          <div class="card">
+            <img src="resources/pfp-02.jpg" style="border-radius: 100px; height: 50px; width: 50px;">
+            <div>
+              <h3>Kritika Oberoi · co-founder</h3>
+              <h5 class="p-tag">Worked together at Looppanel</h5>
+            </div>
           </div>
-          <p>Successfully launched a component library and reduced time to development.</p>
-        </div>
-      </a>
-
-      <a href="./projects/binge-behavior.html" style="text-decoration: none;">
-        <img class="project-img main" src="./projects/binge-eating/binge.gif">
-        <div class="project">
-          <div class="proj-detail">
-            <h3>AWACON: A mindful device for overcoming binge behavior and boredom</h3>
-            <h5 class="p-tag">DESIGN - RESEARCH- PSYCHOLOGY</h5>
-          </div>
-        </div>
-      </a>
-
-      <a href="./projects/loop-research.html" style="text-decoration: none;">
-        <img class="project-img main" src="./projects/loop-research/loop-research.gif">
-        <div class="project">
-          <div class="proj-detail">
-            <h3>Information Architechture revamp for better discoverabilty of features & data organization</h3>
-            <h5 class="p-tag">PRODUCT - DESIGN RESEARCH</h5>
-          </div>
-          <p>Increased discoverabilty of features and customer satisfaction.</p>
-        </div>
-      </a>
-
-      <a href="./projects/staging-project.html" style="text-decoration: none;">
-        <img class="project-img main" src="./projects/staging-project/staging.gif">
-        <div class="project">
-          <div class="proj-detail">
-            <h3>Hidden in plain sight - a commentary on social media surveillance</h3>
-            <h5 class="p-tag">EXPERIENTIAL DESIGN - INSTALLATIONS</h5>
-          </div>
-        </div>
-      </a>
-
-    </div>
-
-    <!--------------------------------------- testimonials - done ----------------------------------------->
-    <div class="grid" style="border:2px solid var(--border-color); margin-bottom: 8em;">
-
-      <div style="padding: var(--padding-40); background-color: var(--primary-color);">
-        <h2>Hear from the people I've worked with</h2>
-      </div>
-
-      <div class="card-text">
-        <div class="card">
-          <img src="resources/pfp-02.jpg" style="border-radius: 100px; height: 50px; width: 50px;">
-          <div>
-            <h3>Kritika Oberoi · co-founder</h3>
-            <h5 class="p-tag">Worked together at Looppanel</h5>
-          </div>
-        </div>
-        <p style="max-width: none;">Karan was a part-time employee at Looppanel but he gave his work his all,
+          <p style="max-width: none;">Karan was a part-time employee at Looppanel but he gave his work his all,
           took feedback very well, iterated on designs endlessly and learned how to run effective user research.</p>
-      </div>
-
-      <div class="card-text">
-        <div class="card">
-          <img src="resources/pfp-03.jpg" style="border-radius: 100px; height: 50px; width: 50px;">
-          <div>
-            <h3>Malavika Susan · UX Designer</h3>
-            <h5 class="p-tag">Worked together at Aphelia Innovations</h5>
-          </div>
         </div>
-        <p style="max-width: none;">Karan's emphasis on design standardization, by meticulous planning and
-          strategizing, made way for a strong foundation in design for me and all our future projects. His ability
+
+        <div class="card-text">
+          <div class="card">
+            <img src="resources/pfp-03.jpg" style="border-radius: 100px; height: 50px; width: 50px;">
+            <div>
+              <h3>Malavika Susan · UX Designer</h3>
+              <h5 class="p-tag">Worked together at Aphelia Innovations</h5>
+            </div>
+          </div>
+          <p style="max-width: none;">Karan's emphasis on design standardization, by meticulous planning and
+            strategizing, made way for a strong foundation in design for me and all our future projects. His ability
           to combine technology with art is exceptional.</p>
-      </div>
-
-      <div class="card-text">
-        <div class="card">
-          <img src="resources/pfp-04.jpg" style="border-radius: 100px; height: 50px; width: 50px;">
-          <div>
-            <h3>Nitin Prakash · Android Developer</h3>
-            <h5 class="p-tag">Worked together at Guesthouser</h5>
-          </div>
         </div>
-        <p style="max-width: none;">I had a pleasure of working with Karan at Guesthouser. He is not only a product designer but also has a great skill of programming 
+
+        <div class="card-text">
+          <div class="card">
+            <img src="resources/pfp-04.jpg" style="border-radius: 100px; height: 50px; width: 50px;">
+            <div>
+              <h3>Nitin Prakash · Android Developer</h3>
+              <h5 class="p-tag">Worked together at Guesthouser</h5>
+            </div>
+          </div>
+          <p style="max-width: none;">I had a pleasure of working with Karan at Guesthouser. He is not only a product designer but also has a great skill of programming 
           which makes his work outstanding. He has superb UI/UX skills and can solve complex problems easily</p>
+        </div>
+
       </div>
 
-    </div>
 
-    <!--------------------------------------- experiments - done ----------------------------------------->
-    <!-- <div class="container-home"> -->
-      
+      <!--------------------------------------- experiments - done ----------------------------------------->
+      <div class="grid">
 
-      <div class="grid" style="border:2px solid var(--border-color); background-color: var(--primary-color); margin-bottom: 8em;">
-
-        <div style="padding: var(--padding-40);">
+        <div style="padding: var(--padding-40); background-color: var(--primary-color);">
           <h2>Experiments</h2>
+          <p style="font-size: 1.6em; color: var(--grey-400); max-width: 35ch;">Things I created to take a break from the ordinary</p>
         </div>
 
         <a href="./experiments/vedic-square.html"><img class="img-exp" src="./experiments/vedic square/vedic-square.gif" /></a>
         <a href="./experiments/color-wheel.html"><video class="img-exp" autoplay loop muted>
-        <source src="./experiments/color-wheel/color-wheel.mp4" type="video/mp4" />
+          <source src="./experiments/color-wheel/color-wheel.mp4" type="video/mp4" />
         </video></a>
         <a href="./experiments/prototypes.html"><img class="img-exp" src="./experiments/prototypes/1.gif" /></a>
         <a href="./experiments/prototypes.html"><img class="img-exp" src="./experiments/prototypes/2.gif" /></a>
         <a href="./experiments/prototypes.html"><img class="img-exp" src="./experiments/prototypes/3.gif" /></a>
       </div>
 
-    <!-- </div> -->
+      <!--------------------------------------- what i can help with ----------------------------------------->
 
-    <!--------------------------------------- what i can help with ----------------------------------------->
+      <div class="grid">
 
-    <div class="container-home">
-      <div class="container-title">
-        <h2 style="margin-bottom: .3em;">What I can help you with</h2>
-      </div>
+        <div style="padding: var(--padding-40); background-color: var(--primary-color);">
+          <h2>Services I offer</h2>
+          <p style="font-size: 1.6em; color: var(--grey-400); max-width: 35ch;">Ismein meri expertise hai</p>
+        </div>
 
-      <div class="grid service">
-
-        <div class="project horizontal" style="justify-content: flex-start; flex-direction: row; align-items: center;">
-          <ion-icon name="color-wand"></ion-icon>
+        <div class="project horizontal" style="justify-content: flex-start; flex-direction: column; align-items: flex-start;">
+          <ion-icon name="color-wand" style="font-size: 2.5em;"></ion-icon>
           <div>
             <h3 style="margin:0">Website and mobile app redesign</h3>
           </div>
         </div>
 
-        <div class="project horizontal" style="justify-content: flex-start; flex-direction: row; align-items: center;">
-          <ion-icon name="layers"></ion-icon>
+        <div class="project horizontal" style="justify-content: flex-start; flex-direction: column; align-items: flex-start;">
+          <ion-icon name="layers" style="font-size: 2.5em;"></ion-icon>
           <div>
             <h3 style="margin:0">Design systems</h3>
           </div>
         </div>
 
-        <div class="project horizontal" style="justify-content: flex-start; flex-direction: row; align-items: center;">
-          <ion-icon name="code"></ion-icon>
+        <div class="project horizontal" style="justify-content: flex-start; flex-direction: column; align-items: flex-start;">
+          <ion-icon name="code" style="font-size: 2.5em;"></ion-icon>
           <div>
             <h3 style="margin:0">Electronics Prototyping and Design</h3>
           </div>
         </div>
 
-        <div class="project horizontal" style="justify-content: flex-start; flex-direction: row; align-items: center;">
-          <ion-icon name="rocket"></ion-icon>
+        <div class="project horizontal" style="justify-content: flex-start; flex-direction: column; align-items: flex-start;">
+          <ion-icon name="rocket" style="font-size: 2.5em;"></ion-icon>
           <div>
             <h3 style="margin:0">Design Workshops and Figma Training for Corporates and Institutions</h3>
           </div>
         </div>
 
-        <div class="project horizontal" style="justify-content: flex-start; flex-direction: row; align-items: center;">
-          <ion-icon name="people"></ion-icon>
+        <div class="project horizontal" style="justify-content: flex-start; flex-direction: column; align-items: flex-start;">
+          <ion-icon name="people" style="font-size: 2.5em;"></ion-icon>
           <div>
             <h3 style="margin:0">Design Consultation for Startups</h3>
           </div>
         </div>
 
-        <div class="project horizontal"
-          style="justify-content: flex-start; flex-direction: row; align-items: center; background: var(--accent-color);">
-          <a style="border:solid var(--grey-100); border-width: 0 0 2px 0;" href="#collaborate"
-            onclick="scrollToBottom()">Work with me ↗</a>
-        </div>
+        <div class="project" id="work" style="justify-content: flex-start; flex-direction: row; align-items: center;">
+        <a style="border:solid var(--grey-100); border-width: 0 0  1px 0;" href="#collaborate"
+        onclick="scrollToBottom()">Work with me → </a>
       </div>
     </div>
 
 
     <!--------------------------------------- resources ----------------------------------------->
     <div class="container-home">
+
       <div class="container-title">
         <h2 style="color: var(--grey-100);margin-bottom: .3em;">Learn from my Figma files and YouTube tutorials viewed
-          over 30k times</h2>
-        <p>Templates and tutorials to help you kickstart any UX Design project</p>
+        over 30k times</h2>
+        <p style="font-size: 1.6em; color: var(--grey-400); max-width: 35ch;">Templates and tutorials to help you kickstart any UX Design project</p>
       </div>
 
       <div class="logos">
 
         <div class="logos-slide">
-          <a target="_blank"
-            href="https://www.figma.com/community/file/897091186704896395/Evolve-Component-Library-%7C-Karan-Kapoor"><img
-              src="./resources/evolve.webp" /></a>
-          <a target="_blank" href="https://www.youtube.com/watch?v=Rf-cg42id78"><img
-              src="./resources/figma-shortcuts.webp" /></a>
-          <a target="_blank" href="https://www.youtube.com/watch?v=LCHQ9MApBGA"><img
-              src="./resources/learn-play.webp" /></a>
-          <a target="_blank"
-            href="https://www.figma.com/community/file/905774038894769917/Animation-%26-Prototype-Playground"><img
-              src="./resources/prototypes.webp" /></a>
-          <a target="_blank" href="https://www.figma.com/community/file/997477366354506560/Twitter-in-Auto-Layout"><img
-              src="./resources/twitter.webp" /></a>
-          <a target="_blank"
-            href="https://www.figma.com/community/file/1076867776880340874/Interactive-Presentation-Gradient-Backgrounds"><img
-              src="./resources/gradients.webp" /></a>
+          <a target="_blank" href="https://www.figma.com/community/file/897091186704896395/Evolve-Component-Library-%7C-Karan-Kapoor"><img src="./resources/evolve.webp" /></a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=Rf-cg42id78"><img src="./resources/figma-shortcuts.webp" /></a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=LCHQ9MApBGA"><img src="./resources/learn-play.webp" /></a>
+          <a target="_blank" href="https://www.figma.com/community/file/905774038894769917/Animation-%26-Prototype-Playground"><img src="./resources/prototypes.webp" /></a>
+          <a target="_blank" href="https://www.figma.com/community/file/997477366354506560/Twitter-in-Auto-Layout"><img src="./resources/twitter.webp" /></a>
+          <a target="_blank" href="https://www.figma.com/community/file/1076867776880340874/Interactive-Presentation-Gradient-Backgrounds"><img src="./resources/gradients.webp" /></a>
         </div>
 
         <div class="logos-slide">
-          <a href="https://www.figma.com/community/file/897091186704896395/Evolve-Component-Library-%7C-Karan-Kapoor"><img
-              src="./resources/evolve.webp" /></a>
-          <a target="_blank" href="https://www.youtube.com/watch?v=Rf-cg42id78"><img
-              src="./resources/figma-shortcuts.webp" /></a>
-          <a target="_blank" href="https://www.youtube.com/watch?v=LCHQ9MApBGA"><img
-              src="./resources/learn-play.webp" /></a>
-          <a target="_blank"
-            href="https://www.figma.com/community/file/905774038894769917/Animation-%26-Prototype-Playground"><img
-              src="./resources/prototypes.webp" /></a>
-          <a target="_blank" href="https://www.figma.com/community/file/997477366354506560/Twitter-in-Auto-Layout"><img
-              src="./resources/twitter.webp" /></a>
-          <a target="_blank"
-            href="https://www.figma.com/community/file/1076867776880340874/Interactive-Presentation-Gradient-Backgrounds"><img
-              src="./resources/gradients.webp" /></a>
+          <a href="https://www.figma.com/community/file/897091186704896395/Evolve-Component-Library-%7C-Karan-Kapoor"><img src="./resources/evolve.webp" /></a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=Rf-cg42id78"><img src="./resources/figma-shortcuts.webp" /></a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=LCHQ9MApBGA"><img src="./resources/learn-play.webp" /></a>
+          <a target="_blank" href="https://www.figma.com/community/file/905774038894769917/Animation-%26-Prototype-Playground"><img src="./resources/prototypes.webp" /></a>
+          <a target="_blank" href="https://www.figma.com/community/file/997477366354506560/Twitter-in-Auto-Layout"><img src="./resources/twitter.webp" /></a>
+          <a target="_blank" href="https://www.figma.com/community/file/1076867776880340874/Interactive-Presentation-Gradient-Backgrounds"><img src="./resources/gradients.webp" /></a>
         </div>
 
       </div>
+
     </div>
 
 
     <!--------------------------------------- collaborate ----------------------------------------->
-    <div class="container-home" style="margin-bottom: 0" id="collaborate">
+    <div class="container-home" id="collaborate" style="margin-bottom: 0;">
       <div class="container-title">
-        <h2 style="margin-bottom: 0.3em">Let's collaborate</h2>
+        <h2>Let's collaborate</h2>
       </div>
 
-      <form class="grid form" style="background-color: transparent; padding: var(--padding-40); gap: 2em;">
+      <form class="grid form" style="background-color: transparent; padding: var(--padding-40); gap: 2em; border-width:0;margin-bottom: 0;">
         <input type="text" id="name" name="Name" placeholder="Your/Company Name*" required />
         <input type="email" id="email" name="Email" placeholder="Email*" required />
-        <textarea id="message" name="Message" placeholder="Describe your project in a few lines*" required></textarea>
         <input type="text" id="phone" name="Phone" placeholder="Phone Number for quick turn around" />
+        <textarea id="message" name="Message" placeholder="Describe your project in a few lines*" required></textarea>
         <button id="submit" type="submit">Send Request</button>
       </form>
 
       <div class="padding-home" style="padding-top: 0; padding-bottom: 0;">
         <p id="success" style="display: none; color: #00FFC2; margin-bottom: .5em;">Project request sent successfully!
-          Let's collaborate.</p>
+        Let's collaborate.</p>
         <p id="error" style="display: none; color: #FF3115; margin-bottom: .5em;">An error occurred while recording your
           request. Please try
-          again</p>
+        again</p>
         <p id="empty-fields" style="display: none; color: #FF3115; margin-bottom: .5em;">Please fill in all the required
-          fields.</p>
+        fields.</p>
       </div>
     </div>
 
-    <div class="nav-bar bottom" style="margin-top: -2px;">
+    <div class="nav-bar bottom" style="margin-top: -1px;">
       <a class="go-to-top" href="#top" onclick="scrollToTop()">Back to top<i class="ri-arrow-up-line"></i></a>
       <div class="nav-options">
         <a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
