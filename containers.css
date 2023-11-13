@@ -40,13 +40,11 @@ input {
 input:focus {
   color: var(--grey-100);
   background-color: var(--accent-color);
-  border: 1px solid var(--border-color);
 }
 
 input::after {
   color: var(--grey-100);
   background-color: var(--accent-color);
-  border: 1px solid var(--border-color);
 }
 
 input::placeholder {
@@ -88,22 +86,6 @@ button:hover {
 .long {
   grid-column: span 2;
   text-decoration: none;
-}
-
-.small-div {
-  height: 2px;
-  background: var(--border-color);
-  width: auto;
-  min-width: var(--min-width);
-  max-width: var(--max-width);
-}
-
-.big-div {
-  height: 4px;
-  background: var(--border-color);
-  width: auto;
-  min-width: var(--min-width);
-  max-width: var(--max-width);
 }
 
 .img-container {
