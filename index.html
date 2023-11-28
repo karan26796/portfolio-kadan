@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="card-stack.css">
   <link rel="stylesheet" href="masonry-home.css">
 
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  -->
@@ -41,6 +44,11 @@
 
     .img-workshop {
       width: auto;
+    }
+
+    calendly-badge-widget{
+      right: 1em;
+      left: 1em;
     }
 
     .mono {
@@ -508,12 +516,10 @@
       Calendly badge widget begin
     </div> -->
 
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/karankapoor/project-discussion', text: 'Collaborate with me', color: '#ffffff', textColor: '#000000', branding: undefined }); }</script>
+    <script type="text/javascript">window.onload = function() {Calendly.initBadgeWidget({ url: 'https://calendly.com/karankapoor/project-discussion', text: 'Collaborate with me', color: '#ffffff', textColor: '#000000', branding: undefined}); }</script>
     <!-- Calendly badge widget end -->
 
-    <div class="nav-bar bottom" style="margin-top: -1px;">
+    <div class="nav-bar bottom" style="margin-top: -1px; margin-bottom:6em">
       <a class="go-to-top" href="#top" onclick="scrollToTop()">Back to top<i class="ri-arrow-up-line"></i></a>
       <div class="nav-options">
         <a href="https://instagram.com/kadankapoor" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
