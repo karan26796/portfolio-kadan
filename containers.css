@@ -139,6 +139,10 @@ button:hover {
   flex-direction: row;
   justify-content: space-between;
 
+  height: 3.5em;
+  align-items: center;
+  justify-items: center;
+
   width: auto;
   min-width: var(--min-width);
   max-width: var(--max-width);
@@ -154,6 +158,15 @@ button:hover {
   z-index: 4;
   position: sticky;
   top: 0px;
+}
+
+.container-blog {
+  border: solid var(--border-color);
+  border-width: 1px;
+  margin-bottom: -1px;
+  padding: var(--padding-40);
+  background: var(--primary-color);
+
 }
 
 .nav-bar.bottom {
