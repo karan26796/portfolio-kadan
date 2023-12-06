@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="containers.css">
 	<link rel="stylesheet" href="infinite-carousel.css">
 	<link rel="stylesheet" href="card-stack.css">
+	<link rel="stylesheet" href="masonry-gallery.css">
 
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  -->
@@ -66,30 +67,26 @@
 
 	<div class="root-container">
 
-		<!-- Done -->
-    <div class="nav-bar">
-      <a href="index.html">
-        <p class="nav">के.के.</p>
-      </a>
-      <div class="nav-options">
+	  <!-- Done -->
+	  <div class="nav-bar">
         <a href="index.html">
           <p class="nav">Home</p>
         </a>
+
+      <a href="index.html">
+        <img style="width: 2em; height: auto;" src="favicon.png">
+      </a>
+
         <a href="about.html">
           <p class="nav">About Me</p>
         </a>
-        <a href="images.html">
-          <p class="nav">Photos</p>
-        </a>
-        <!-- <ion-icon name="moon" onclick="myFunction()"></ion-icon> -->
-      </div>
     </div>
 
 		<div class="img-container"><img src="./about/profile.webp" class="img-blog">
 		</div>
 
 		<div class="container-home padding-blog">
-			
+
 			<h3>Hello, it's me, Karan. I'm a digital product designer, code learner, electronics prototyper, amateur
 				photo clicker, & traveller.</h3>
 
@@ -109,46 +106,55 @@
 			</h3>
 		</div>
 
-		<div class="container-home padding-blog" id="table">
-
-			<div id="column">
-				<h4 style="margin-top:0">Clients & Collaborators</h4>
-				<p>Obvious</p>
-				<p>FrontRow</p>
-				<p>Looppanel</p>
-				<p>IIM-Ahmedabad</p>
-				<p>IIT-Madras</p>
-				<p>Indiana University</p>
-				<p>Zuddl</p>
-				<p>Qoohoo</p>
-				<p>Pixis</p>
-				<p>VectorEdge</p>
-				<p>Media.net</p>
+		<div class="container-home" style="margin-top: 6em;">
+			<div class="padding-home">
+				<h2>Photo Gallery</h2>
+				<p style="max-width: 35ch; color: var(--grey-100);">I have been fortunate to visit some of the most
+					stunning
+					places in India. Here are some of my favorite pictures. I hope you like them! 😌<br><br>
+					Follow on <a style="font-size: 1em;" href="https://instagram.com/kadankapoor"
+						target="_blank">Instagram <i class="ri-arrow-right-up-line"></i></a>
+					for more such photos.</p>
 			</div>
-
-
-			<div id="column">
-				<h4 style="margin-top:0">Expertise in</h4>
-				<p>Digital Product Design</p>
-				<p>Design Systems</p>
-				<p>Figma Training</p>
-				<p>Design Consultancy</p>
-				<p>Webflow</p>
-				<p>Landscape Photography</p>
-				<p>Risky Car Driving</p>
-			</div>
-
-
-			<div id="column">
-				<h4 style="margin-top:0">Still learning</h4>
-				<p>Blender</p>
-				<p>Unity</p>
-				<p>React.js</p>
-				<p>Sketching</p>
-			</div>
-
-
 		</div>
+
+		<div class="container">
+
+			<img src="./gallery/13.webp" alt="A windmill" />
+			<img src="./gallery/14.webp" alt="A windmill" />
+			<img src="./gallery/15.webp" alt="A windmill" />
+			<img src="./gallery/16.webp" alt="A windmill" />
+			<img src="./gallery/17.webp" alt="A windmill" />
+			<img src="./gallery/18.webp" alt="A windmill" />
+			<img src="./gallery/19.webp" alt="A windmill" />
+			<img src="./gallery/20.webp" alt="A windmill" />
+			<img src="./gallery/21.webp" alt="A windmill" />
+			<img src="./gallery/22.webp" alt="A windmill" />
+			<img src="./gallery/23.webp" alt="A windmill" />
+			<img src="./gallery/24.webp" alt="A windmill" />
+			<img src="./gallery/25.webp" alt="A windmill" />
+			<img src="./gallery/26.webp" alt="A windmill" />
+			<img src="./gallery/27.webp" alt="A windmill" />
+			<img src="./gallery/28.webp" alt="A windmill" />
+			<img src="./gallery/29.webp" alt="A windmill" />
+			<img src="./gallery/33.webp" alt="A windmill" />
+			<img src="./gallery/1.webp" alt="A windmill" />
+			<img src="./gallery/2.webp" alt="A windmill" />
+			<img src="./gallery/3.webp" alt="A windmill" />
+			<img src="./gallery/4.webp" alt="A windmill" />
+			<img src="./gallery/5.webp" alt="A windmill" />
+			<img src="./gallery/6.webp" alt="A windmill" />
+			<img src="./gallery/7.webp" alt="A windmill" />
+			<img src="./gallery/8.webp" alt="A windmill" />
+			<img src="./gallery/9.jpg" alt="A windmill" />
+			<img src="./gallery/10.webp" alt="A windmill" />
+			<img src="./gallery/11.webp" alt="A windmill" />
+			<img src="./gallery/12.webp" alt="A windmill" />
+		</div>
+
+		<script
+      type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/karankapoor/project-discussion', text: 'Collaborate with me', color: '#ffffff', textColor: '#000000', branding: undefined }); }</script>
+    <!-- Calendly badge widget end -->
 
 		<div class="nav-bar bottom">
 			<a class="go-to-top" href="#top">Back to top<i class="ri-arrow-up-line"></i></a>

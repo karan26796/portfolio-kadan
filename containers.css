@@ -70,6 +70,14 @@ textarea::placeholder {
   color: var(--grey-250);
 }
 
+.hover-project{
+  background-color: var(--primary-color);
+  }
+
+.hover-project:hover{
+background-color: var(--accent-color);
+}
+
 button {
   padding: var(--padding-24);
   font-weight: 500;
@@ -139,7 +147,6 @@ button:hover {
   flex-direction: row;
   justify-content: space-between;
 
-  height: 3.5em;
   align-items: center;
   justify-items: center;
 
