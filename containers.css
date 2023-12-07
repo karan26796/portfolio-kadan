@@ -307,6 +307,7 @@ button:hover {
   background: var(--border-color);
   padding: 1px;
   margin-bottom: 8em;
+  position: relative; 
 }
 
 .grid-logos {

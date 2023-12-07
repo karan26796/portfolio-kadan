@@ -3,6 +3,17 @@
   display: block;
 }
 
+.img-static{
+  position: absolute;
+  width: 50%; /* Set the width to 100% */
+  height: auto; /* Set the height to 100% */
+  object-fit: contain; /* or contain, depending on your requirements */
+}
+
+.img-static:hover{
+  opacity: 0;
+}
+
 figure {
   margin: 0;
   display: grid;

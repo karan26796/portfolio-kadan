@@ -451,3 +451,47 @@
 </body>
 
 </html>
+
+.grid {
+	display: grid;
+	column-count: var(--grid-projects);
+	grid-template-columns: 1fr 1fr;
+	gap: 1px;
+	justify-content: center;
+	background: var(--border-color);
+	padding: 1px;
+	margin-bottom: 8em;
+  }
+
+  .img-exp {
+	max-width: 100%;
+	display: block;
+  }
+  
+  .img-static{
+	position: absolute;
+	max-width:100%;
+  }
+  
+  .img-static:hover{
+	opacity: 0;
+  }
+
+  <div class="grid" style="margin-bottom: 0px;">
+
+	<div style="padding: var(--padding-40); background-color: var(--primary-color);">
+	  <h2>Experiments</h2>
+	  <p style="font-size: 1.6em; color: var(--grey-400); max-width: 35ch;">Things I created to take a break from the
+		ordinary</p>
+	</div>
+
+	<a><img class="img-static" src="./experiments/img-1.webp"/><img class="img-exp" src="./experiments/prototypes/1.gif" /></a>
+	<a><img class="img-static" src="./experiments/img-2.webp"/><img class="img-exp" src="./experiments/prototypes/2.gif" /></a>
+	<a><img class="img-static" src="./experiments/img-3.webp"/><img class="img-exp" src="./experiments/prototypes/3.gif" /></a>
+	<a><img class="img-static" src="./experiments/img-4.webp"/><img class="img-exp" src="./experiments/prototypes/4.gif" /></a>
+	<a><img class="img-static" src="./experiments/colretech.webp"/><img class="img-exp" src="./experiments/branding-colretech.gif" /></a>
+	<a><img class="img-exp" src="./experiments/vedic square/vedic-square.gif" /></a>
+	<a><video class="img-exp" autoplay loop muted>
+		<source src="./experiments/color-wheel/color-wheel.mp4" type="video/mp4" />
+	  </video></a>
+  </div>
