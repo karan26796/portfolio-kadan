@@ -110,8 +110,6 @@
     #email {
       grid-row: 2/span 1;
       grid-column: 1/span 1;
-      "
-
     }
 
     #phone {
@@ -207,19 +205,19 @@
 
   <div class="root-container">
 
-      <!-- Done -->
-      <div class="nav-bar">
-        <a href="index.html">
-          <p class="nav">Home</p>
-        </a>
+    <!-- Done -->
+    <div class="nav-bar">
+      <a href="index.html">
+        <p class="nav">Home</p>
+      </a>
 
       <a href="index.html">
         <img style="width: 2em; height: auto;" src="favicon.png">
       </a>
 
-        <a href="about.html">
-          <p class="nav">About Me</p>
-        </a>
+      <a href="about.html">
+        <p class="nav">About Me</p>
+      </a>
     </div>
 
     <!--------------------------------------- introduction ----------------------------------------->
@@ -292,7 +290,10 @@
             <h3>Looppanel : Creating a Zoom note-taking sidekick for user interviews </h3>
             <h5 class="p-tag">PRODUCT DESIGN - USABILITY TESTING</h5>
           </div>
+          <div class="proj-detail" style="justify-content: baseline;">
           <p>Recorded 1 lac notes in 2 months of note-taker launch. </p>
+          <p class="read-more-text">Read More<i class="ri-arrow-right-line"></i></p>
+        </div>
         </div>
       </a>
 
@@ -303,7 +304,10 @@
             <h3>Designing ways to zoom in and out of research data</h3>
             <h5 class="p-tag">PRODUCT DESIGN - UX RESEARCH</h5>
           </div>
-          <p>Reduced the time from call recording to insights by ~10hrs</p>
+          <div class="proj-detail" style="justify-content: baseline;">
+            <p>Reduced the time from call recording to insights by ~10hrs</p>
+            <p class="read-more-text">Read More<i class="ri-arrow-right-line"></i></p>
+          </div>
         </div>
       </a>
 
@@ -314,7 +318,10 @@
             <h3>Redesigning Nepal's Superapp by creating a design system</h3>
             <h5 class="p-tag">DESIGN SYSTEM - COMPONENT LIBRARY</h5>
           </div>
+          <div class="proj-detail" style="justify-content: baseline;">
           <p>Successfully launched a component library and reduced time to development.</p>
+          <p class="read-more-text">Read More<i class="ri-arrow-right-line"></i></p>
+          </div>
         </div>
       </a>
 
@@ -336,18 +343,12 @@
             <h3>AWACON: A mindful device for overcoming binge behavior and boredom</h3>
             <h5 class="p-tag">DESIGN - RESEARCH- PSYCHOLOGY</h5>
           </div>
-        </div>
-      </a>
-
-      <!-- <a href="./projects/staging-project.html" style="text-decoration: none;">
-        <img class="project-img main" src="./projects/staging-project/staging.gif">
-        <div class="project">
-          <div class="proj-detail">
-            <h3>Hidden in plain sight - a commentary on social media surveillance</h3>
-            <h5 class="p-tag">EXPERIENTIAL DESIGN - INSTALLATIONS</h5>
+          <div class="proj-detail" style="justify-content: baseline;">
+            <p>Gives you back the control over your life by providing alternate ways to spend your time.</p>
+          <p class="read-more-text">Read More<i class="ri-arrow-right-line"></i></p>
           </div>
         </div>
-      </a> -->
+      </a>
 
     </div>
 
@@ -395,7 +396,35 @@
           designer but also has a great skill of programming
           which makes his work outstanding. He has superb UI/UX skills and can solve complex problems easily</p>
       </div>
+    </div>
 
+    <!-- Other projects -->
+    <div class="grid">
+
+      <div class="element-big" style="padding: var(--padding-40); background-color: var(--primary-color);">
+        <h2>Other fun projects</h2>
+      </div>
+
+      <a style="display: flex; flex-direction: column;" href="./projects/staging-project.html"
+        style="text-decoration: none;">
+        <img class="project-img" src="./projects/staging-project/staging.gif">
+        <div class="project">
+          <h3>Hidden in plain sight - a commentary on social media surveillance</h3>
+          <h5 class="p-tag">EXPERIENTIAL DESIGN - INSTALLATIONS</h5>
+          <p class="read-more-text">Read More<i class="ri-arrow-right-line"></i></p>
+        </div>
+      </a>
+
+      <a style="display: flex; flex-direction: column;" href="./projects/pause-leave-management.html"
+        style="text-decoration: none;">
+        <img class="project-img" src="./projects/pause-holiday/pause-thumb.webp">
+        <div class="project">
+          <h3>How we designed a leave tracking tool for the wellbeing of
+            employees</h3>
+          <h5 class="p-tag">PRODUCT DESIGN - SAAS - ENTERPRISE SOFTWARE</h5>
+          <p class="read-more-text">Read More<i class="ri-arrow-right-line"></i></p>
+        </div>
+      </a>
     </div>
 
     <!--------------------------------------- experiments - done ----------------------------------------->
@@ -407,13 +436,21 @@
           ordinary</p>
       </div>
 
-      <a><img class="img-static" src="./experiments/img-1.webp"/><img class="img-exp" src="./experiments/prototypes/1.gif" /></a>
-      <a><img class="img-static" src="./experiments/img-2.webp"/><img class="img-exp" src="./experiments/prototypes/2.gif" /></a>
-      <a><img class="img-static" src="./experiments/img-3.webp"/><img class="img-exp" src="./experiments/prototypes/3.gif" /></a>
-      <a><img class="img-static" src="./experiments/img-4.webp"/><img class="img-exp" src="./experiments/prototypes/4.gif" /></a>
-      <a><img class="img-static" src="./experiments/colretech.webp"/><img class="img-exp" src="./experiments/branding-colretech.gif" /></a>
-      <a href="/experiments/vedic-square.html"><img class="img-static" src="./experiments/vedic square/vedic-square.webp"/><img class="img-exp" src="./experiments/vedic square/vedic-square.gif" /></a>
-      <a><img class="img-static" src="./experiments/color-wheel/color-wheel.webp"/><img class="img-exp" src="./experiments/color-wheel/color-wheel.gif" /></a>
+      <a><img class="img-static" src="./experiments/img-1.webp" /><img class="img-exp"
+          src="./experiments/prototypes/1.gif" /></a>
+      <a><img class="img-static" src="./experiments/img-2.webp" /><img class="img-exp"
+          src="./experiments/prototypes/2.gif" /></a>
+      <a><img class="img-static" src="./experiments/img-3.webp" /><img class="img-exp"
+          src="./experiments/prototypes/3.gif" /></a>
+      <a><img class="img-static" src="./experiments/img-4.webp" /><img class="img-exp"
+          src="./experiments/prototypes/4.gif" /></a>
+      <a><img class="img-static" src="./experiments/colretech.webp" /><img class="img-exp"
+          src="./experiments/branding-colretech.gif" /></a>
+      <a href="/experiments/vedic-square.html"><img class="img-static"
+          src="./experiments/vedic square/vedic-square.webp" /><img class="img-exp"
+          src="./experiments/vedic square/vedic-square.gif" /></a>
+      <a><img class="img-static" src="./experiments/color-wheel/color-wheel.webp" /><img class="img-exp"
+          src="./experiments/color-wheel/color-wheel.gif" /></a>
       <!-- <a href="/experiments/color-wheel.html"><img class="img-static" src="./experiments/color-wheel/color-wheel.webp"/><video class="img-exp" autoplay loop>
           <source src="./experiments/color-wheel/color-wheel.mp4" type="video/mp4" />
         </video></a> -->

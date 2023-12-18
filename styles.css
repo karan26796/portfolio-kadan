@@ -181,6 +181,19 @@ h5 {
   max-width: 60ch;
 }
 
+.read-more-text {
+  color: white;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.project:hover .read-more-text {
+  color: white;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .tag-align {
   text-align: right;
   max-width: 20ch;
@@ -272,6 +285,12 @@ blockquote {
 
   body {
     font-size: 14px;
+  }
+
+  .read-more-text {
+    color: white;
+    opacity: 1;
+  transform: translateY(0%);
   }
 }
 
