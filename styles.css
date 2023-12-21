@@ -181,15 +181,21 @@ h5 {
   max-width: 60ch;
 }
 
-.read-more-text {
-  color: white;
+.project .read-more-text {
+  background-color: white;
+  font-size: 1em;
+  color: var(--primary-color);
+  padding: .5em 1em;
+  margin-top: .5em;
   opacity: 0;
+  border-radius: 1em;
   transform: translateY(10%);
+  width: fit-content;
+  height: fit-content;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .project:hover .read-more-text {
-  color: white;
   opacity: 1;
   transform: translateY(0);
 }
@@ -287,9 +293,8 @@ blockquote {
     font-size: 14px;
   }
 
-  .read-more-text {
-    color: white;
-    opacity: 1;
+.project .read-more-text {
+  opacity: 1;
   transform: translateY(0%);
   }
 }
