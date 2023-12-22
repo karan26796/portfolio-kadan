@@ -25,21 +25,6 @@ body{
   --highlight-color: #9DC9FF;
 }
 
-.dark-mode{
-  --primary-color: #ffffff;
-  --accent-color: #ebebeb;
-  --grey-100: #181818;
-  --grey-200: #383838;
-  --grey-250: #535353;
-  --grey-300: #686868;
-  --grey-400: #9c9c9c;
-  --grey-500: #8b8b8b;
-  --grey-600: #b9b9b9;
-  --border-color: #ebeef1;
-  --visited-link: #ffffff;
-  --highlight-color: #2185ff;
-}
-
 ion-icon {
   color: var(--grey-100);
   font-size: 1.5em;
@@ -98,11 +83,6 @@ a:hover {
   color: var(--grey-100);
   text-decoration: underline;
   text-decoration-style: dotted;
-}
-
-a:visited {
-  color: var(--visited-link);
-  text-decoration: underline;
 }
 
 h1 {

@@ -28,68 +28,12 @@ body {
   color: var(--grey-100);
 }
 
-input {
-  color: var(--grey-300);
-  font-size: 1.25em;
-  background-color: var(--primary-color);
-  padding: var(--padding-24);
-  --highlight-color: var(--border-color);
-  border: 1px solid var(--border-color);
-}
-
-input:focus {
-  color: var(--grey-100);
-  background-color: var(--accent-color);
-}
-
-input::after {
-  color: var(--grey-100);
-  background-color: var(--accent-color);
-}
-
-input::placeholder {
-  color: var(--grey-250);
-}
-
-textarea {
-  color: var(--grey-300);
-  font-size: 1.25em;
-  background-color: var(--primary-color);
-  padding: var(--padding-24);
-  --highlight-color: var(--border-color);
-  border: 1px solid var(--border-color);
-  grid-column: span 2;
-}
-
-textarea:focus {
-  color: var(--grey-100);
-  background-color: var(--accent-color);
-}
-
-textarea::placeholder {
-  color: var(--grey-250);
-}
-
 .hover-project{
   background-color: var(--primary-color);
   }
 
 .hover-project:hover{
 background-color: var(--accent-color);
-}
-
-button {
-  padding: var(--padding-24);
-  font-weight: 500;
-  font-size: 1.25em;
-  background-color: white;
-  color: var(--primary-color);
-  border: 1px solid var(--border-color);
-  grid-column: span 2;
-}
-
-button:hover {
-  background-color: var(--border-color);
 }
 
 .long {
@@ -290,10 +234,6 @@ button:hover {
   height: var(--project-img-main);
 }
 
-.arrow {
-  display: block;
-}
-
 .project a,
 .grid a,
 .nav-bar a {
@@ -345,9 +285,6 @@ button:hover {
     --max-width: 960px;
     --width: auto;
 
-    /*--padding-40: 2.5em;
-      --padding-12: .75em;*/
-
     --project-img-main: 500px;
     --project-img: 300px;
   }
@@ -367,9 +304,6 @@ button:hover {
     --max-width: 800px;
     --width: auto;
 
-    /*--padding-40: 24px;
-      --padding-12: 12px;*/
-
     --project-img: 300px;
     --project-img-main: 300px;
   }
@@ -388,9 +322,6 @@ button:hover {
     --min-width: auto;
     --max-width: 640px;
     --width: auto;
-
-    /*--padding-40: 32px;
-      --padding-12: 16px;*/
 
     --logo-size: 80px;
 
@@ -415,7 +346,6 @@ button:hover {
 
   .img-container {
     align-items: center;
-    /* padding: 12px 0; */
   }
 
   .grid-rel {
