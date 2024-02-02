@@ -162,12 +162,13 @@ h5 {
 }
 
 .project .read-more-text {
-  background-color: white;
+  background-color: #0062FF;
   font-size: 1em;
-  color: var(--primary-color);
+  font-weight: 500;
+  color: white;
   padding: .5em 1em;
   margin-top: .5em;
-  opacity: 0;
+  opacity: 1;
   border-radius: 1em;
   transform: translateY(10%);
   width: fit-content;
