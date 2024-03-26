@@ -1,11 +1,4 @@
 /*carousel-code*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -15,7 +8,7 @@
   }
 }
 
-.logos {
+.logos-figma {
   overflow: hidden;
 /*  padding: 60px 0;*/
 background: var(--primary-color);
@@ -23,8 +16,8 @@ white-space: nowrap;
 position: relative;
 }
 
-.logos:before,
-.logos:after {
+.logos-figma:before,
+.logos-figma:after {
   position: absolute;
   top: 0;
   width: 100px;
@@ -33,44 +26,44 @@ position: relative;
   z-index: 2;
 }
 
-.logos:before {
+.logos-figma:before {
   left: 0;
   background: linear-gradient(to left, rgba(0, 0, 0, 0), var(--primary-color));
 }
 
-.logos:after {
+.logos-figma:after {
   right: 0;
   background: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary-color));
 }
 
-.logos-slide {
+.logos-slide-figma {
   display: inline-block;
   animation: 35s slide infinite linear;
 }
 
-.logos-slide img {
+.logos-slide-figma img {
   height: 450px;
 /*  margin: 0 40px;*/
 }
 
 @media only screen and (max-width: 1200px) {
-  .logos-slide img {
+  .logos-slide-figma img {
     height: 450px;
   }
 }
 
 @media only screen and (max-width: 920px) {
-  .logos-slide img {
+  .logos-slide-figma img {
     height: 350px;}
 }
 
 @media only screen and (max-width: 776px) {
-  .logos-slide img {
+  .logos-slide-figma img {
     height: 300px;}
 }
 
 /* This will work for mobile */
 @media only screen and (max-width: 478px) {
-  .logos-slide img {
+  .logos-slide-figma img {
     height: 250px;}
 }
